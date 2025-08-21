@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/spa-hero-green.jpg";
+import evaLogo from "@/assets/eva-logo.png";
 
 const HeroSection = () => {
   const handleCall = () => {
@@ -27,12 +28,13 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Logo/Brand */}
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-8xl font-bold text-primary tracking-wide">
-              EVA
-            </h1>
-            <p className="text-xl md:text-2xl text-primary font-light tracking-widest">
-              INTERNATIONAL SPA
-            </p>
+            <div className="flex justify-center mb-6">
+              <img 
+                src={evaLogo} 
+                alt="EVA International Spa" 
+                className="h-24 md:h-32 w-auto"
+              />
+            </div>
             <div className="w-32 h-px bg-gradient-gold mx-auto"></div>
           </div>
 
