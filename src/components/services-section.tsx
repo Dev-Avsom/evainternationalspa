@@ -4,6 +4,11 @@ import { Phone, MessageCircle, Sparkles, Droplets, Heart } from "lucide-react";
 import massageImage from "@/assets/massage-therapy.jpg";
 import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import jacuzziImage from "@/assets/jacuzzi.jpg";
+import balineseImage from "@/assets/balinese-therapy.jpg";
+import deepTissueImage from "@/assets/deep-tissue-therapy.jpg";
+import swedishImage from "@/assets/swedish-therapy.jpg";
+import thaiImage from "@/assets/thai-therapy.jpg";
+import bodyScrubImage from "@/assets/body-scrub-therapy.jpg";
 
 const ServicesSection = () => {
   const handleCall = () => {
@@ -27,7 +32,7 @@ const ServicesSection = () => {
     {
       title: "Balinese Therapy", 
       description: "Ancient Indonesian healing tradition that incorporates deep tissue massage, acupressure, and stretching, alongside aromatic oils and natural remedies.",
-      image: massageImage,
+      image: balineseImage,
       icon: <Heart className="h-6 w-6" />,
       duration: "90-120 mins",
       featured: false
@@ -35,7 +40,7 @@ const ServicesSection = () => {
     {
       title: "Deep Tissue Therapy",
       description: "Therapeutic massage designed to target the deeper layers of muscle and connective tissue. Perfect for relieving chronic tension and muscle pain.",
-      image: massageImage,
+      image: deepTissueImage,
       icon: <Heart className="h-6 w-6" />,
       duration: "60-90 mins",
       featured: false
@@ -43,7 +48,7 @@ const ServicesSection = () => {
     {
       title: "Swedish Therapy",
       description: "One of the most popular massage therapies involving long, flowing strokes, kneading, and circular movements to help relax the entire body.",
-      image: massageImage,
+      image: swedishImage,
       icon: <Heart className="h-6 w-6" />,
       duration: "60-90 mins",
       featured: false
@@ -51,7 +56,7 @@ const ServicesSection = () => {
     {
       title: "Thai Therapy",
       description: "Rooted in ancient Thai traditions, this unique therapy combines yoga-like stretching, acupressure, and deep tissue massage to promote flexibility.",
-      image: massageImage,
+      image: thaiImage,
       icon: <Heart className="h-6 w-6" />,
       duration: "90-120 mins",
       featured: false
@@ -59,7 +64,7 @@ const ServicesSection = () => {
     {
       title: "Body Scrub Therapy",
       description: "Ultimate skin rejuvenation with luxurious body scrub treatments designed to exfoliate, nourish, and hydrate your skin for a glowing complexion.",
-      image: massageImage,
+      image: bodyScrubImage,
       icon: <Droplets className="h-6 w-6" />,
       duration: "45-60 mins",
       featured: false
