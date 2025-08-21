@@ -153,23 +153,34 @@ const ServicesSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
-          <div className="bg-gradient-card rounded-lg p-8 border border-border/50 shadow-card max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">
+        <div className="text-center px-4">
+          <div className="bg-gradient-card rounded-lg p-6 md:p-8 border border-border/50 shadow-card max-w-2xl mx-auto">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
               Ready for the Ultimate Relaxation Experience?
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-6 text-sm md:text-base">
               Call us now to book your appointment and let our expert therapists take care of you.
             </p>
-            <Button 
-              onClick={handleCall}
-              variant="call" 
-              size="xl"
-              className="shadow-glow"
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Call Now: +91 88846 66814
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button 
+                onClick={handleCall}
+                variant="call" 
+                size="lg"
+                className="shadow-glow w-full sm:w-auto"
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                <span className="text-sm md:text-base">Call Now</span>
+              </Button>
+              <Button 
+                onClick={() => handleWhatsApp("a spa appointment")}
+                variant="hero" 
+                size="lg"
+                className="w-full sm:w-auto"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" />
+                <span className="text-sm md:text-base">WhatsApp</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
