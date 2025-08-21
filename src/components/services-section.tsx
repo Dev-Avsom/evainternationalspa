@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Sparkles, Droplets, Heart } from "lucide-react";
+import { Phone, MessageCircle, Sparkles, Droplets, Heart } from "lucide-react";
 import massageImage from "@/assets/massage-therapy.jpg";
 import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import jacuzziImage from "@/assets/jacuzzi.jpg";
@@ -8,6 +8,11 @@ import jacuzziImage from "@/assets/jacuzzi.jpg";
 const ServicesSection = () => {
   const handleCall = () => {
     window.open("tel:+918884666814", "_self");
+  };
+
+  const handleWhatsApp = (serviceName: string) => {
+    const message = `Hi! I would like to book ${serviceName} at Eva International Spa.`;
+    window.open(`https://wa.me/918884666814?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   const services = [
@@ -122,15 +127,26 @@ const ServicesSection = () => {
                   {service.description}
                 </CardDescription>
                 
-                <Button 
-                  onClick={handleCall}
-                  variant="luxury" 
-                  size="sm" 
-                  className="w-full"
-                >
-                  <Phone className="mr-2 h-4 w-4" />
-                  Book This Service
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <Button 
+                    onClick={handleCall}
+                    variant="call" 
+                    size="sm" 
+                    className="flex-1"
+                  >
+                    <Phone className="mr-2 h-4 w-4" />
+                    Call
+                  </Button>
+                  <Button 
+                    onClick={() => handleWhatsApp(service.title)}
+                    variant="hero" 
+                    size="sm" 
+                    className="flex-1"
+                  >
+                    <MessageCircle className="mr-2 h-4 w-4" />
+                    WhatsApp
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
