@@ -113,7 +113,15 @@ const ContactSection = () => {
                   <div>
                     <p className="font-semibold text-foreground">Location</p>
                     <p className="text-muted-foreground">Eva International Spa</p>
-                    <p className="text-sm text-primary">Premium spa location</p>
+                    <Button 
+                      onClick={() => window.open("https://maps.app.goo.gl/x33CYXpKePF3YTCW7", "_blank")}
+                      variant="outline" 
+                      size="sm" 
+                      className="mt-2"
+                    >
+                      <MapPin className="mr-1 h-4 w-4" />
+                      View on Map
+                    </Button>
                   </div>
                 </div>
               </CardContent>
