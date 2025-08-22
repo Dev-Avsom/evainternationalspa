@@ -12,9 +12,9 @@ const WhatsAppFloat = () => {
       <Button
         onClick={handleWhatsApp}
         size="icon"
-        className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-glow transition-all duration-300 hover:scale-110 animate-pulse"
+        className="h-16 w-16 md:h-14 md:w-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-glow transition-all duration-300 hover:scale-110 animate-pulse"
       >
-        <MessageCircle className="h-7 w-7" />
+        <MessageCircle className="h-8 w-8 md:h-7 md:w-7" />
       </Button>
       
       {/* Tooltip */}
