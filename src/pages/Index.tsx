@@ -2,6 +2,7 @@ import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import WhyChooseSection from "@/components/why-choose-section";
 import ContactSection from "@/components/contact-section";
+import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
       <ServicesSection />
       <WhyChooseSection />
       <ContactSection />
+      <Footer />
       <WhatsAppFloat />
     </div>
   );
