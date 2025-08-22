@@ -137,7 +137,7 @@ const ServicesSection = () => {
                     onClick={handleCall}
                     variant="call" 
                     size="sm" 
-                    className="flex-1"
+                    className="flex-1 h-10"
                   >
                     <Phone className="mr-2 h-4 w-4" />
                     Call
@@ -146,7 +146,7 @@ const ServicesSection = () => {
                     onClick={() => handleWhatsApp(service.title)}
                     variant="hero" 
                     size="sm" 
-                    className="flex-1"
+                    className="flex-1 h-10"
                   >
                     <MessageCircle className="mr-2 h-4 w-4" />
                     WhatsApp
