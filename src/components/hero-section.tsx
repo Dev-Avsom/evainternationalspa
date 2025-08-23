@@ -48,6 +48,15 @@ const HeroSection = () => {
             </p>
           </div>
 
+          {/* Pricing Highlight */}
+          <div className="pt-4">
+            <div className="inline-block bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3">
+              <p className="text-primary font-semibold text-lg">
+                Spa Service Starts from ₹1,999/- only
+              </p>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
