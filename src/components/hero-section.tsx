@@ -50,8 +50,8 @@ const HeroSection = () => {
 
           {/* Pricing Highlight */}
           <div className="pt-4">
-            <div className="inline-block bg-primary/10 backdrop-blur-sm border border-primary/20 rounded-full px-6 py-3">
-              <p className="text-primary font-semibold text-lg">
+            <div className="inline-block bg-white backdrop-blur-sm border border-white/20 rounded-full px-6 py-3">
+              <p className="text-black font-semibold text-lg">
                 Spa Service Starts from ₹1,999/- only
               </p>
             </div>
