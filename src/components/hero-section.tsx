@@ -18,6 +18,13 @@ const HeroSection = () => {
   const [currentKeyword, setCurrentKeyword] = useState(0);
   const [utmKeyword, setUtmKeyword] = useState<string | null>(null);
 
+  // Function to convert text to Title Case
+  const toTitleCase = (str: string) => {
+    return str.replace(/\w\S*/g, (txt) => 
+      txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+    );
+  };
+
   useEffect(() => {
     // Get utm_term from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
@@ -36,7 +43,7 @@ const HeroSection = () => {
     }
   }, [adKeywords.length, utmKeyword]);
 
-  const displayKeyword = utmKeyword || adKeywords[currentKeyword];
+  const displayKeyword = toTitleCase(utmKeyword || adKeywords[currentKeyword]);
 
   const handleCall = () => {
     window.open("tel:+918884666814", "_self");
