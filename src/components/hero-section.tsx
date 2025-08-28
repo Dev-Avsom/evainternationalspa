@@ -1,8 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/spa-hero-green.jpg";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
+  const adKeywords = [
+    "Best Spa in Bangalore",
+    "Luxury Massage Therapy",
+    "Professional Body Treatments", 
+    "Relaxation & Wellness Center",
+    "Premium Spa Services",
+    "Thai & Swedish Massage",
+    "Couples Spa Packages",
+    "Deep Tissue Therapy"
+  ];
+
+  const [currentKeyword, setCurrentKeyword] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentKeyword((prev) => (prev + 1) % adKeywords.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [adKeywords.length]);
+
   const handleCall = () => {
     window.open("tel:+918884666814", "_self");
   };
@@ -42,6 +64,14 @@ const HeroSection = () => {
             <h2 className="text-3xl md:text-5xl font-light text-foreground">
               Embracing Luxury & Relaxation
             </h2>
+            
+            {/* Dynamic Google Ad Keywords */}
+            <div className="h-8 flex items-center justify-center">
+              <p className="text-xl md:text-2xl font-semibold text-primary animate-fade-in transition-all duration-500">
+                {adKeywords[currentKeyword]}
+              </p>
+            </div>
+            
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Experience tranquility like never before at Eva Spa, your sanctuary for relaxation and wellness. 
               We offer luxurious treatments designed to refresh your body, mind, and spirit.
