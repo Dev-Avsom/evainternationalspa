@@ -16,14 +16,27 @@ const HeroSection = () => {
   ];
 
   const [currentKeyword, setCurrentKeyword] = useState(0);
+  const [utmKeyword, setUtmKeyword] = useState<string | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentKeyword((prev) => (prev + 1) % adKeywords.length);
-    }, 3000);
+    // Get utm_term from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const keyword = urlParams.get('utm_term');
+    setUtmKeyword(keyword);
+  }, []);
 
-    return () => clearInterval(interval);
-  }, [adKeywords.length]);
+  useEffect(() => {
+    // Only cycle through keywords if no UTM keyword is present
+    if (!utmKeyword) {
+      const interval = setInterval(() => {
+        setCurrentKeyword((prev) => (prev + 1) % adKeywords.length);
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }
+  }, [adKeywords.length, utmKeyword]);
+
+  const displayKeyword = utmKeyword || adKeywords[currentKeyword];
 
   const handleCall = () => {
     window.open("tel:+918884666814", "_self");
@@ -68,7 +81,7 @@ const HeroSection = () => {
             {/* Dynamic Google Ad Keywords */}
             <div className="h-8 flex items-center justify-center">
               <p className="text-xl md:text-2xl font-semibold text-primary animate-fade-in transition-all duration-500">
-                {adKeywords[currentKeyword]}
+                {displayKeyword}
               </p>
             </div>
             
