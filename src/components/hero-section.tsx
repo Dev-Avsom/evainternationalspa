@@ -116,7 +116,7 @@ const HeroSection = () => {
               className="w-full sm:w-auto"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call Now - Book Appointment
+              Book Appointment - 8884666814
             </Button>
             <Button
               onClick={handleWhatsApp}
