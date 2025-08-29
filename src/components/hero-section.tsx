@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const adKeywords = [
-    "Best Spa in Bangalore",
+    "Best Spa in Koramangala",
     "Luxury Massage Therapy",
     "Professional Body Treatments", 
     "Relaxation & Wellness Center",
