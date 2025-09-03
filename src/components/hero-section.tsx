@@ -93,8 +93,9 @@ const HeroSection = () => {
             </div>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Experience tranquility like never before at Eva Spa, your sanctuary for relaxation and wellness. 
-              We offer luxurious treatments designed to refresh your body, mind, and spirit.
+              Experience premium spa and massage services in Koramangala. We offer full body massage, 
+              female to male body massage, jacuzzi spa treatments, and luxury wellness services. 
+              Your trusted spa center near you for complete relaxation and rejuvenation.
             </p>
           </div>
 
