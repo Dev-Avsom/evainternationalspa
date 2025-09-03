@@ -140,37 +140,39 @@ const CouplesLanding = () => {
 
             {/* Pricing Highlight */}
             <div className="pt-6 space-y-4">
-              <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
-                <p className="text-spa-dark font-bold text-sm md:text-lg">
-                  💕 Couples Packages Starting from ₹4,999/- with Private Jacuzzi
+              <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
+                <p className="text-spa-dark font-bold text-xs md:text-lg text-center">
+                  💕 Couples Packages from ₹4,999/-
                 </p>
               </div>
-              <div className="inline-block bg-primary/90 backdrop-blur-sm border border-primary/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
-                <p className="text-spa-dark font-bold text-sm md:text-lg">
-                  ✨ Special Offer: Book Couples Massage & Get 25% Off Second Session
+              <div className="inline-block bg-primary/90 backdrop-blur-sm border border-primary/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
+                <p className="text-spa-dark font-bold text-xs md:text-lg text-center">
+                  ✨ Book Couples Massage & Get 25% Off
                 </p>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 px-4">
               <Button
                 onClick={handleCall}
                 variant="call"
                 size="xl"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto text-sm md:text-base"
               >
-                <Phone className="mr-2 h-5 w-5" />
-                Book Your Romantic Retreat - 8884666814
+                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                <span className="hidden md:inline">Book Your Romantic Retreat - 8884666814</span>
+                <span className="md:hidden">Book Retreat - 8884666814</span>
               </Button>
               <Button
                 onClick={handleWhatsApp}
                 variant="hero"
                 size="xl"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto text-sm md:text-base"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp for Couples Package
+                <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                <span className="hidden md:inline">WhatsApp for Couples Package</span>
+                <span className="md:hidden">WhatsApp Us</span>
               </Button>
             </div>
           </div>
