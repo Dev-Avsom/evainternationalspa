@@ -159,8 +159,8 @@ const ThaiMassageLanding = () => {
                 className="w-full sm:w-auto text-sm md:text-base"
               >
                 <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                <span className="hidden md:inline">Book Your Therapeutic Session - 8884666814</span>
-                <span className="md:hidden">Call - 8884666814</span>
+                <span className="hidden md:inline">Book Session - 8884666814</span>
+                <span className="md:hidden">Call Now</span>
               </Button>
               <Button
                 onClick={handleWhatsApp}
@@ -169,8 +169,8 @@ const ThaiMassageLanding = () => {
                 className="w-full sm:w-auto text-sm md:text-base"
               >
                 <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                <span className="hidden md:inline">WhatsApp for Thai Massage</span>
-                <span className="md:hidden">WhatsApp Us</span>
+                <span className="hidden md:inline">WhatsApp Thai Massage</span>
+                <span className="md:hidden">WhatsApp</span>
               </Button>
             </div>
           </div>
@@ -261,13 +261,15 @@ const ThaiMassageLanding = () => {
                   </div>
                   
                   <div className="flex flex-col gap-2 pt-4">
-                    <Button onClick={handleCall} variant="call" size="sm" className="w-full">
-                      <Phone className="mr-2 h-4 w-4" />
-                      Book {service.title}
+                    <Button onClick={handleCall} variant="call" size="sm" className="w-full text-xs sm:text-sm">
+                      <Phone className="mr-1 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" />
+                      <span className="hidden sm:inline">Book {service.title}</span>
+                      <span className="sm:hidden">Book Now</span>
                     </Button>
-                    <Button onClick={handleWhatsApp} variant="hero" size="sm" className="w-full">
-                      <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp Details
+                    <Button onClick={handleWhatsApp} variant="hero" size="sm" className="w-full text-xs sm:text-sm">
+                      <MessageCircle className="mr-1 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" />
+                      <span className="hidden sm:inline">WhatsApp Details</span>
+                      <span className="sm:hidden">WhatsApp</span>
                     </Button>
                   </div>
                 </CardContent>
@@ -376,9 +378,10 @@ const ThaiMassageLanding = () => {
                   that correspond to different organs and systems in your body.
                 </p>
                 
-                <Button onClick={handleCall} variant="call" size="lg" className="w-full sm:w-auto">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Book Reflexology Session
+                <Button onClick={handleCall} variant="call" size="lg" className="w-full sm:w-auto text-sm md:text-base">
+                  <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                  <span className="hidden md:inline">Book Reflexology Session</span>
+                  <span className="md:hidden">Book Reflexology</span>
                 </Button>
               </div>
             </div>
@@ -436,19 +439,21 @@ const ThaiMassageLanding = () => {
                 onClick={handleCall}
                 variant="hero"
                 size="xl"
-                className="w-full sm:w-auto bg-spa-dark text-primary hover:bg-spa-dark/90"
+                className="w-full sm:w-auto bg-spa-dark text-primary hover:bg-spa-dark/90 text-sm md:text-base"
               >
-                <Phone className="mr-2 h-5 w-5" />
-                Book Your Therapeutic Session
+                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                <span className="hidden md:inline">Book Your Therapeutic Session</span>
+                <span className="md:hidden">Book Session</span>
               </Button>
               <Button
                 onClick={handleWhatsApp}
                 variant="luxury"
                 size="xl"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto text-sm md:text-base"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp for Thai Massage
+                <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
+                <span className="hidden md:inline">WhatsApp for Thai Massage</span>
+                <span className="md:hidden">WhatsApp</span>
               </Button>
             </div>
             <div className="pt-6">
