@@ -22,7 +22,7 @@ const CouplesLanding = () => {
     {
       title: "Romantic Retreat Package",
       duration: "3 hours",
-      price: "₹4,999",
+      price: "Customized Package",
       image: jacuzziImage,
       features: [
         "Private Jacuzzi & Steam Session",
@@ -35,7 +35,7 @@ const CouplesLanding = () => {
     {
       title: "Anniversary Special",
       duration: "4 hours",
-      price: "₹7,999",
+      price: "Personalized Package",
       image: massageImage,
       features: [
         "Extended Private Jacuzzi",
@@ -48,7 +48,7 @@ const CouplesLanding = () => {
     {
       title: "Ultimate Romance Package",
       duration: "5 hours",
-      price: "₹9,999",
+      price: "Premium Package",
       image: aromatherapyImage,
       features: [
         "All-Day Private Suite",
