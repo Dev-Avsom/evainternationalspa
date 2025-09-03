@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MessageCircle, Heart, Sparkles, Gift, Users } from "lucide-react";
-import heroImage from "@/assets/spa-hero-green.jpg";
+import heroImage from "@/assets/jacuzzi.jpg";
 import jacuzziImage from "@/assets/jacuzzi.jpg";
 import massageImage from "@/assets/massage-therapy.jpg";
 import aromatherapyImage from "@/assets/aromatherapy.jpg";
@@ -139,10 +139,15 @@ const CouplesLanding = () => {
             </div>
 
             {/* Pricing Highlight */}
-            <div className="pt-6">
+            <div className="pt-6 space-y-4">
               <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
                 <p className="text-spa-dark font-bold text-sm md:text-lg">
                   💕 Couples Packages Starting from ₹8,999/- with Private Jacuzzi
+                </p>
+              </div>
+              <div className="inline-block bg-primary/90 backdrop-blur-sm border border-primary/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
+                <p className="text-spa-dark font-bold text-sm md:text-lg">
+                  ✨ Special Offer: Book Couples Massage & Get 25% Off Second Session
                 </p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MessageCircle, Target, Zap, Shield, Activity, Star } from "lucide-react";
-import heroImage from "@/assets/spa-hero-green.jpg";
+import heroImage from "@/assets/thai-therapy.jpg";
 import thaiImage from "@/assets/thai-therapy.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";

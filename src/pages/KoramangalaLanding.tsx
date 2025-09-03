@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MessageCircle, MapPin, Star, Shield, Users, Clock } from "lucide-react";
-import heroImage from "@/assets/spa-hero-green.jpg";
+import heroImage from "@/assets/massage-therapy.jpg";
 import massageImage from "@/assets/massage-therapy.jpg";
 import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import jacuzziImage from "@/assets/jacuzzi.jpg";
@@ -90,12 +90,12 @@ const KoramangalaLanding = () => {
               </h1>
               
               <h2 className="text-xl md:text-2xl font-semibold text-primary">
-                The Ultimate Spa Experience in Koramangala
+                The Ultimate Spa Experience
               </h2>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Escape the city's stress and rediscover balance at Eva International Spa, 
-                Koramangala's premier destination for luxury wellness. Located in the heart of Koramangala, 
+                your premier destination for luxury wellness. Located in the heart of the area, 
                 we offer a world-class spa experience with skilled therapists and commitment to your well-being.
               </p>
             </div>
@@ -104,7 +104,7 @@ const KoramangalaLanding = () => {
             <div className="pt-6">
               <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
                 <p className="text-spa-dark font-bold text-sm md:text-lg">
-                  ✨ Spa Services Starting from ₹1,999/- only in Koramangala
+                  ✨ Spa Services Starting from ₹1,999/- only | Prime Location
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ const KoramangalaLanding = () => {
                 className="w-full sm:w-auto"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Book Your Koramangala Spa Day - 8884666814
+                Book Your Spa Day - 8884666814
               </Button>
               <Button
                 onClick={handleWhatsApp}
@@ -143,7 +143,7 @@ const KoramangalaLanding = () => {
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our serene environment transports you away from Koramangala's hustle, providing a haven of peace and rejuvenation.
+              Our serene environment transports you away from the city's hustle, providing a haven of peace and rejuvenation in your neighborhood.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ const KoramangalaLanding = () => {
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We offer a full menu of services, from therapeutic massages to invigorating facials, 
-              right here in Koramangala.
+              right here in your local area.
             </p>
           </div>
 
@@ -252,7 +252,7 @@ const KoramangalaLanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              What Our <span className="text-primary font-bold">Koramangala Clients</span> Say
+              What Our <span className="text-primary font-bold">Local Clients</span> Say
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
           </div>
@@ -280,11 +280,11 @@ const KoramangalaLanding = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-spa-dark">
-              Ready to Experience Koramangala's Best Spa?
+              Ready to Experience the Area's Best Spa?
             </h2>
             <p className="text-lg text-spa-dark">
               Don't wait! Book your appointment today and discover why Eva International Spa 
-              is Koramangala's most trusted wellness destination.
+              is your most trusted local wellness destination.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
@@ -294,7 +294,7 @@ const KoramangalaLanding = () => {
                 className="w-full sm:w-auto bg-spa-dark text-primary hover:bg-spa-dark/90"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Book Your Koramangala Spa Day Now
+                Book Your Spa Day Now
               </Button>
               <Button
                 onClick={handleWhatsApp}
