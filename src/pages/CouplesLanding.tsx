@@ -22,7 +22,7 @@ const CouplesLanding = () => {
     {
       title: "Romantic Retreat Package",
       duration: "3 hours",
-      price: "₹8,999",
+      price: "₹4,999",
       image: jacuzziImage,
       features: [
         "Private Jacuzzi & Steam Session",
@@ -35,7 +35,7 @@ const CouplesLanding = () => {
     {
       title: "Anniversary Special",
       duration: "4 hours",
-      price: "₹12,999",
+      price: "₹7,999",
       image: massageImage,
       features: [
         "Extended Private Jacuzzi",
@@ -48,7 +48,7 @@ const CouplesLanding = () => {
     {
       title: "Ultimate Romance Package",
       duration: "5 hours",
-      price: "₹16,999",
+      price: "₹9,999",
       image: aromatherapyImage,
       features: [
         "All-Day Private Suite",
@@ -142,7 +142,7 @@ const CouplesLanding = () => {
             <div className="pt-6 space-y-4">
               <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
                 <p className="text-spa-dark font-bold text-sm md:text-lg">
-                  💕 Couples Packages Starting from ₹8,999/- with Private Jacuzzi
+                  💕 Couples Packages Starting from ₹4,999/- with Private Jacuzzi
                 </p>
               </div>
               <div className="inline-block bg-primary/90 backdrop-blur-sm border border-primary/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">

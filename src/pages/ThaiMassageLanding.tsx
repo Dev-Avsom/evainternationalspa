@@ -33,7 +33,7 @@ const ThaiMassageLanding = () => {
     {
       title: "Therapeutic Foot Reflexology",
       duration: "60-90 mins", 
-      price: "₹2,499",
+      price: "₹1,999",
       description: "Targeted pressure point therapy on feet to harmonize your entire body and provide lasting relief",
       benefits: [
         "Soothes tired feet",
@@ -145,7 +145,7 @@ const ThaiMassageLanding = () => {
             <div className="pt-6">
               <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
                 <p className="text-spa-dark font-bold text-sm md:text-lg">
-                  🌿 Authentic Thai Massage Starting from ₹2,499/- | Expert Reflexology
+                  🌿 Authentic Thai Massage Starting from ₹1,999/- | Expert Reflexology
                 </p>
               </div>
             </div>
