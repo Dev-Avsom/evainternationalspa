@@ -25,11 +25,11 @@ const CouplesLanding = () => {
       price: "Customized Package",
       image: jacuzziImage,
       features: [
-        "Private Jacuzzi & Steam Session",
-        "Synchronized Couples Massage",
-        "Champagne & Fresh Fruits",
-        "Aromatherapy Enhancement",
-        "Private Suite Access"
+        "Private Jacuzzi Near Me & Steam Session",
+        "Expert Private Massage Therapist Near Me",
+        "Champagne & Fresh Fruits Service",
+        "Aromatherapy by Couples Spa Near Me",
+        "Exclusive Jacuzzi Spa for Couples Suite"
       ]
     },
     {
@@ -38,11 +38,11 @@ const CouplesLanding = () => {
       price: "Personalized Package",
       image: massageImage,
       features: [
-        "Extended Private Jacuzzi",
-        "Premium Couples Massage",
-        "Rose Petal Decoration",
-        "Personalized Music Selection",
-        "Complimentary Photography"
+        "Extended Jacuzzi Near Me Session",
+        "Premium Couple Massage Spa Near Me",
+        "Rose Petal & Steam and Sauna Near Me",
+        "Personalized Music & Ambiance",
+        "Complimentary Romantic Photography"
       ]
     },
     {
@@ -51,48 +51,53 @@ const CouplesLanding = () => {
       price: "Premium Package",
       image: aromatherapyImage,
       features: [
-        "All-Day Private Suite",
-        "Multiple Therapy Sessions",
-        "Gourmet Meal Included",
-        "Professional Spa Consultation",
-        "Take-Home Spa Kit"
+        "All-Day Couples Spa Near Me Suite",
+        "Multiple Private Massage Therapist Sessions",
+        "Gourmet Meal & Jacuzzi Spa for Couples",
+        "Professional Couple Massage Spa Consultation",
+        "Luxury Take-Home Spa Kit"
       ]
     }
   ];
 
   const testimonials = [
     {
-      text: "The perfect anniversary gift! We loved the private jacuzzi and massage. So romantic!",
+      text: "Found the best couples spa near me! The private massage therapist near me was amazing, and the jacuzzi spa for couples was so romantic. Perfect anniversary treat!",
       name: "Aditi & Ravi",
       occasion: "5th Anniversary"
     },
     {
-      text: "A wonderful way to reconnect. The ambiance was perfect, and the service was impeccable.",
+      text: "This couple massage spa near me exceeded all expectations! The steam and sauna near me facilities plus the private jacuzzi near me made our Valentine's Day unforgettable.",
       name: "Neha & Sameer", 
       occasion: "Valentine's Day"
+    },
+    {
+      text: "Best private massage therapist near me experience! The jacuzzi spa for couples near me with steam and sauna made our honeymoon perfect. Highly recommend this couples spa near me!",
+      name: "Priya & Arjun",
+      occasion: "Honeymoon"
     }
   ];
 
   const amenities = [
     {
       icon: <Heart className="h-6 w-6" />,
-      title: "Private Suites",
-      description: "Exclusively designed intimate spaces just for couples"
+      title: "Private Couples Spa Near Me Suites",
+      description: "Exclusively designed intimate spaces with jacuzzi near me and steam facilities"
     },
     {
       icon: <Sparkles className="h-6 w-6" />,
-      title: "Synchronized Services",
-      description: "Perfectly coordinated treatments by expert therapist pairs"
+      title: "Expert Private Massage Therapist Near Me",
+      description: "Perfectly synchronized treatments by certified couple massage spa near me specialists"
     },
     {
       icon: <Gift className="h-6 w-6" />,
-      title: "Romantic Touches",
-      description: "Rose petals, candles, and personalized ambiance"
+      title: "Romantic Jacuzzi Spa for Couples",
+      description: "Rose petals, candles, steam and sauna near me with personalized ambiance"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Dedicated Staff",
-      description: "Personal attendants to cater to your every need"
+      title: "Dedicated Couple Massage Team",
+      description: "Personal attendants specializing in couples spa near me experiences"
     }
   ];
 
@@ -293,22 +298,22 @@ const CouplesLanding = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Side-by-Side</h3>
-                <p className="text-muted-foreground text-sm">Enjoy massages together in the same room</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Couples Spa Near Me Experience</h3>
+                <p className="text-muted-foreground text-sm">Enjoy synchronized massages together with jacuzzi near me access</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Synchronized</h3>
-                <p className="text-muted-foreground text-sm">Perfectly timed treatments by expert pairs</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Private Massage Therapist Near Me</h3>
+                <p className="text-muted-foreground text-sm">Expert couple massage spa near me treatments by certified pairs</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Personalized</h3>
-                <p className="text-muted-foreground text-sm">Customized to each partner's preferences</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Steam and Sauna Near Me</h3>
+                <p className="text-muted-foreground text-sm">Complete jacuzzi spa for couples near me with wellness facilities</p>
               </div>
             </div>
           </div>
@@ -325,19 +330,19 @@ const CouplesLanding = () => {
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="bg-gradient-card border-border/50 hover:shadow-luxury transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Heart key={i} className="w-5 h-5 text-primary fill-current" />
+                      <Heart key={i} className="w-4 h-4 text-primary fill-current" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground italic mb-4 text-center">"{testimonial.text}"</p>
+                  <p className="text-muted-foreground italic mb-4 text-center text-sm">"{testimonial.text}"</p>
                   <div className="text-center">
-                    <p className="text-foreground font-semibold">- {testimonial.name}</p>
-                    <p className="text-primary text-sm">{testimonial.occasion}</p>
+                    <p className="text-foreground font-semibold text-sm">- {testimonial.name}</p>
+                    <p className="text-primary text-xs">{testimonial.occasion}</p>
                   </div>
                 </CardContent>
               </Card>
