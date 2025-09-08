@@ -124,17 +124,17 @@ const CouplesLanding = () => {
             {/* Headlines */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-light text-foreground">
-                <span className="text-primary font-bold">Reconnect & Unwind</span> Together
+                <span className="text-primary font-bold">Couples Spa Near Me</span> - Reconnect & Unwind Together
               </h1>
               
               <h2 className="text-xl md:text-2xl font-semibold text-accent">
-                Couples Spa Packages & Private Jacuzzi
+                Private Massage Therapist Near Me | Jacuzzi Spa for Couples Near Me
               </h2>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Escape with your loved one to Eva International Spa. Our exclusive couples' packages 
-                and private amenities are designed for a truly intimate and romantic experience. 
-                Create unforgettable memories in our luxurious couples' spa suites.
+                Discover the best couple massage spa near me at Eva International Spa. Our private massage therapist near me 
+                offers exclusive couples' packages with jacuzzi near me, steam and sauna near me facilities. 
+                Create unforgettable memories in our luxurious couples spa near me location.
               </p>
             </div>
 
@@ -184,12 +184,13 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              Private <span className="text-primary font-bold">Jacuzzi & Steam</span>
+              Private <span className="text-primary font-bold">Jacuzzi Near Me & Steam and Sauna Near Me</span>
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Indulge in a private hydrotherapy session before your massage to melt away stress 
-              and set a romantic mood. Our exclusive amenities are designed just for couples.
+              Experience the best jacuzzi spa for couples near me with private steam and sauna near me facilities. 
+              Our jacuzzi near me sessions with private massage therapist near me create the perfect romantic atmosphere 
+              for couples seeking luxury spa treatments.
             </p>
           </div>
 
@@ -220,12 +221,12 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              Exclusive <span className="text-primary font-bold">Couples Packages</span>
+              Exclusive <span className="text-primary font-bold">Couple Massage Spa Near Me Packages</span>
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Choose from our variety of packages designed for special occasions, anniversaries, 
-              or just a spontaneous romantic date.
+              Find the perfect couple massage spa near me with our exclusive packages featuring private massage therapist near me, 
+              jacuzzi spa for couples near me, and steam and sauna near me facilities for special occasions and romantic dates.
             </p>
           </div>
 
@@ -279,13 +280,13 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              Customized <span className="text-primary font-bold">Couples Massages</span>
+              Best <span className="text-primary font-bold">Private Massage Therapist Near Me for Couples</span>
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our skilled therapists work in tandem to provide a synchronized, deeply relaxing massage 
-              tailored to both of your needs. Experience the perfect harmony of healing touch as you 
-              reconnect with your loved one in our serene, romantic environment.
+              Our expert private massage therapist near me team works in perfect synchronization at this premier couples spa near me. 
+              Experience customized couple massage spa near me treatments with jacuzzi near me and steam and sauna near me facilities, 
+              creating the perfect harmony of healing touch in our romantic environment.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
               <div className="text-center">
@@ -353,8 +354,9 @@ const CouplesLanding = () => {
               Ready to Create Unforgettable Memories?
             </h2>
             <p className="text-lg text-spa-dark">
-              Book your romantic couples spa experience today and discover why Eva International Spa 
-              is the perfect destination for love, relaxation, and reconnection.
+              Book your romantic couples spa near me experience today with our private massage therapist near me, 
+              jacuzzi spa for couples near me, and steam and sauna near me facilities. Discover why Eva International Spa 
+              is the best couple massage spa near me destination for love, relaxation, and reconnection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
