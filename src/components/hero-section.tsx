@@ -82,7 +82,7 @@ const HeroSection = () => {
           {/* Tagline */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-5xl font-light text-foreground">
-              Embracing Luxury & Relaxation
+              Most Trusted Body Massage & Spa in Koramangala
             </h2>
             
             {/* Dynamic Google Ad Keywords */}
