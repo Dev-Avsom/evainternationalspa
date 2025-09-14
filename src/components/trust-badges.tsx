@@ -6,7 +6,7 @@ const TrustBadges = () => {
     {
       icon: Star,
       title: "4.8/5 Rating",
-      subtitle: "500+ Happy Clients",
+      subtitle: "5000+ Happy Clients",
       color: "text-yellow-500"
     },
     {

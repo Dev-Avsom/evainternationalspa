@@ -93,7 +93,7 @@ const WhyChooseSection = () => {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { number: "20+", label: "Years Experience", color: "text-primary" },
-            { number: "10K+", label: "Happy Clients", color: "text-accent" },
+            { number: "5000+", label: "Happy Clients", color: "text-accent" },
             { number: "50+", label: "Treatments", color: "text-primary" },
             { number: "100%", label: "Satisfaction", color: "text-accent" }
           ].map((stat, index) => (
