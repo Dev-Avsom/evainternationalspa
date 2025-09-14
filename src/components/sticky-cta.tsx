@@ -77,7 +77,7 @@ const StickyCTA = () => {
       <div className="fixed right-4 bottom-20 z-50 flex flex-col gap-3">
         <Button
           onClick={handleWhatsApp}
-          className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce"
+          className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
           size="icon"
         >
           <MessageCircle className="h-6 w-6" />
@@ -106,7 +106,7 @@ const StickyCTA = () => {
                 onClick={handleCall}
                 variant="hero"
                 size="lg"
-                className="bg-background text-foreground border border-background/20 shadow-glow transform hover:scale-105 transition-all duration-300 animate-pulse"
+                className="bg-background text-foreground border border-background/20 shadow-glow transform hover:scale-105 transition-all duration-300"
               >
                 <PhoneCall className="mr-2 h-4 w-4" />
                 <span className="hidden sm:inline">Call Now</span>
