@@ -108,26 +108,33 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
+          {/* Enhanced CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               onClick={handleCall}
               variant="call"
               size="xl"
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto animate-pulse shadow-luxury hover:shadow-glow transition-all duration-300"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Book Appointment - 8884666814
+              📞 BOOK NOW - 8884666814
             </Button>
             <Button
               onClick={handleWhatsApp}
               variant="hero"
               size="xl"
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-glow transition-all duration-300"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              WhatsApp Us
+              💬 WhatsApp (Quick Response)
             </Button>
+          </div>
+
+          {/* Urgency Text */}
+          <div className="pt-4">
+            <p className="text-primary font-semibold animate-pulse">
+              ⚡ Call now for instant booking | Response within 5 minutes
+            </p>
           </div>
 
           {/* Opening Hours */}
