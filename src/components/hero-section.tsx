@@ -117,7 +117,7 @@ const HeroSection = () => {
               className="w-full sm:w-auto animate-pulse shadow-luxury hover:shadow-glow transition-all duration-300"
             >
               <Phone className="mr-2 h-5 w-5" />
-              📞 BOOK NOW - 8884666814
+              BOOK NOW - 8884666814
             </Button>
             <Button
               onClick={handleWhatsApp}
@@ -126,7 +126,7 @@ const HeroSection = () => {
               className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-glow transition-all duration-300"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              💬 WhatsApp (Quick Response)
+              WhatsApp (Quick Response)
             </Button>
           </div>
 

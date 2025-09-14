@@ -89,7 +89,7 @@ const StickyCTA = () => {
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex-1">
-              <p className="font-bold text-lg">🔥 Book Now - Starting ₹1,999</p>
+              <p className="font-bold text-lg">Book Now - Starting ₹1,999</p>
               <p className="text-sm opacity-80">Limited Time Offer!</p>
             </div>
             <div className="flex gap-2">
