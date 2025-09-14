@@ -85,28 +85,28 @@ const StickyCTA = () => {
       </div>
 
       {/* Sticky Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white text-spa-dark shadow-luxury border-t-2 border-primary">
-        <div className="container mx-auto px-4 py-3">
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-gradient-to-r from-spa-dark via-secondary to-spa-dark text-foreground shadow-2xl border-t-4 border-gradient-gold">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex-1">
-              <p className="font-bold text-lg">Book Now - Starting ₹1,999</p>
-              <p className="text-sm opacity-80">Limited Time Offer!</p>
+              <p className="font-bold text-xl text-primary">⚡ Limited Time Offer!</p>
+              <p className="text-sm text-muted-foreground">Premium Spa Services Starting ₹1,999</p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-3">
               <Button
                 onClick={handleQuickInquiry}
-                variant="secondary"
+                variant="luxury"
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 border border-primary-foreground/20 hidden sm:flex"
+                className="hidden sm:flex shadow-glow transform hover:scale-105 transition-all duration-300"
               >
                 <User className="mr-2 h-4 w-4" />
                 Quick Inquiry
               </Button>
               <Button
                 onClick={handleCall}
-                variant="secondary"
+                variant="call"
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 border border-primary-foreground/20"
+                className="shadow-glow transform hover:scale-105 transition-all duration-300 animate-pulse"
               >
                 <PhoneCall className="mr-2 h-4 w-4" />
                 <span className="hidden sm:inline">Call Now</span>
