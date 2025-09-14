@@ -85,7 +85,7 @@ const StickyCTA = () => {
       </div>
 
       {/* Sticky Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-secondary text-secondary-foreground shadow-luxury border-t-2 border-primary">
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white text-spa-dark shadow-luxury border-t-2 border-primary">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex-1">
