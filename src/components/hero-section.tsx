@@ -114,7 +114,7 @@ const HeroSection = () => {
               onClick={handleCall}
               variant="call"
               size="xl"
-              className="w-full sm:w-auto animate-pulse shadow-luxury hover:shadow-glow transition-all duration-300"
+              className="w-full sm:w-auto shadow-luxury hover:shadow-glow transition-all duration-300"
             >
               <Phone className="mr-2 h-5 w-5" />
               BOOK NOW - 8884666814
