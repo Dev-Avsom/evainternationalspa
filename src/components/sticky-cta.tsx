@@ -85,7 +85,7 @@ const StickyCTA = () => {
       </div>
 
       {/* Sticky Bottom Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-card/90 backdrop-blur-sm text-card-foreground shadow-luxury border-t border-primary/20">
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-secondary text-secondary-foreground shadow-luxury border-t-2 border-primary">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex-1">
@@ -97,7 +97,7 @@ const StickyCTA = () => {
                 onClick={handleQuickInquiry}
                 variant="secondary"
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 hidden sm:flex"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 border border-primary-foreground/20 hidden sm:flex"
               >
                 <User className="mr-2 h-4 w-4" />
                 Quick Inquiry
@@ -106,7 +106,7 @@ const StickyCTA = () => {
                 onClick={handleCall}
                 variant="secondary"
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 border border-primary-foreground/20"
               >
                 <PhoneCall className="mr-2 h-4 w-4" />
                 <span className="hidden sm:inline">Call Now</span>
