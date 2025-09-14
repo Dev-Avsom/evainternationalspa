@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 140 70% 8%;
+    --background: 140 30% 4%;
     --foreground: 45 100% 95%;
 
-    --card: 140 60% 12%;
+    --card: 140 25% 6%;
     --card-foreground: 45 100% 95%;
 
-    --popover: 140 60% 12%;
+    --popover: 140 25% 6%;
     --popover-foreground: 45 100% 95%;
 
     --primary: 45 93% 58%;
-    --primary-foreground: 140 70% 8%;
+    --primary-foreground: 140 30% 4%;
 
-    --secondary: 135 45% 18%;
+    --secondary: 135 20% 8%;
     --secondary-foreground: 45 100% 95%;
 
-    --muted: 140 40% 15%;
+    --muted: 140 15% 10%;
     --muted-foreground: 45 20% 65%;
 
     --accent: 35 85% 65%;
-    --accent-foreground: 140 70% 8%;
+    --accent-foreground: 140 30% 4%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 45 100% 95%;
 
-    --border: 140 50% 20%;
-    --input: 140 50% 20%;
+    --border: 140 20% 12%;
+    --input: 140 20% 12%;
     --ring: 45 93% 58%;
 
     /* Spa-specific design tokens */
     --spa-gold: 45 93% 58%;
     --spa-gold-light: 48 95% 75%;
-    --spa-dark: 140 70% 8%;
-    --spa-warm: 135 45% 18%;
+    --spa-dark: 140 30% 4%;
+    --spa-warm: 135 20% 8%;
     --spa-cream: 45 40% 90%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(140 70% 8%) 0%, hsl(140 60% 12%) 50%, hsl(135 45% 18%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(140 30% 4%) 0%, hsl(140 25% 6%) 50%, hsl(135 20% 8%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(48 95% 75%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(140 60% 12%) 0%, hsl(140 50% 20%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(140 25% 6%) 0%, hsl(140 20% 12%) 100%);
     
     /* Shadows */
     --shadow-luxury: 0 20px 40px -10px hsl(45 93% 58% / 0.3);
-    --shadow-card: 0 10px 30px -5px hsl(140 70% 8% / 0.5);
+    --shadow-card: 0 10px 30px -5px hsl(140 30% 4% / 0.5);
     --shadow-glow: 0 0 30px hsl(45 93% 58% / 0.4);
 
     --radius: 0.5rem;
