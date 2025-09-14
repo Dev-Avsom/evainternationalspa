@@ -82,13 +82,6 @@ const StickyCTA = () => {
         >
           <MessageCircle className="h-6 w-6" />
         </Button>
-        <Button
-          onClick={handleCall}
-          className="w-14 h-14 rounded-full bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300"
-          size="icon"
-        >
-          <Phone className="h-6 w-6" />
-        </Button>
       </div>
 
       {/* Sticky Bottom Bar */}
