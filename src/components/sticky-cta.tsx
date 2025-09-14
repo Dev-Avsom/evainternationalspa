@@ -84,7 +84,7 @@ const StickyCTA = () => {
         </Button>
         <Button
           onClick={handleCall}
-          className="w-14 h-14 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+          className="w-14 h-14 rounded-full bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300"
           size="icon"
         >
           <Phone className="h-6 w-6" />
@@ -111,9 +111,9 @@ const StickyCTA = () => {
               </Button>
               <Button
                 onClick={handleCall}
-                variant="call"
+                variant="hero"
                 size="lg"
-                className=""
+                className="bg-spa-dark text-primary hover:bg-spa-dark/90"
               >
                 <PhoneCall className="mr-2 h-4 w-4" />
                 <span className="hidden sm:inline">Call Now</span>
