@@ -57,6 +57,12 @@ export default {
 				'spa-dark': 'hsl(var(--spa-dark))',
 				'spa-warm': 'hsl(var(--spa-warm))',
 				'spa-cream': 'hsl(var(--spa-cream))',
+				'romantic-rose': 'hsl(var(--romantic-rose))',
+				'romantic-blush': 'hsl(var(--romantic-blush))',
+				'romantic-deep': 'hsl(var(--romantic-deep))',
+				'romantic-wine': 'hsl(var(--romantic-wine))',
+				'romantic-pearl': 'hsl(var(--romantic-pearl))',
+				'romantic-champagne': 'hsl(var(--romantic-champagne))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -72,6 +78,9 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-gold': 'var(--gradient-gold)',
 				'gradient-card': 'var(--gradient-card)',
+				'gradient-romantic': 'var(--gradient-romantic)',
+				'gradient-romantic-hero': 'var(--gradient-romantic-hero)',
+				'gradient-romantic-card': 'var(--gradient-romantic-card)',
 			},
 			boxShadow: {
 				'luxury': 'var(--shadow-luxury)',

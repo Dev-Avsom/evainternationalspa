@@ -43,10 +43,21 @@ All colors MUST be HSL.
     --spa-warm: 135 20% 8%;
     --spa-cream: 45 40% 90%;
     
+    /* Romantic color palette */
+    --romantic-rose: 350 70% 60%;
+    --romantic-blush: 340 60% 85%;
+    --romantic-deep: 345 80% 45%;
+    --romantic-wine: 345 70% 35%;
+    --romantic-pearl: 20 20% 95%;
+    --romantic-champagne: 45 50% 88%;
+    
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(140 30% 4%) 0%, hsl(140 25% 6%) 50%, hsl(135 20% 8%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(45 70% 45%) 0%, hsl(48 60% 60%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(140 25% 6%) 0%, hsl(140 20% 12%) 100%);
+    --gradient-romantic: linear-gradient(135deg, hsl(350 70% 60%) 0%, hsl(340 60% 85%) 100%);
+    --gradient-romantic-hero: linear-gradient(135deg, hsl(345 80% 45%) 0%, hsl(350 70% 60%) 50%, hsl(340 60% 85%) 100%);
+    --gradient-romantic-card: linear-gradient(145deg, hsl(340 60% 85% / 0.1) 0%, hsl(350 70% 60% / 0.05) 100%);
     
     /* Shadows */
     --shadow-luxury: 0 20px 40px -10px hsl(45 70% 45% / 0.2);
