@@ -8,63 +8,66 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 70% 20%;
+    --background: 0 15% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 70% 20%;
+    --card: 0 20% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 98%;
-    --popover-foreground: 0 70% 20%;
+    --popover: 0 20% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 0 70% 35%;
+    --primary: 0 45% 25%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 10% 95%;
-    --secondary-foreground: 0 70% 20%;
+    --secondary: 0 15% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 0 5% 92%;
-    --muted-foreground: 0 20% 45%;
+    --muted: 0 10% 18%;
+    --muted-foreground: 0 15% 65%;
 
-    --accent: 45 90% 60%;
-    --accent-foreground: 0 70% 20%;
+    --accent: 45 100% 65%;
+    --accent-foreground: 0 45% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 10% 90%;
-    --input: 0 10% 90%;
-    --ring: 0 70% 35%;
+    --border: 0 15% 20%;
+    --input: 0 15% 20%;
+    --ring: 0 45% 25%;
 
-    /* Brand color palette - Maroon, White, Gold */
-    --maroon: 0 70% 35%;
-    --maroon-dark: 0 80% 25%;
-    --maroon-light: 0 60% 50%;
-    --gold: 45 90% 60%;
-    --gold-light: 45 80% 70%;
-    --gold-dark: 45 100% 45%;
+    /* Brand color palette - Silky Maroon, Dark Theme, Shining Gold */
+    --maroon: 0 45% 25%;
+    --maroon-dark: 0 50% 18%;
+    --maroon-light: 0 40% 35%;
+    --maroon-silky: 0 35% 22%;
+    --gold: 45 100% 65%;
+    --gold-light: 45 95% 75%;
+    --gold-dark: 45 100% 50%;
+    --gold-shine: 45 100% 70%;
     --white-pure: 0 0% 100%;
-    --cream: 45 30% 95%;
+    --cream: 45 20% 92%;
     
     /* Spa-specific design tokens */
-    --spa-gold: 45 90% 60%;
-    --spa-gold-light: 45 80% 70%;
-    --spa-dark: 0 70% 35%;
-    --spa-warm: 0 60% 50%;
-    --spa-cream: 45 30% 95%;
+    --spa-gold: 45 100% 65%;
+    --spa-gold-light: 45 95% 75%;
+    --spa-dark: 0 45% 25%;
+    --spa-warm: 0 40% 35%;
+    --spa-cream: 45 20% 92%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 70% 35%) 0%, hsl(0 80% 25%) 50%, hsl(0 60% 50%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 90% 60%) 0%, hsl(45 80% 70%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 98%) 0%, hsl(0 5% 92%) 100%);
-    --gradient-maroon: linear-gradient(135deg, hsl(0 70% 35%) 0%, hsl(0 60% 50%) 100%);
-    --gradient-maroon-hero: linear-gradient(135deg, hsl(0 70% 35%) 0%, hsl(0 80% 25%) 50%, hsl(45 90% 60%) 100%);
-    --gradient-maroon-card: linear-gradient(145deg, hsl(0 70% 35% / 0.05) 0%, hsl(0 60% 50% / 0.02) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 45% 25%) 0%, hsl(0 50% 18%) 50%, hsl(0 35% 22%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 65%) 0%, hsl(45 100% 70%) 50%, hsl(45 95% 75%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 20% 12%) 0%, hsl(0 15% 15%) 100%);
+    --gradient-maroon: linear-gradient(135deg, hsl(0 45% 25%) 0%, hsl(0 35% 22%) 100%);
+    --gradient-maroon-hero: linear-gradient(135deg, hsl(0 50% 18%) 0%, hsl(0 45% 25%) 50%, hsl(45 100% 65%) 100%);
+    --gradient-maroon-card: linear-gradient(145deg, hsl(0 35% 22% / 0.1) 0%, hsl(0 45% 25% / 0.05) 100%);
     
     /* Shadows */
-    --shadow-luxury: 0 20px 40px -10px hsl(45 70% 45% / 0.2);
-    --shadow-card: 0 10px 30px -5px hsl(140 30% 4% / 0.5);
-    --shadow-glow: 0 0 30px hsl(45 70% 45% / 0.3);
+    --shadow-luxury: 0 20px 40px -10px hsl(45 100% 65% / 0.4);
+    --shadow-card: 0 10px 30px -5px hsl(0 45% 25% / 0.6);
+    --shadow-glow: 0 0 40px hsl(45 100% 65% / 0.5);
+    --shadow-maroon: 0 10px 30px -5px hsl(0 35% 22% / 0.4);
 
     --radius: 0.5rem;
 
@@ -86,33 +89,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 70% 15%;
+    --background: 0 25% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 0 70% 18%;
+    --card: 0 30% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 70% 18%;
+    --popover: 0 30% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 45 90% 60%;
-    --primary-foreground: 0 70% 20%;
+    --primary: 45 100% 65%;
+    --primary-foreground: 0 45% 15%;
 
-    --secondary: 0 50% 25%;
+    --secondary: 0 20% 12%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 50% 25%;
-    --muted-foreground: 0 20% 70%;
+    --muted: 0 20% 15%;
+    --muted-foreground: 0 15% 70%;
 
-    --accent: 45 80% 70%;
-    --accent-foreground: 0 70% 20%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 0 45% 15%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 50% 25%;
-    --input: 0 50% 25%;
-    --ring: 45 90% 60%;
+    --border: 0 20% 18%;
+    --input: 0 20% 18%;
+    --ring: 45 100% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
