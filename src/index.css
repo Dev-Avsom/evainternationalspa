@@ -8,38 +8,38 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 193 44% 24%;
+    --background: 195 78% 11%;
     --foreground: 0 0% 100%;
 
-    --card: 193 44% 30%;
+    --card: 195 70% 16%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 193 44% 30%;
+    --popover: 195 70% 16%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 35 100% 60%;
-    --primary-foreground: 193 44% 24%;
+    --primary-foreground: 195 78% 11%;
 
-    --secondary: 193 40% 35%;
+    --secondary: 195 65% 20%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 193 35% 40%;
+    --muted: 195 60% 25%;
     --muted-foreground: 0 0% 100%;
 
     --accent: 35 100% 60%;
-    --accent-foreground: 193 44% 24%;
+    --accent-foreground: 195 78% 11%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 193 35% 45%;
-    --input: 193 35% 45%;
+    --border: 195 55% 30%;
+    --input: 195 55% 30%;
     --ring: 35 100% 60%;
 
-    /* Brand color palette - #224857 & Bright Golden Orange */
-    --navy-deep: 193 44% 24%;
-    --navy-card: 193 44% 30%;
-    --navy-border: 193 35% 45%;
+    /* Brand color palette - #062832 & Golden Orange */
+    --navy-deep: 195 78% 11%;
+    --navy-card: 195 70% 16%;
+    --navy-border: 195 55% 30%;
     --gold-eva: 35 100% 60%;
     --gold-eva-light: 35 95% 70%;
     --gold-eva-dark: 35 100% 50%;
@@ -50,21 +50,21 @@ All colors MUST be HSL.
     /* Spa-specific design tokens */
     --spa-gold: 35 100% 60%;
     --spa-gold-light: 35 95% 70%;
-    --spa-dark: 193 44% 24%;
-    --spa-navy: 193 44% 30%;
+    --spa-dark: 195 78% 11%;
+    --spa-navy: 195 70% 16%;
     --spa-cream: 35 20% 92%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(193 44% 24%) 0%, hsl(193 44% 30%) 50%, hsl(193 40% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(195 78% 11%) 0%, hsl(195 70% 16%) 50%, hsl(195 65% 20%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(35 100% 60%) 0%, hsl(35 100% 65%) 50%, hsl(35 95% 70%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(193 44% 30%) 0%, hsl(193 40% 35%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(195 70% 16%) 0%, hsl(195 65% 20%) 100%);
     --gradient-eva: linear-gradient(135deg, hsl(35 100% 60%) 0%, hsl(35 100% 65%) 100%);
-    --gradient-eva-hero: linear-gradient(135deg, hsl(193 44% 24%) 0%, hsl(193 44% 30%) 50%, hsl(35 100% 60%) 100%);
+    --gradient-eva-hero: linear-gradient(135deg, hsl(195 78% 11%) 0%, hsl(195 70% 16%) 50%, hsl(35 100% 60%) 100%);
     --gradient-eva-card: linear-gradient(145deg, hsl(35 100% 60% / 0.05) 0%, hsl(35 95% 70% / 0.02) 100%);
     
     /* Shadows */
     --shadow-luxury: 0 20px 40px -10px hsl(35 100% 60% / 0.3);
-    --shadow-card: 0 10px 30px -5px hsl(193 44% 24% / 0.6);
+    --shadow-card: 0 10px 30px -5px hsl(195 78% 11% / 0.8);
     --shadow-glow: 0 0 50px hsl(35 100% 60% / 0.4);
     --shadow-eva: 0 10px 30px -5px hsl(35 100% 60% / 0.25);
 
@@ -88,32 +88,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 193 50% 20%;
+    --background: 195 85% 8%;
     --foreground: 0 0% 100%;
 
-    --card: 193 50% 26%;
+    --card: 195 80% 13%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 193 50% 26%;
+    --popover: 195 80% 13%;
     --popover-foreground: 0 0% 100%;
 
     --primary: 35 100% 65%;
-    --primary-foreground: 193 50% 20%;
+    --primary-foreground: 195 85% 8%;
 
-    --secondary: 193 45% 30%;
+    --secondary: 195 75% 18%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 193 40% 35%;
+    --muted: 195 70% 22%;
     --muted-foreground: 0 0% 100%;
 
     --accent: 35 100% 70%;
-    --accent-foreground: 193 50% 20%;
+    --accent-foreground: 195 85% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 193 40% 40%;
-    --input: 193 40% 40%;
+    --border: 195 65% 28%;
+    --input: 195 65% 28%;
     --ring: 35 100% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
