@@ -25,11 +25,11 @@ const CouplesLanding = () => {
       price: "Customized Package",
       image: jacuzziImage,
       features: [
-        "Private Jacuzzi Near Me & Steam Session",
-        "Expert Private Massage Therapist Near Me",
+        "Private Jacuzzi in Koramangala & Steam Session",
+        "Expert Private Massage Therapist at Eva International Spa",
         "Champagne & Fresh Fruits Service",
-        "Aromatherapy by Couples Spa Near Me",
-        "Exclusive Jacuzzi Spa for Couples Suite"
+        "Aromatherapy by Eva International Spa Couples Suite",
+        "Exclusive Jacuzzi Spa for Couples in Koramangala"
       ]
     },
     {
@@ -38,9 +38,9 @@ const CouplesLanding = () => {
       price: "Personalized Package",
       image: massageImage,
       features: [
-        "Extended Jacuzzi Near Me Session",
-        "Premium Couple Massage Spa Near Me",
-        "Rose Petal & Steam and Sauna Near Me",
+        "Extended Jacuzzi Session in Koramangala",
+        "Premium Couple Massage at Eva International Spa",
+        "Rose Petal & Steam and Sauna in Koramangala",
         "Personalized Music & Ambiance",
         "Complimentary Romantic Photography"
       ]
@@ -51,28 +51,28 @@ const CouplesLanding = () => {
       price: "Premium Package",
       image: aromatherapyImage,
       features: [
-        "All-Day Couples Spa Near Me Suite",
+        "All-Day Eva International Spa Couples Suite",
         "Multiple Private Massage Therapist Sessions",
-        "Gourmet Meal & Jacuzzi Spa for Couples",
-        "Professional Couple Massage Spa Consultation",
-        "Luxury Take-Home Spa Kit"
+        "Gourmet Meal & Jacuzzi Spa for Couples in Koramangala",
+        "Professional Eva International Spa Consultation",
+        "Luxury Take-Home Eva International Spa Kit"
       ]
     }
   ];
 
   const testimonials = [
     {
-      text: "Found the best couples spa near me! The private massage therapist near me was amazing, and the jacuzzi spa for couples was so romantic. Perfect anniversary treat!",
+      text: "Eva International Spa in Koramangala is the best couples spa! The private massage therapist was amazing, and the jacuzzi spa for couples was so romantic. Perfect anniversary treat!",
       name: "Aditi & Ravi",
       occasion: "5th Anniversary"
     },
     {
-      text: "This couple massage spa near me exceeded all expectations! The steam and sauna near me facilities plus the private jacuzzi near me made our Valentine's Day unforgettable.",
+      text: "Eva International Spa in Koramangala exceeded all expectations! The steam and sauna facilities plus the private jacuzzi made our Valentine's Day unforgettable.",
       name: "Neha & Sameer", 
       occasion: "Valentine's Day"
     },
     {
-      text: "Best private massage therapist near me experience! The jacuzzi spa for couples near me with steam and sauna made our honeymoon perfect. Highly recommend this couples spa near me!",
+      text: "Best private massage therapist experience at Eva International Spa! The jacuzzi spa for couples in Koramangala with steam and sauna made our honeymoon perfect. Highly recommend Eva International Spa!",
       name: "Priya & Arjun",
       occasion: "Honeymoon"
     }
@@ -81,23 +81,23 @@ const CouplesLanding = () => {
   const amenities = [
     {
       icon: <Heart className="h-6 w-6" />,
-      title: "Private Couples Spa Near Me Suites",
-      description: "Exclusively designed intimate spaces with jacuzzi near me and steam facilities"
+      title: "Private Eva International Spa Couples Suites",
+      description: "Exclusively designed intimate spaces with jacuzzi in Koramangala and steam facilities"
     },
     {
       icon: <Sparkles className="h-6 w-6" />,
-      title: "Expert Private Massage Therapist Near Me",
-      description: "Perfectly synchronized treatments by certified couple massage spa near me specialists"
+      title: "Expert Private Massage Therapist at Eva International Spa",
+      description: "Perfectly synchronized treatments by certified Eva International Spa specialists"
     },
     {
       icon: <Gift className="h-6 w-6" />,
-      title: "Romantic Jacuzzi Spa for Couples",
-      description: "Rose petals, candles, steam and sauna near me with personalized ambiance"
+      title: "Romantic Jacuzzi Spa for Couples in Koramangala",
+      description: "Rose petals, candles, steam and sauna at Eva International Spa with personalized ambiance"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Dedicated Couple Massage Team",
-      description: "Personal attendants specializing in couples spa near me experiences"
+      title: "Dedicated Eva International Spa Couple Massage Team",
+      description: "Personal attendants specializing in Eva International Spa couples experiences"
     }
   ];
 
@@ -129,17 +129,17 @@ const CouplesLanding = () => {
             {/* Headlines */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-6xl font-light text-foreground">
-                <span className="text-primary font-bold">Couples Spa Near Me</span> - Reconnect & Unwind Together
+                <span className="text-primary font-bold">Eva International Spa Couples Suite in Koramangala</span> - Reconnect & Unwind Together
               </h1>
               
               <h2 className="text-xl md:text-2xl font-semibold text-accent">
-                Private Massage Therapist Near Me | Jacuzzi Spa for Couples Near Me
+                Private Massage Therapist at Eva International Spa | Jacuzzi Spa for Couples in Koramangala
               </h2>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Discover the best couple massage spa near me at Eva International Spa. Our private massage therapist near me 
-                offers exclusive couples' packages with jacuzzi near me, steam and sauna near me facilities. 
-                Create unforgettable memories in our luxurious couples spa near me location.
+                Discover the best couple massage spa in Koramangala at Eva International Spa. Our private massage therapist 
+                offers exclusive couples' packages with jacuzzi in Koramangala, steam and sauna facilities. 
+                Create unforgettable memories in our luxurious Eva International Spa couples suite in Koramangala.
               </p>
             </div>
 
@@ -189,13 +189,13 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              Private <span className="text-primary font-bold">Jacuzzi Near Me & Steam and Sauna Near Me</span>
+              Private <span className="text-primary font-bold">Jacuzzi in Koramangala & Steam and Sauna at Eva International Spa</span>
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Experience the best jacuzzi spa for couples near me with private steam and sauna near me facilities. 
-              Our jacuzzi near me sessions with private massage therapist near me create the perfect romantic atmosphere 
-              for couples seeking luxury spa treatments.
+              Experience the best jacuzzi spa for couples in Koramangala with private steam and sauna facilities. 
+              Our jacuzzi sessions in Koramangala with private massage therapist create the perfect romantic atmosphere 
+              for couples seeking luxury spa treatments at Eva International Spa.
             </p>
           </div>
 
@@ -226,12 +226,12 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              Exclusive <span className="text-primary font-bold">Couple Massage Spa Near Me Packages</span>
+              Exclusive <span className="text-primary font-bold">Eva International Spa Couple Massage Packages in Koramangala</span>
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Find the perfect couple massage spa near me with our exclusive packages featuring private massage therapist near me, 
-              jacuzzi spa for couples near me, and steam and sauna near me facilities for special occasions and romantic dates.
+              Find the perfect couple massage spa in Koramangala with our exclusive Eva International Spa packages featuring private massage therapist, 
+              jacuzzi spa for couples in Koramangala, and steam and sauna facilities for special occasions and romantic dates.
             </p>
           </div>
 
@@ -285,35 +285,35 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
-              Best <span className="text-primary font-bold">Private Massage Therapist Near Me for Couples</span>
+              Best <span className="text-primary font-bold">Private Massage Therapist at Eva International Spa for Couples</span>
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our expert private massage therapist near me team works in perfect synchronization at this premier couples spa near me. 
-              Experience customized couple massage spa near me treatments with jacuzzi near me and steam and sauna near me facilities, 
-              creating the perfect harmony of healing touch in our romantic environment.
+              Our expert private massage therapist team works in perfect synchronization at Eva International Spa. 
+              Experience customized couple massage treatments in Koramangala with jacuzzi and steam and sauna facilities, 
+              creating the perfect harmony of healing touch in our romantic Eva International Spa environment.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Couples Spa Near Me Experience</h3>
-                <p className="text-muted-foreground text-sm">Enjoy synchronized massages together with jacuzzi near me access</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Eva International Spa Couples Experience</h3>
+                <p className="text-muted-foreground text-sm">Enjoy synchronized massages together with jacuzzi in Koramangala access</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Private Massage Therapist Near Me</h3>
-                <p className="text-muted-foreground text-sm">Expert couple massage spa near me treatments by certified pairs</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Eva International Spa Private Massage Therapist</h3>
+                <p className="text-muted-foreground text-sm">Expert couple massage treatments by certified Eva International Spa pairs</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Steam and Sauna Near Me</h3>
-                <p className="text-muted-foreground text-sm">Complete jacuzzi spa for couples near me with wellness facilities</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Steam and Sauna in Koramangala</h3>
+                <p className="text-muted-foreground text-sm">Complete jacuzzi spa for couples in Koramangala with wellness facilities</p>
               </div>
             </div>
           </div>
@@ -359,9 +359,9 @@ const CouplesLanding = () => {
               Ready to Create Unforgettable Memories?
             </h2>
             <p className="text-lg text-white/90">
-              Book your romantic couples spa near me experience today with our private massage therapist near me, 
-              jacuzzi spa for couples near me, and steam and sauna near me facilities. Discover why Eva International Spa 
-              is the best couple massage spa near me destination for love, relaxation, and reconnection.
+              Book your romantic Eva International Spa couples experience today with our private massage therapist, 
+              jacuzzi spa for couples in Koramangala, and steam and sauna facilities. Discover why Eva International Spa 
+              is the best couple massage spa in Koramangala for love, relaxation, and reconnection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
