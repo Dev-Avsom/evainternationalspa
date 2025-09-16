@@ -109,7 +109,7 @@ const CouplesLanding = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
-          <div className="absolute inset-0 bg-gradient-romantic-hero opacity-80"></div>
+          <div className="absolute inset-0 bg-gradient-maroon-hero opacity-80"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -123,7 +123,7 @@ const CouplesLanding = () => {
                   className="h-24 md:h-32 w-auto"
                 />
               </div>
-              <div className="w-32 h-px bg-gradient-romantic mx-auto"></div>
+              <div className="w-32 h-px bg-gradient-gold mx-auto"></div>
             </div>
 
             {/* Headlines */}
@@ -150,7 +150,7 @@ const CouplesLanding = () => {
                   💕 Couples Packages from ₹4,999/-
                 </p>
               </div>
-              <div className="inline-block bg-romantic-rose/90 backdrop-blur-sm border border-romantic-rose/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
+              <div className="inline-block bg-maroon/90 backdrop-blur-sm border border-maroon/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
                 <p className="text-white font-bold text-xs md:text-lg text-center">
                   ✨ Book Couples Massage & Get 25% Off
                 </p>
@@ -191,7 +191,7 @@ const CouplesLanding = () => {
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
               Private <span className="text-primary font-bold">Jacuzzi Near Me & Steam and Sauna Near Me</span>
             </h2>
-            <div className="w-24 h-px bg-gradient-romantic mx-auto mb-6"></div>
+            <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Experience the best jacuzzi spa for couples near me with private steam and sauna near me facilities. 
               Our jacuzzi near me sessions with private massage therapist near me create the perfect romantic atmosphere 
@@ -201,10 +201,10 @@ const CouplesLanding = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {amenities.map((amenity, index) => (
-              <Card key={index} className="bg-gradient-romantic-card border-romantic-rose/20 hover:shadow-luxury transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-gradient-maroon-card border-maroon/20 hover:shadow-luxury transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
-                  <div className="mx-auto w-12 h-12 bg-romantic-rose/20 rounded-full flex items-center justify-center mb-4">
-                    <div className="text-romantic-rose">
+                  <div className="mx-auto w-12 h-12 bg-maroon/20 rounded-full flex items-center justify-center mb-4">
+                    <div className="text-maroon">
                       {amenity.icon}
                     </div>
                   </div>
@@ -287,7 +287,7 @@ const CouplesLanding = () => {
             <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4">
               Best <span className="text-primary font-bold">Private Massage Therapist Near Me for Couples</span>
             </h2>
-            <div className="w-24 h-px bg-gradient-romantic mx-auto mb-6"></div>
+            <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Our expert private massage therapist near me team works in perfect synchronization at this premier couples spa near me. 
               Experience customized couple massage spa near me treatments with jacuzzi near me and steam and sauna near me facilities, 
@@ -295,22 +295,22 @@ const CouplesLanding = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-romantic-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-romantic-rose" />
+                <div className="w-16 h-16 bg-maroon/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-8 h-8 text-maroon" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Couples Spa Near Me Experience</h3>
                 <p className="text-muted-foreground text-sm">Enjoy synchronized massages together with jacuzzi near me access</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-romantic-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-romantic-rose" />
+                <div className="w-16 h-16 bg-maroon/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-maroon" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Private Massage Therapist Near Me</h3>
                 <p className="text-muted-foreground text-sm">Expert couple massage spa near me treatments by certified pairs</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-romantic-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Sparkles className="w-8 h-8 text-romantic-rose" />
+                <div className="w-16 h-16 bg-maroon/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Sparkles className="w-8 h-8 text-maroon" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Steam and Sauna Near Me</h3>
                 <p className="text-muted-foreground text-sm">Complete jacuzzi spa for couples near me with wellness facilities</p>
@@ -352,7 +352,7 @@ const CouplesLanding = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-romantic">
+      <section className="py-20 bg-gradient-maroon">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -368,7 +368,7 @@ const CouplesLanding = () => {
                 onClick={handleCall}
                 variant="hero"
                 size="xl"
-                className="w-full sm:w-auto bg-white text-romantic-deep hover:bg-white/90"
+                className="w-full sm:w-auto bg-white text-maroon hover:bg-white/90"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Book Your Romantic Retreat
@@ -377,14 +377,14 @@ const CouplesLanding = () => {
                 onClick={handleWhatsApp}
                 variant="luxury"
                 size="xl"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto bg-gold text-maroon hover:bg-gold/90"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp for Special Packages
               </Button>
             </div>
             <div className="pt-6">
-              <p className="text-spa-dark font-semibold">
+              <p className="text-white/90 font-semibold">
                 💕 Private Suites Available | 📞 +91 88846 66814 | 🕘 Open Daily: 9 AM - 10 PM
               </p>
             </div>
