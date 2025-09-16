@@ -392,7 +392,7 @@ const CouplesLanding = () => {
         </div>
       </section>
 
-      <Footer />
+      <Footer showCouplesPricing={true} />
       <WhatsAppFloat />
     </div>
   );
