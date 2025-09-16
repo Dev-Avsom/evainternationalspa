@@ -8,38 +8,38 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 15% 8%;
+    --background: 220 20% 15%;
     --foreground: 0 0% 95%;
 
-    --card: 220 20% 12%;
+    --card: 220 25% 20%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 20% 12%;
+    --popover: 220 25% 20%;
     --popover-foreground: 0 0% 95%;
 
     --primary: 35 100% 60%;
-    --primary-foreground: 220 15% 8%;
+    --primary-foreground: 220 20% 15%;
 
-    --secondary: 220 15% 15%;
+    --secondary: 220 20% 25%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 10% 18%;
+    --muted: 220 15% 30%;
     --muted-foreground: 220 8% 65%;
 
     --accent: 35 100% 60%;
-    --accent-foreground: 220 15% 8%;
+    --accent-foreground: 220 20% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
+    --border: 220 15% 35%;
+    --input: 220 15% 35%;
     --ring: 35 100% 60%;
 
-    /* Brand color palette - Deep Navy & Bright Golden Orange */
-    --navy-deep: 220 15% 8%;
-    --navy-card: 220 20% 12%;
-    --navy-border: 220 15% 20%;
+    /* Brand color palette - Brighter Navy & Bright Golden Orange */
+    --navy-deep: 220 20% 15%;
+    --navy-card: 220 25% 20%;
+    --navy-border: 220 15% 35%;
     --gold-eva: 35 100% 60%;
     --gold-eva-light: 35 95% 70%;
     --gold-eva-dark: 35 100% 50%;
@@ -50,23 +50,23 @@ All colors MUST be HSL.
     /* Spa-specific design tokens */
     --spa-gold: 35 100% 60%;
     --spa-gold-light: 35 95% 70%;
-    --spa-dark: 220 15% 8%;
-    --spa-navy: 220 20% 12%;
+    --spa-dark: 220 20% 15%;
+    --spa-navy: 220 25% 20%;
     --spa-cream: 35 20% 92%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(220 20% 12%) 50%, hsl(220 25% 15%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 20% 15%) 0%, hsl(220 25% 20%) 50%, hsl(220 30% 25%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(35 100% 60%) 0%, hsl(35 100% 65%) 50%, hsl(35 95% 70%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 12%) 0%, hsl(220 15% 15%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 20%) 0%, hsl(220 20% 25%) 100%);
     --gradient-eva: linear-gradient(135deg, hsl(35 100% 60%) 0%, hsl(35 100% 65%) 100%);
-    --gradient-eva-hero: linear-gradient(135deg, hsl(220 15% 8%) 0%, hsl(220 20% 12%) 50%, hsl(35 100% 60%) 100%);
+    --gradient-eva-hero: linear-gradient(135deg, hsl(220 20% 15%) 0%, hsl(220 25% 20%) 50%, hsl(35 100% 60%) 100%);
     --gradient-eva-card: linear-gradient(145deg, hsl(35 100% 60% / 0.05) 0%, hsl(35 95% 70% / 0.02) 100%);
     
     /* Shadows */
-    --shadow-luxury: 0 20px 40px -10px hsl(35 100% 60% / 0.4);
-    --shadow-card: 0 10px 30px -5px hsl(220 15% 8% / 0.8);
-    --shadow-glow: 0 0 50px hsl(35 100% 60% / 0.6);
-    --shadow-eva: 0 10px 30px -5px hsl(35 100% 60% / 0.3);
+    --shadow-luxury: 0 20px 40px -10px hsl(35 100% 60% / 0.3);
+    --shadow-card: 0 10px 30px -5px hsl(220 20% 15% / 0.6);
+    --shadow-glow: 0 0 50px hsl(35 100% 60% / 0.4);
+    --shadow-eva: 0 10px 30px -5px hsl(35 100% 60% / 0.25);
 
     --radius: 0.5rem;
 
@@ -88,32 +88,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 20% 5%;
+    --background: 220 25% 12%;
     --foreground: 0 0% 98%;
 
-    --card: 220 25% 10%;
+    --card: 220 30% 18%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 220 25% 10%;
+    --popover: 220 30% 18%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 35 100% 65%;
-    --primary-foreground: 220 20% 5%;
+    --primary-foreground: 220 25% 12%;
 
-    --secondary: 220 20% 12%;
+    --secondary: 220 25% 20%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 20% 15%;
+    --muted: 220 20% 25%;
     --muted-foreground: 220 10% 70%;
 
     --accent: 35 100% 70%;
-    --accent-foreground: 220 20% 5%;
+    --accent-foreground: 220 25% 12%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
+    --border: 220 20% 30%;
+    --input: 220 20% 30%;
     --ring: 35 100% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
