@@ -7,6 +7,7 @@ import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import jacuzziImage from "@/assets/jacuzzi.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import LimitedTimeOffer from "@/components/limited-time-offer";
 
 const KoramangalaLanding = () => {
   const handleCall = () => {
@@ -60,7 +61,9 @@ const KoramangalaLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <LimitedTimeOffer />
       {/* Hero Section */}
+      <div className="pt-16">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -316,6 +319,7 @@ const KoramangalaLanding = () => {
         </div>
       </section>
 
+      </div>
       <Footer />
       <WhatsAppFloat />
     </div>

@@ -5,6 +5,7 @@ import heroImage from "@/assets/thai-therapy.jpg";
 import thaiImage from "@/assets/thai-therapy.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import LimitedTimeOffer from "@/components/limited-time-offer";
 
 const ThaiMassageLanding = () => {
   const handleCall = () => {
@@ -101,7 +102,9 @@ const ThaiMassageLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <LimitedTimeOffer />
       {/* Hero Section */}
+      <div className="pt-16">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -465,6 +468,7 @@ const ThaiMassageLanding = () => {
         </div>
       </section>
 
+      </div>
       <Footer />
       <WhatsAppFloat />
     </div>

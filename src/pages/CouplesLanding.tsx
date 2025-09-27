@@ -7,6 +7,7 @@ import massageImage from "@/assets/massage-therapy.jpg";
 import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import LimitedTimeOffer from "@/components/limited-time-offer";
 
 const CouplesLanding = () => {
   const handleCall = () => {
@@ -103,7 +104,9 @@ const CouplesLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <LimitedTimeOffer showCouplesOffer={true} />
       {/* Hero Section */}
+      <div className="pt-16">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -392,6 +395,7 @@ const CouplesLanding = () => {
         </div>
       </section>
 
+      </div>
       <Footer showCouplesPricing={true} />
       <WhatsAppFloat />
     </div>
