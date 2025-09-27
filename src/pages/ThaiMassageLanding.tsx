@@ -5,7 +5,6 @@ import heroImage from "@/assets/thai-therapy.jpg";
 import thaiImage from "@/assets/thai-therapy.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
-import LimitedTimeOffer from "@/components/limited-time-offer";
 
 const ThaiMassageLanding = () => {
   const handleCall = () => {
@@ -102,11 +101,9 @@ const ThaiMassageLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LimitedTimeOffer />
       {/* Hero Section */}
-      <div className="pt-16">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
@@ -431,8 +428,13 @@ const ThaiMassageLanding = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-spa-dark">
-              Experience Authentic Thai Healing Today
+              🚨 LIMITED TIME: Thai Massage Special Offer
             </h2>
+            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-4 inline-block">
+              <p className="text-spa-dark font-bold text-lg">
+                ⏰ Book Today: Authentic Thai Healing Experience
+              </p>
+            </div>
             <p className="text-lg text-spa-dark">
               Don't let chronic pain and stress hold you back. Book your therapeutic Thai massage 
               and reflexology session today and discover the power of authentic healing.
@@ -468,7 +470,6 @@ const ThaiMassageLanding = () => {
         </div>
       </section>
 
-      </div>
       <Footer />
       <WhatsAppFloat />
     </div>

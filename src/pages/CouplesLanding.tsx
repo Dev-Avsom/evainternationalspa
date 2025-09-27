@@ -7,7 +7,6 @@ import massageImage from "@/assets/massage-therapy.jpg";
 import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
-import LimitedTimeOffer from "@/components/limited-time-offer";
 
 const CouplesLanding = () => {
   const handleCall = () => {
@@ -104,9 +103,7 @@ const CouplesLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LimitedTimeOffer showCouplesOffer={true} />
       {/* Hero Section */}
-      <div className="pt-16">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -359,8 +356,13 @@ const CouplesLanding = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Ready to Create Unforgettable Memories?
+              🚨 LIMITED TIME: Couples Romance Package for ₹4,999/-
             </h2>
+            <div className="bg-primary/20 backdrop-blur-sm rounded-full px-6 py-3 mb-4 inline-block">
+              <p className="text-white font-bold text-lg">
+                ⏰ Special Offer: Save ₹2,000 on Couples Spa Experience
+              </p>
+            </div>
             <p className="text-lg text-white/90">
               Book your romantic Eva International Spa couples experience today with our private massage therapist, 
               jacuzzi spa for couples in Koramangala, and steam and sauna facilities. Discover why Eva International Spa 
@@ -395,7 +397,6 @@ const CouplesLanding = () => {
         </div>
       </section>
 
-      </div>
       <Footer showCouplesPricing={true} />
       <WhatsAppFloat />
     </div>

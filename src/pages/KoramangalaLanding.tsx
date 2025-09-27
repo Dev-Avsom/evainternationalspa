@@ -7,7 +7,6 @@ import aromatherapyImage from "@/assets/aromatherapy.jpg";
 import jacuzziImage from "@/assets/jacuzzi.jpg";
 import Footer from "@/components/footer";
 import WhatsAppFloat from "@/components/whatsapp-float";
-import LimitedTimeOffer from "@/components/limited-time-offer";
 
 const KoramangalaLanding = () => {
   const handleCall = () => {
@@ -61,9 +60,7 @@ const KoramangalaLanding = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LimitedTimeOffer />
       {/* Hero Section */}
-      <div className="pt-16">
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -284,8 +281,13 @@ const KoramangalaLanding = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-spa-dark">
-              Ready to Experience the Area's Best Spa?
+              🚨 LIMITED TIME OFFER - Book Today & Save!
             </h2>
+            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-4 inline-block">
+              <p className="text-spa-dark font-bold text-lg">
+                ⏰ Special Discount: Eva International Spa Services
+              </p>
+            </div>
             <p className="text-lg text-spa-dark">
               Don't wait! Book your appointment today and discover why Eva International Spa 
               is your most trusted local wellness destination.
@@ -319,7 +321,6 @@ const KoramangalaLanding = () => {
         </div>
       </section>
 
-      </div>
       <Footer />
       <WhatsAppFloat />
     </div>
