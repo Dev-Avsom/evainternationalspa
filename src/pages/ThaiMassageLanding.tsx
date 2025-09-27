@@ -142,7 +142,12 @@ const ThaiMassageLanding = () => {
             </div>
 
             {/* Pricing Highlight */}
-            <div className="pt-6">
+            <div className="pt-6 space-y-4">
+              <div className="inline-block bg-primary/90 backdrop-blur-sm border border-primary/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
+                <p className="text-white font-bold text-xs md:text-lg text-center">
+                  💄 Young Beautiful Therapist Available
+                </p>
+              </div>
               <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
                 <p className="text-spa-dark font-bold text-xs md:text-lg text-center">
                   🌿 Thai Massage from ₹1,999/- | Expert Reflexology
