@@ -277,19 +277,15 @@ const KoramangalaLanding = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-hero">
+      <section className="py-20 bg-gradient-gold">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
-              🚨 LIMITED TIME: Spa Day Offers in Koramangala
+            <h2 className="text-4xl md:text-5xl font-bold text-spa-dark">
+              Ready to Experience the Area's Best Spa?
             </h2>
-            <div className="bg-primary/20 backdrop-blur-sm rounded-full px-6 py-3 mb-4 inline-block">
-              <p className="text-white font-bold text-lg">
-                ⏰ Special Discount: Luxury Spa Services — From ₹1,999/-
-              </p>
-            </div>
-            <p className="text-lg text-white/90">
-              Book today and experience Eva International Spa’s signature therapies at our Koramangala center.
+            <p className="text-lg text-spa-dark">
+              Don't wait! Book your appointment today and discover why Eva International Spa 
+              is your most trusted local wellness destination.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
@@ -312,7 +308,7 @@ const KoramangalaLanding = () => {
               </Button>
             </div>
             <div className="pt-6">
-              <p className="text-white font-semibold">
+              <p className="text-spa-dark font-semibold">
                 📍 Located in Koramangala | 📞 +91 88846 66814 | 🕘 Open 7 Days: 9 AM - 10 PM
               </p>
             </div>
