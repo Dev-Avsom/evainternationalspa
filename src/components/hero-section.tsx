@@ -100,12 +100,7 @@ const HeroSection = () => {
           </div>
 
           {/* Pricing Highlight */}
-          <div className="pt-6 space-y-4">
-            <div className="inline-block bg-primary/90 backdrop-blur-sm border border-primary/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
-              <p className="text-white font-bold text-sm md:text-lg">
-                💄 Young Beautiful Therapist Available
-              </p>
-            </div>
+          <div className="pt-6">
             <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
               <p className="text-spa-dark font-bold text-sm md:text-lg">
                 ✨ Spa Service Starts from ₹1,999/- only
