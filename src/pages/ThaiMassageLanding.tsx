@@ -12,7 +12,7 @@ const ThaiMassageLanding = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = "Hi! I would like to book an authentic Thai massage and foot reflexology session at Eva International Spa.";
+    const message = "Hi! I would like to book an authentic Thai massage session at Eva International Spa.";
     window.open(`https://wa.me/918884666814?text=${encodeURIComponent(message)}`, "_blank");
   };
 
@@ -31,23 +31,10 @@ const ThaiMassageLanding = () => {
       ]
     },
     {
-      title: "Therapeutic Foot Reflexology",
-      duration: "60-90 mins", 
-      price: "₹1,999",
-      description: "Targeted pressure point therapy on feet to harmonize your entire body and provide lasting relief",
-      benefits: [
-        "Soothes tired feet",
-        "Improves sleep quality",
-        "Reduces stress hormones",
-        "Enhances blood flow",
-        "Balances nervous system"
-      ]
-    },
-    {
-      title: "Combined Thai & Reflexology",
+      title: "Extended Thai Massage",
       duration: "150 mins",
       price: "₹5,999", 
-      description: "Complete therapeutic session combining both ancient healing arts for maximum wellness benefits",
+      description: "Complete therapeutic session with extended time for maximum wellness benefits and deep relaxation",
       benefits: [
         "Full body restoration",
         "Deep stress relief",
@@ -72,7 +59,7 @@ const ThaiMassageLanding = () => {
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Certified Therapists",
-      description: "Expert practitioners trained in authentic Thai massage and reflexology methods"
+      description: "Expert practitioners trained in authentic Thai massage methods"
     },
     {
       icon: <Activity className="h-6 w-6" />,
@@ -88,14 +75,14 @@ const ThaiMassageLanding = () => {
       service: "Traditional Thai Massage"
     },
     {
-      text: "The foot reflexology was incredible! My feet feel so light, and my whole body feels relaxed.",
-      name: "Meera S.",
-      service: "Foot Reflexology"
-    },
-    {
       text: "After months of back pain, this therapeutic session provided the relief I needed. Highly recommend!",
       name: "Arjun P.",
-      service: "Combined Therapy"
+      service: "Extended Thai Massage"
+    },
+    {
+      text: "The stretching and acupressure techniques were amazing. My flexibility has improved so much!",
+      name: "Priya K.",
+      service: "Traditional Thai Massage"
     }
   ];
 
@@ -131,11 +118,11 @@ const ThaiMassageLanding = () => {
               </h1>
               
               <h2 className="text-xl md:text-2xl font-semibold text-accent">
-                Authentic Thai Massage & Foot Reflexology
+                Authentic Thai Massage & Wellness
               </h2>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Experience authentic Thai massage and foot reflexology at Eva International Spa. 
+                Experience authentic Thai massage at Eva International Spa. 
                 Our expert practitioners deliver therapeutic relief using ancient healing traditions 
                 to restore your body's energy and balance.
               </p>
@@ -145,7 +132,7 @@ const ThaiMassageLanding = () => {
             <div className="pt-6">
               <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-3 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in mx-2">
                 <p className="text-spa-dark font-bold text-xs md:text-lg text-center">
-                  🌿 Thai Massage from ₹1,999/- | Expert Reflexology
+                  🌿 Thai Massage from ₹3,999/- | Authentic Therapy
                 </p>
               </div>
             </div>
@@ -331,63 +318,6 @@ const ThaiMassageLanding = () => {
         </div>
       </section>
 
-      {/* Foot Reflexology Details */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 relative">
-                <div className="bg-gradient-card rounded-lg p-8 border border-border/50 shadow-luxury">
-                  <h3 className="text-2xl font-semibold text-foreground mb-4">Foot Reflexology Map</h3>
-                  <p className="text-muted-foreground mb-6">
-                    Your feet contain over 7,000 nerve endings connected to every organ in your body. 
-                    Our expert reflexologists apply precise pressure to specific points to promote healing throughout your system.
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Pressure Points:</h4>
-                      <ul className="space-y-1 text-muted-foreground">
-                        <li>• Head & Neck</li>
-                        <li>• Heart & Lungs</li>
-                        <li>• Digestive System</li>
-                        <li>• Reproductive Organs</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Benefits:</h4>
-                      <ul className="space-y-1 text-muted-foreground">
-                        <li>• Stress reduction</li>
-                        <li>• Better sleep</li>
-                        <li>• Pain relief</li>
-                        <li>• Improved circulation</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="order-1 lg:order-2 space-y-6">
-                <h2 className="text-4xl md:text-5xl font-light text-foreground">
-                  Targeted <span className="text-primary font-bold">Foot Reflexology</span>
-                </h2>
-                <div className="w-24 h-px bg-gradient-gold"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Your feet carry the weight of your day. Our reflexology services apply pressure 
-                  to specific points to soothe your feet and harmonize your entire body. 
-                  This ancient healing art promotes natural healing by stimulating reflex points 
-                  that correspond to different organs and systems in your body.
-                </p>
-                
-                <Button onClick={handleCall} variant="call" size="lg" className="w-full sm:w-auto text-sm md:text-base">
-                  <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                  <span className="hidden md:inline">Book Reflexology Session</span>
-                  <span className="md:hidden">Book Reflexology</span>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials */}
       <section className="py-20 bg-card">
@@ -398,7 +328,7 @@ const ThaiMassageLanding = () => {
             </h2>
             <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real results from our therapeutic Thai massage and reflexology treatments.
+              Real results from our therapeutic Thai massage treatments.
             </p>
           </div>
 
@@ -432,7 +362,7 @@ const ThaiMassageLanding = () => {
             </h2>
             <p className="text-lg text-spa-dark">
               Don't let chronic pain and stress hold you back. Book your therapeutic Thai massage 
-              and reflexology session today and discover the power of authentic healing.
+              session today and discover the power of authentic healing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
