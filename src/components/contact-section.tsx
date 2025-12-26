@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock, Mail } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
 
 const ContactSection = () => {
   const handleCall = () => {
@@ -8,199 +8,86 @@ const ContactSection = () => {
   };
 
   const handleWhatsApp = () => {
-    // WhatsApp number will be provided later
-    window.open("https://wa.me/918884666814", "_blank");
-  };
-
-  const handleEmail = () => {
-    window.open("mailto:info@evainternationalspa.com", "_self");
+    window.open("https://wa.me/918884666814?text=Hi! I'd like to book a therapy session.", "_blank");
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-10 bg-background pb-24">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-light text-foreground mb-4">
-            Book Your <span className="text-primary font-bold">Appointment</span>
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-2">
+            Book <span className="text-primary">Now</span>
           </h2>
-          <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to experience luxury and relaxation? Contact us now to book your personalized spa treatment.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <Card className="bg-gradient-card border-border/50 shadow-card">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground flex items-center">
-                  <Phone className="mr-3 h-6 w-6 text-primary" />
-                  Contact Information
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-primary/20 rounded-full">
-                    <Phone className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Phone</p>
-                    <p className="text-muted-foreground">+91 88846 66814</p>
-                    <Button 
-                      onClick={handleCall}
-                      variant="luxury" 
-                      size="sm" 
-                      className="mt-2"
-                    >
-                      Call Now
-                    </Button>
-                  </div>
-                </div>
+        <div className="max-w-lg mx-auto space-y-4">
+          {/* Quick Contact Card */}
+          <Card className="bg-gradient-gold text-primary-foreground border-0 shadow-luxury">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-xl text-center">
+                Ready to Relax?
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 text-center">
+              <p className="text-sm">
+                Call now for instant booking. Our team responds within 5 minutes!
+              </p>
+              
+              <div className="flex flex-col gap-3">
+                <Button 
+                  onClick={handleCall}
+                  size="lg"
+                  className="w-full bg-background text-foreground hover:bg-background/90 font-bold"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call 8884666814
+                </Button>
+                
+                <Button 
+                  onClick={handleWhatsApp}
+                  size="lg"
+                  className="w-full bg-[#25D366] text-white hover:bg-[#20BD5A] font-bold"
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  WhatsApp Us
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
 
-                <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-primary/20 rounded-full">
-                    <MessageCircle className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">WhatsApp</p>
-                    <p className="text-muted-foreground">Quick responses & booking</p>
-                    <Button 
-                      onClick={handleWhatsApp}
-                      variant="hero" 
-                      size="sm" 
-                      className="mt-2"
-                    >
-                      WhatsApp Us
-                    </Button>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-primary/20 rounded-full">
-                    <Mail className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted-foreground">info@evainternationalspa.com</p>
-                    <Button 
-                      onClick={handleEmail}
-                      variant="outline" 
-                      size="sm" 
-                      className="mt-2"
-                    >
-                      Send Email
-                    </Button>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-primary/20 rounded-full">
-                    <Clock className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Opening Hours</p>
-                    <p className="text-muted-foreground">Mon - Sun: 09:00 AM - 10:00 PM</p>
-                    <p className="text-sm text-primary">Open 7 days a week</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-primary/20 rounded-full">
-                    <MapPin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">Location</p>
-                    <p className="text-muted-foreground">Eva International Spa</p>
-                    <Button 
-                      onClick={() => window.open("https://maps.app.goo.gl/x33CYXpKePF3YTCW7", "_blank")}
-                      variant="outline" 
-                      size="sm" 
-                      className="mt-2"
-                    >
-                      <MapPin className="mr-1 h-4 w-4" />
-                      View on Map
-                    </Button>
-                  </div>
-                </div>
+          {/* Info Grid */}
+          <div className="grid grid-cols-2 gap-3">
+            <Card className="bg-card border-border/50">
+              <CardContent className="p-4 text-center">
+                <Clock className="h-5 w-5 text-primary mx-auto mb-2" />
+                <p className="font-semibold text-foreground text-sm">Open Daily</p>
+                <p className="text-xs text-muted-foreground">9 AM - 10 PM</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-card border-border/50">
+              <CardContent className="p-4 text-center">
+                <MapPin className="h-5 w-5 text-primary mx-auto mb-2" />
+                <p className="font-semibold text-foreground text-sm">Koramangala</p>
+                <Button 
+                  onClick={() => window.open("https://maps.app.goo.gl/x33CYXpKePF3YTCW7", "_blank")}
+                  variant="link"
+                  size="sm"
+                  className="text-xs text-primary p-0 h-auto"
+                >
+                  View Map
+                </Button>
               </CardContent>
             </Card>
           </div>
 
-          {/* Call to Action */}
-          <div className="space-y-8">
-            {/* Immediate Booking */}
-            <Card className="bg-gradient-gold text-spa-dark border-0 shadow-luxury">
-              <CardHeader>
-                <CardTitle className="text-2xl text-center">
-                  Book Your Spa Experience Now
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6 text-center">
-                <p className="text-lg">
-                  Don't wait! Call us now for immediate booking and consultation. 
-                  Our expert team is ready to provide you with the ultimate relaxation experience.
-                </p>
-                
-                <div className="space-y-4">
-                  <Button 
-                    onClick={handleCall}
-                    variant="hero" 
-                    size="xl"
-                    className="w-full bg-spa-dark text-primary hover:bg-spa-dark/90"
-                  >
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call +91 88846 66814
-                  </Button>
-                  
-                  <p className="text-sm">Or</p>
-                  
-                  <Button 
-                    onClick={handleWhatsApp}
-                    variant="hero" 
-                    size="lg"
-                    className="w-full bg-spa-dark text-primary hover:bg-spa-dark/90"
-                  >
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    WhatsApp for Quick Response
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Special Offers */}
-            <Card className="bg-gradient-card border-border/50 shadow-card">
-              <CardHeader>
-                <CardTitle className="text-xl text-foreground text-center">
-                  Special Offers
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center space-y-4">
-                <div className="space-y-2">
-                  <p className="text-primary font-semibold">First-time visitors get 20% off!</p>
-                  <p className="text-muted-foreground text-sm">
-                    Valid on all massage therapies
-                  </p>
-                </div>
-                
-                <div className="space-y-2">
-                  <p className="text-accent font-semibold">Couple packages available</p>
-                  <p className="text-muted-foreground text-sm">
-                    Romantic spa experience for two
-                  </p>
-                </div>
-
-                <Button 
-                  onClick={handleCall}
-                  variant="luxury" 
-                  size="lg"
-                  className="w-full"
-                >
-                  Book Now to Claim Offer
-                </Button>
-              </CardContent>
-            </Card>
+          {/* Offer Badge */}
+          <div className="text-center bg-card/50 rounded-lg p-4 border border-primary/20">
+            <p className="text-primary font-bold">✨ Spa Services from ₹1,999</p>
+            <p className="text-xs text-muted-foreground mt-1">
+              Cross-gender therapy available with certified professionals
+            </p>
           </div>
         </div>
       </div>
