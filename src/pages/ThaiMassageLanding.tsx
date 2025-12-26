@@ -151,7 +151,7 @@ const ThaiMassageLanding = () => {
               </Button>
               <Button
                 onClick={handleWhatsApp}
-                variant="hero"
+                variant="whatsapp"
                 size="xl"
                 className="w-full sm:w-auto text-sm md:text-base"
               >
@@ -253,7 +253,7 @@ const ThaiMassageLanding = () => {
                       <span className="hidden sm:inline">Book {service.title}</span>
                       <span className="sm:hidden">Book Now</span>
                     </Button>
-                    <Button onClick={handleWhatsApp} variant="hero" size="sm" className="w-full text-xs sm:text-sm">
+                    <Button onClick={handleWhatsApp} variant="whatsapp" size="sm" className="w-full text-xs sm:text-sm">
                       <MessageCircle className="mr-1 h-3 w-3 sm:mr-2 sm:h-4 sm:w-4" />
                       <span className="hidden sm:inline">WhatsApp Details</span>
                       <span className="sm:hidden">WhatsApp</span>
@@ -367,9 +367,9 @@ const ThaiMassageLanding = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 onClick={handleCall}
-                variant="hero"
+                variant="call"
                 size="xl"
-                className="w-full sm:w-auto bg-spa-dark text-primary hover:bg-spa-dark/90 text-sm md:text-base"
+                className="w-full sm:w-auto text-sm md:text-base"
               >
                 <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                 <span className="hidden md:inline">Book Your Therapeutic Session</span>
@@ -377,7 +377,7 @@ const ThaiMassageLanding = () => {
               </Button>
               <Button
                 onClick={handleWhatsApp}
-                variant="luxury"
+                variant="whatsapp"
                 size="xl"
                 className="w-full sm:w-auto text-sm md:text-base"
               >

@@ -67,13 +67,13 @@ const LeadForm = () => {
 
   if (isSubmitted) {
     return (
-      <section className="py-10 bg-background" aria-labelledby="form-success">
+      <section className="py-12 bg-background" aria-labelledby="form-success">
         <div className="container mx-auto px-4 max-w-md">
-          <Card className="bg-card border-primary/20">
-            <CardContent className="p-6 text-center">
-              <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" aria-hidden="true" />
-              <h2 id="form-success" className="text-xl font-bold text-foreground mb-2">Thank You!</h2>
-              <p className="text-muted-foreground">
+          <Card className="bg-white border-border shadow-card rounded-2xl">
+            <CardContent className="p-8 text-center">
+              <CheckCircle className="h-14 w-14 text-primary mx-auto mb-4" aria-hidden="true" />
+              <h2 id="form-success" className="text-xl font-bold text-foreground mb-2 font-playfair">Thank You!</h2>
+              <p className="text-muted-foreground font-lato">
                 We have received your request. Our team will contact you within 5 minutes.
               </p>
             </CardContent>
@@ -84,30 +84,30 @@ const LeadForm = () => {
   }
 
   return (
-    <section className="py-10 bg-background" aria-labelledby="form-heading">
+    <section className="py-12 bg-background" aria-labelledby="form-heading">
       <div className="container mx-auto px-4 max-w-md">
-        <Card className="bg-card border-primary/20">
+        <Card className="bg-white border-border shadow-card rounded-2xl">
           <CardHeader className="pb-2">
-            <CardTitle id="form-heading" className="text-xl text-center text-foreground">
+            <CardTitle id="form-heading" className="text-xl text-center text-foreground font-playfair">
               Quick <span className="text-primary">Booking</span>
             </CardTitle>
-            <p className="text-sm text-muted-foreground text-center">
+            <p className="text-sm text-muted-foreground text-center font-lato">
               Get a callback within 5 minutes
             </p>
           </CardHeader>
-          <CardContent className="p-5">
+          <CardContent className="p-6">
             <form onSubmit={handleSubmit} className="space-y-4" noValidate>
               <div>
                 <label htmlFor="name" className="sr-only">Your Name</label>
                 <div className="relative">
-                  <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                   <Input
                     id="name"
                     type="text"
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="pl-10 h-12 min-h-[48px]"
+                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-lato"
                     maxLength={50}
                     required
                     aria-required="true"
@@ -118,14 +118,14 @@ const LeadForm = () => {
               <div>
                 <label htmlFor="phone" className="sr-only">Phone Number</label>
                 <div className="relative">
-                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                   <Input
                     id="phone"
                     type="tel"
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="pl-10 h-12 min-h-[48px]"
+                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-lato"
                     maxLength={12}
                     required
                     aria-required="true"
@@ -135,13 +135,14 @@ const LeadForm = () => {
               
               <Button
                 type="submit"
-                className="w-full h-12 min-h-[48px] bg-primary text-primary-foreground hover:bg-primary/90 font-bold"
+                variant="call"
+                className="w-full h-12 min-h-[48px] font-bold"
               >
                 <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
                 Get Instant Callback
               </Button>
               
-              <p className="text-[10px] text-muted-foreground text-center">
+              <p className="text-[10px] text-muted-foreground text-center font-lato">
                 By submitting, you agree to our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>
               </p>

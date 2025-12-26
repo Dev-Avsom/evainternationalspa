@@ -123,7 +123,7 @@ const KoramangalaLanding = () => {
               </Button>
               <Button
                 onClick={handleWhatsApp}
-                variant="hero"
+                variant="whatsapp"
                 size="xl"
                 className="w-full sm:w-auto text-sm md:text-base"
               >
@@ -290,16 +290,16 @@ const KoramangalaLanding = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 onClick={handleCall}
-                variant="hero"
+                variant="call"
                 size="xl"
-                className="w-full sm:w-auto bg-spa-dark text-primary hover:bg-spa-dark/90"
+                className="w-full sm:w-auto"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Book Your Spa Day Now
               </Button>
               <Button
                 onClick={handleWhatsApp}
-                variant="luxury"
+                variant="whatsapp"
                 size="xl"
                 className="w-full sm:w-auto"
               >
