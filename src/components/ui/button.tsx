@@ -17,13 +17,13 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full",
         ghost: "hover:bg-muted hover:text-foreground rounded-full",
-        link: "text-foreground underline-offset-4 hover:underline",
-        // Matte Black Call Button - Sophisticated luxury contrast
-        call: "bg-matte-black text-white hover:bg-matte-black/90 rounded-full shadow-button font-semibold text-base",
-        // WhatsApp Green with white border for clean look
+        link: "text-primary underline-offset-4 hover:underline",
+        // Deep Teal Call Button
+        call: "bg-primary text-primary-foreground hover:bg-accent rounded-full shadow-button font-semibold text-base",
+        // WhatsApp Green with white border
         whatsapp: "bg-whatsapp-green text-white hover:bg-whatsapp-green/90 rounded-full shadow-button font-semibold text-base border-2 border-white",
-        // Deep Espresso for Book buttons - Warm luxury feel
-        espresso: "bg-deep-espresso text-white hover:bg-deep-espresso/90 rounded-full shadow-button font-semibold",
+        // Teal for Book buttons
+        teal: "bg-accent text-accent-foreground hover:bg-primary rounded-full shadow-button font-semibold",
       },
       size: {
         default: "h-11 px-6 py-2 text-sm",

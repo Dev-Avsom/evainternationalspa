@@ -69,13 +69,13 @@ const TrustBadges = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        {/* Trust Badges - Clean Grid with White Cards */}
+        {/* Trust Badges */}
         <div className="grid grid-cols-4 gap-5 mb-20">
           {badges.map((badge, index) => (
             <div key={index} className="text-center bg-card rounded-2xl p-6 shadow-card border border-border">
-              <badge.icon className={`h-7 w-7 mx-auto mb-4 ${badge.highlight ? 'text-amber-500' : 'text-foreground'}`} />
+              <badge.icon className={`h-7 w-7 mx-auto mb-4 ${badge.highlight ? 'text-gold-accent' : 'text-primary'}`} />
               <p className="font-bold text-foreground text-sm font-montserrat">{badge.title}</p>
               <p className="text-xs text-muted-foreground font-montserrat font-medium mt-1">{badge.subtitle}</p>
             </div>
@@ -85,7 +85,7 @@ const TrustBadges = () => {
         {/* Trust & Safety Section */}
         <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12 font-montserrat">
-            Your Safety is Our Priority
+            Your <span className="text-primary">Safety</span> is Our Priority
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -93,7 +93,7 @@ const TrustBadges = () => {
               <Card key={index} className="bg-card border border-border shadow-card rounded-2xl">
                 <CardContent className="p-8 flex items-start gap-5">
                   <div className="bg-secondary rounded-xl p-4 shrink-0">
-                    <feature.icon className="h-6 w-6 text-foreground" />
+                    <feature.icon className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground text-base font-montserrat">{feature.title}</h3>
@@ -105,10 +105,10 @@ const TrustBadges = () => {
           </div>
         </div>
 
-        {/* Testimonials - Clean White Cards */}
+        {/* Testimonials */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-10 font-montserrat">
-            What Clients Say
+            What <span className="text-primary">Clients Say</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -117,7 +117,7 @@ const TrustBadges = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center gap-1 mb-5">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-amber-500 fill-current" />
+                      <Star key={i} className="h-5 w-5 text-gold-accent fill-current" />
                     ))}
                   </div>
                   <p className="text-muted-foreground text-base mb-6 italic font-montserrat font-medium leading-relaxed">
@@ -125,7 +125,7 @@ const TrustBadges = () => {
                   </p>
                   <div className="flex justify-between items-center">
                     <p className="font-bold text-foreground text-sm font-montserrat">{testimonial.name}</p>
-                    <p className="text-xs text-muted-foreground font-montserrat font-medium">{testimonial.service}</p>
+                    <p className="text-xs text-primary font-montserrat font-medium">{testimonial.service}</p>
                   </div>
                 </CardContent>
               </Card>

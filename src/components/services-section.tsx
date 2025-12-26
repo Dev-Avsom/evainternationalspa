@@ -54,7 +54,7 @@ const ServicesSection = () => {
         </div>
         <Button 
           onClick={() => handleWhatsApp(service.title)}
-          variant="espresso"
+          variant="teal"
           size="sm"
           className="w-full h-12 text-sm min-h-[48px]"
           aria-label={`Book ${service.title} via WhatsApp`}
@@ -72,7 +72,7 @@ const ServicesSection = () => {
         {/* Deep Tissue Massage Services */}
         <div className="mb-20">
           <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center font-montserrat">
-            Deep Tissue Massage Services
+            Deep Tissue <span className="text-primary">Massage Services</span>
           </h2>
           <p className="text-base text-muted-foreground text-center mb-12 font-montserrat font-medium max-w-lg mx-auto">
             Pain relief therapy for chronic tension and muscle recovery
@@ -87,7 +87,7 @@ const ServicesSection = () => {
         {/* Aromatherapy Packages */}
         <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center font-montserrat">
-            Aromatherapy Packages
+            Aromatherapy <span className="text-primary">Packages</span>
           </h2>
           <p className="text-base text-muted-foreground text-center mb-12 font-montserrat font-medium max-w-lg mx-auto">
             Holistic wellness center treatments with natural essential oils
@@ -102,7 +102,7 @@ const ServicesSection = () => {
         {/* Couple Spa Deals */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center font-montserrat">
-            Couple Spa Deals
+            Couple Spa <span className="text-primary">Deals</span>
           </h2>
           <p className="text-base text-muted-foreground text-center mb-12 font-montserrat font-medium max-w-lg mx-auto">
             Romantic spa experience for two at the best spa near me in Koramangala

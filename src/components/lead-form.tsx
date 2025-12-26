@@ -43,7 +43,6 @@ const LeadForm = () => {
       return;
     }
 
-    // Track form submission
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'generate_lead', {
         event_category: 'Lead Generation',
@@ -52,7 +51,6 @@ const LeadForm = () => {
       });
     }
 
-    // Send to WhatsApp with sanitized data
     const sanitizedName = trimmedName.replace(/[<>'"]/g, '');
     const sanitizedPhone = trimmedPhone.replace(/[^0-9+\-\s]/g, '');
     const message = `Hi! I'm interested in booking a spa session.\n\nName: ${sanitizedName}\nPhone: ${sanitizedPhone}\n\nPlease contact me for booking.`;
@@ -67,11 +65,11 @@ const LeadForm = () => {
 
   if (isSubmitted) {
     return (
-      <section className="py-20 bg-secondary" aria-labelledby="form-success">
+      <section className="py-20 bg-background" aria-labelledby="form-success">
         <div className="container mx-auto px-4 max-w-md">
           <Card className="bg-card border border-border shadow-card rounded-2xl">
             <CardContent className="p-12 text-center">
-              <CheckCircle className="h-16 w-16 text-foreground mx-auto mb-6" aria-hidden="true" />
+              <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" aria-hidden="true" />
               <h2 id="form-success" className="text-2xl font-bold text-foreground mb-4 font-montserrat">Thank You!</h2>
               <p className="text-muted-foreground font-montserrat font-medium">
                 We have received your request. Our team will contact you within 5 minutes.
@@ -84,12 +82,12 @@ const LeadForm = () => {
   }
 
   return (
-    <section className="py-20 bg-secondary" aria-labelledby="form-heading">
+    <section className="py-20 bg-background" aria-labelledby="form-heading">
       <div className="container mx-auto px-4 max-w-md">
         <Card className="bg-card border border-border shadow-card rounded-2xl">
           <CardHeader className="pb-4">
             <CardTitle id="form-heading" className="text-2xl text-center text-foreground font-montserrat">
-              Quick Booking
+              Quick <span className="text-primary">Booking</span>
             </CardTitle>
             <p className="text-base text-muted-foreground text-center font-montserrat font-medium">
               Get a callback within 5 minutes
@@ -144,7 +142,7 @@ const LeadForm = () => {
               
               <p className="text-xs text-muted-foreground text-center font-montserrat font-medium">
                 By submitting, you agree to our{" "}
-                <a href="/privacy-policy" className="text-foreground hover:underline">Privacy Policy</a>
+                <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>
               </p>
             </form>
           </CardContent>
