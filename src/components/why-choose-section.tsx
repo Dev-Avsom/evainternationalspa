@@ -43,44 +43,44 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-14 bg-secondary">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 font-playfair">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4 font-montserrat">
             Why <span className="text-primary">Eva Spa</span>?
           </h2>
-          <p className="text-sm text-muted-foreground font-lato">
+          <p className="text-sm text-muted-foreground font-montserrat font-light">
             Premium facilities with professional service
           </p>
         </div>
 
-        {/* Compact Features Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {/* Compact Features Grid - White Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="bg-white border-border shadow-card rounded-2xl"
+              className="bg-card border-0 shadow-card rounded-3xl"
             >
-              <CardContent className="p-5 text-center">
-                <div className="mb-3 flex justify-center">
-                  <div className="p-3 bg-secondary rounded-full text-primary">
+              <CardContent className="p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <div className="p-3 bg-secondary rounded-2xl text-primary">
                     {feature.icon}
                   </div>
                 </div>
                 
                 <Badge 
                   variant="secondary" 
-                  className="mb-2 bg-primary/10 text-primary border-0 text-[10px] font-lato"
+                  className="mb-3 bg-accent/10 text-accent border-0 text-[10px] font-montserrat font-medium"
                 >
                   {feature.badge}
                 </Badge>
                 
-                <h3 className="text-sm font-semibold text-foreground mb-1 font-playfair">
+                <h3 className="text-sm font-semibold text-foreground mb-2 font-montserrat">
                   {feature.title}
                 </h3>
                 
-                <p className="text-xs text-muted-foreground font-lato">
+                <p className="text-xs text-muted-foreground font-montserrat font-light">
                   {feature.description}
                 </p>
               </CardContent>

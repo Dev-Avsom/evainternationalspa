@@ -2,93 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Soft Pastel & Minimalist Design System
+   All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Modern Wellness Center - Light & Airy Palette */
-    --background: 40 33% 98%;          /* Soft Cream #FDFBF7 */
-    --foreground: 0 0% 20%;            /* Dark Slate #333333 */
+    /* Soft Pastel Palette */
+    --background: 60 20% 98%;              /* Soft Cream #FAF9F6 */
+    --foreground: 0 0% 29%;                /* Dark Grey #4A4A4A */
 
-    --card: 37 27% 94%;                /* Warm Sand #F5F0E6 */
-    --card-foreground: 0 0% 20%;       /* Dark Slate */
+    --card: 0 0% 100%;                     /* Pure White #FFFFFF */
+    --card-foreground: 0 0% 29%;           /* Dark Grey */
 
-    --popover: 0 0% 100%;              /* White */
-    --popover-foreground: 0 0% 20%;    /* Dark Slate */
+    --popover: 0 0% 100%;                  /* White */
+    --popover-foreground: 0 0% 29%;        /* Dark Grey */
 
-    --primary: 207 78% 28%;            /* Deep Royal Blue #0F4C81 */
-    --primary-foreground: 0 0% 100%;   /* White */
+    --primary: 207 31% 29%;                /* Deep Slate Blue #35495E */
+    --primary-foreground: 0 0% 100%;       /* White */
 
-    --secondary: 37 27% 94%;           /* Warm Sand */
-    --secondary-foreground: 0 0% 20%;  /* Dark Slate */
+    --secondary: 140 26% 92%;              /* Pastel Sage Green #E6F0EB */
+    --secondary-foreground: 0 0% 29%;      /* Dark Grey */
 
-    --muted: 37 20% 88%;               /* Light Sand */
-    --muted-foreground: 0 0% 45%;      /* Medium Grey */
+    --muted: 60 10% 94%;                   /* Light Cream */
+    --muted-foreground: 0 0% 45%;          /* Medium Grey */
 
-    --accent: 24 60% 45%;              /* Copper/Bronze #B8733D */
-    --accent-foreground: 0 0% 100%;    /* White */
+    --accent: 12 55% 70%;                  /* Pastel Coral/Muted Terracotta #E68C7C */
+    --accent-foreground: 0 0% 100%;        /* White */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 37 20% 85%;              /* Light border */
-    --input: 37 20% 85%;
-    --ring: 207 78% 28%;               /* Royal Blue */
+    --border: 0 0% 90%;                    /* Soft border */
+    --input: 0 0% 90%;
+    --ring: 207 31% 29%;                   /* Slate Blue */
 
-    /* Wellness palette tokens */
-    --wellness-cream: 40 33% 98%;      /* #FDFBF7 */
-    --wellness-sand: 37 27% 94%;       /* #F5F0E6 */
-    --wellness-slate: 0 0% 20%;        /* #333333 */
-    --wellness-blue: 207 78% 28%;      /* #0F4C81 */
-    --wellness-copper: 24 60% 45%;     /* Copper accent */
-    --wellness-copper-light: 24 50% 55%;
-    --whatsapp-green: 142 70% 49%;     /* #25D366 */
+    /* Pastel palette tokens */
+    --pastel-sage: 140 26% 92%;            /* #E6F0EB */
+    --pastel-cream: 60 20% 98%;            /* #FAF9F6 */
+    --pastel-white: 0 0% 100%;             /* #FFFFFF */
+    --pastel-grey: 0 0% 29%;               /* #4A4A4A */
+    --pastel-coral: 12 55% 70%;            /* #E68C7C */
+    --deep-charcoal: 0 0% 18%;             /* #2D2D2D */
+    --deep-slate: 207 31% 29%;             /* #35495E */
+    --whatsapp-green: 142 70% 49%;         /* #25D366 */
+    
+    /* Legacy tokens mapped to new pastel palette */
+    --wellness-cream: 60 20% 98%;
+    --wellness-sand: 140 26% 92%;
+    --wellness-slate: 0 0% 29%;
+    --wellness-blue: 207 31% 29%;
+    --wellness-copper: 12 55% 70%;
+    --wellness-copper-light: 12 50% 75%;
     --wellness-white: 0 0% 100%;
     --wellness-light-grey: 0 0% 96%;
     
-    /* Legacy tokens mapped to new palette */
-    --spa-dark: 0 0% 20%;
-    --spa-cream: 40 33% 98%;
-    --spa-beige: 37 27% 94%;
-    --spa-gold: 24 60% 45%;
-    --spa-gold-light: 24 50% 55%;
-    --spa-gold-dark: 24 70% 35%;
-    --navy-deep: 207 78% 28%;
-    --navy-card: 207 70% 35%;
-    --gold-eva: 24 60% 45%;
-    --gold-eva-light: 24 50% 55%;
-    --gold-eva-dark: 24 70% 35%;
-    --white-pure: 0 0% 100%;
-    --cream-soft: 37 27% 94%;
+    /* Soft Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(140 26% 92%) 0%, hsl(60 20% 98%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(60 20% 98%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(60 20% 98%) 0%, hsl(140 26% 92%) 100%);
     
-    /* Subtle Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(37 27% 94%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(37 27% 94%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(37 27% 94%) 0%, hsl(40 33% 98%) 100%);
-    
-    /* Refined Shadows */
-    --shadow-luxury: 0 4px 20px -4px hsl(0 0% 0% / 0.08);
-    --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.06);
-    --shadow-button: 0 4px 14px -3px hsl(207 78% 28% / 0.25);
-    --shadow-glow: 0 0 20px hsl(207 78% 28% / 0.15);
-    --shadow-eva: 0 2px 8px -2px hsl(0 0% 0% / 0.05);
+    /* Soft Shadows */
+    --shadow-luxury: 0 8px 30px -8px hsl(0 0% 0% / 0.08);
+    --shadow-card: 0 2px 16px -4px hsl(0 0% 0% / 0.06);
+    --shadow-button: 0 4px 12px -2px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 20px hsl(207 31% 29% / 0.1);
+    --shadow-eva: 0 2px 8px -2px hsl(0 0% 0% / 0.04);
+    --shadow-top: 0 -4px 16px -4px hsl(0 0% 0% / 0.08);
 
-    --radius: 0.5rem;
+    --radius: 1.25rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 20%;
-    --sidebar-primary: 207 78% 28%;
+    --sidebar-foreground: 0 0% 29%;
+    --sidebar-primary: 207 31% 29%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 37 27% 94%;
-    --sidebar-accent-foreground: 0 0% 20%;
-    --sidebar-border: 37 20% 85%;
-    --sidebar-ring: 207 78% 28%;
+    --sidebar-accent: 140 26% 92%;
+    --sidebar-accent-foreground: 0 0% 29%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 207 31% 29%;
   }
 
   .dark {
-    /* Keep dark mode but adjust to new palette */
+    /* Keep dark mode but adjust to pastel-compatible palette */
     --background: 0 0% 8%;
     --foreground: 0 0% 95%;
 
@@ -98,7 +93,7 @@ All colors MUST be HSL.
     --popover: 0 0% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 207 70% 50%;
+    --primary: 207 40% 50%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 18%;
@@ -107,7 +102,7 @@ All colors MUST be HSL.
     --muted: 0 0% 22%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 24 60% 55%;
+    --accent: 12 55% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -115,15 +110,15 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 207 70% 50%;
+    --ring: 207 40% 50%;
     --sidebar-background: 0 0% 10%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 207 70% 50%;
+    --sidebar-primary: 207 40% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 15%;
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 207 70% 50%;
+    --sidebar-ring: 207 40% 50%;
   }
 }
 
@@ -134,10 +129,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
 }

@@ -19,8 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'lato': ['Lato', 'sans-serif'],
-				'playfair': ['Playfair Display', 'serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -56,15 +55,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'wellness-cream': 'hsl(var(--wellness-cream))',
-				'wellness-sand': 'hsl(var(--wellness-sand))',
-				'wellness-slate': 'hsl(var(--wellness-slate))',
-				'wellness-blue': 'hsl(var(--wellness-blue))',
-				'wellness-copper': 'hsl(var(--wellness-copper))',
-				'wellness-copper-light': 'hsl(var(--wellness-copper-light))',
+				'pastel-sage': 'hsl(var(--pastel-sage))',
+				'pastel-cream': 'hsl(var(--pastel-cream))',
+				'pastel-white': 'hsl(var(--pastel-white))',
+				'pastel-grey': 'hsl(var(--pastel-grey))',
+				'pastel-coral': 'hsl(var(--pastel-coral))',
+				'deep-charcoal': 'hsl(var(--deep-charcoal))',
+				'deep-slate': 'hsl(var(--deep-slate))',
 				'whatsapp-green': 'hsl(var(--whatsapp-green))',
-				'wellness-white': 'hsl(var(--wellness-white))',
-				'wellness-light-grey': 'hsl(var(--wellness-light-grey))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -87,8 +85,12 @@ export default {
 				'button': 'var(--shadow-button)',
 				'glow': 'var(--shadow-glow)',
 				'eva': 'var(--shadow-eva)',
+				'top': 'var(--shadow-top)',
 			},
 			borderRadius: {
+				'xl': '1.25rem',
+				'2xl': '1.5rem',
+				'3xl': '2rem',
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'

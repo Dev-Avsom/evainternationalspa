@@ -5,30 +5,30 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-border py-12 pb-24" role="contentinfo">
+    <footer className="bg-card border-t border-border py-14 pb-28" role="contentinfo">
       <div className="container mx-auto px-4">
         {/* Safety Disclaimer */}
-        <div className="bg-secondary border border-border rounded-2xl p-5 mb-10 text-center">
-          <div className="flex items-center justify-center gap-2 mb-2">
+        <div className="bg-secondary rounded-3xl p-6 mb-12 text-center">
+          <div className="flex items-center justify-center gap-2 mb-3">
             <Shield className="h-5 w-5 text-primary" aria-hidden="true" />
-            <span className="font-semibold text-foreground text-sm font-playfair">Professional Services Only</span>
+            <span className="font-semibold text-foreground text-sm font-montserrat">Professional Services Only</span>
           </div>
-          <p className="text-xs text-muted-foreground max-w-xl mx-auto font-lato">
+          <p className="text-xs text-muted-foreground max-w-xl mx-auto font-montserrat font-light">
             We provide strictly professional therapeutic massage and spa services only. 
             All therapists are certified professionals trained in therapeutic techniques.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Contact Information */}
           <div>
-            <h3 className="font-bold text-foreground mb-5 font-playfair">Contact Us</h3>
-            <address className="not-italic space-y-4 font-lato">
+            <h3 className="font-bold text-foreground mb-6 font-montserrat">Contact Us</h3>
+            <address className="not-italic space-y-5 font-montserrat">
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-1 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-sm text-foreground">+91 88846 66814</p>
-                  <p className="text-xs text-muted-foreground">Available for calls & WhatsApp</p>
+                  <p className="text-xs text-muted-foreground font-light">Available for calls & WhatsApp</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -48,13 +48,13 @@ const Footer = () => {
 
           {/* Physical Address */}
           <div>
-            <h3 className="font-bold text-foreground mb-5 font-playfair">Our Location</h3>
-            <address className="not-italic font-lato">
+            <h3 className="font-bold text-foreground mb-6 font-montserrat">Our Location</h3>
+            <address className="not-italic font-montserrat">
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-1 shrink-0" aria-hidden="true" />
                 <div>
                   <p className="text-sm text-foreground font-medium">Eva International Spa</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground font-light">
                     No. 72, 1st Floor, 6th Cross Road,<br />
                     Koramangala 5th Block,<br />
                     Bengaluru, Karnataka 560095
@@ -74,21 +74,21 @@ const Footer = () => {
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-bold text-foreground mb-5 font-playfair">Legal</h3>
-            <nav aria-label="Legal links" className="font-lato">
-              <ul className="space-y-3">
+            <h3 className="font-bold text-foreground mb-6 font-montserrat">Legal</h3>
+            <nav aria-label="Legal links" className="font-montserrat">
+              <ul className="space-y-4">
                 <li>
-                  <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors font-light">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors font-light">
                     Terms of Service
                   </Link>
                 </li>
                 <li>
-                  <Link to="/refund-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/refund-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors font-light">
                     Refund Policy
                   </Link>
                 </li>
@@ -98,16 +98,16 @@ const Footer = () => {
         </div>
 
         {/* Copyright & Credits */}
-        <div className="border-t border-border pt-8 text-center space-y-2 font-lato">
-          <p className="text-xs text-muted-foreground">
+        <div className="border-t border-border pt-10 text-center space-y-3 font-montserrat">
+          <p className="text-xs text-muted-foreground font-light">
             © {currentYear} Eva International Spa. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-muted-foreground font-light">
             Premium Body Massage & Spa in Koramangala, Bengaluru
           </p>
-          <p className="text-muted-foreground text-xs pt-2">
+          <p className="text-muted-foreground text-xs pt-2 font-light">
             Designed and Marketing by{" "}
-            <span className="text-primary font-semibold">Caasa Creative Labs</span>
+            <span className="text-primary font-medium">Caasa Creative Labs</span>
             {" "}|{" "}
             <span className="text-accent">Driven by Intelligence</span>
           </p>
