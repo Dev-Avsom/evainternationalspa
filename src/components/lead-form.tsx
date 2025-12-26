@@ -67,13 +67,13 @@ const LeadForm = () => {
 
   if (isSubmitted) {
     return (
-      <section className="py-16 bg-secondary" aria-labelledby="form-success">
+      <section className="py-20 bg-secondary" aria-labelledby="form-success">
         <div className="container mx-auto px-4 max-w-md">
-          <Card className="bg-card border-0 shadow-card rounded-3xl">
-            <CardContent className="p-10 text-center">
-              <CheckCircle className="h-14 w-14 text-primary mx-auto mb-5" aria-hidden="true" />
-              <h2 id="form-success" className="text-xl font-bold text-foreground mb-3 font-montserrat">Thank You!</h2>
-              <p className="text-muted-foreground font-montserrat font-light">
+          <Card className="bg-card border border-border shadow-card rounded-2xl">
+            <CardContent className="p-12 text-center">
+              <CheckCircle className="h-16 w-16 text-foreground mx-auto mb-6" aria-hidden="true" />
+              <h2 id="form-success" className="text-2xl font-bold text-foreground mb-4 font-montserrat">Thank You!</h2>
+              <p className="text-muted-foreground font-montserrat font-medium">
                 We have received your request. Our team will contact you within 5 minutes.
               </p>
             </CardContent>
@@ -84,30 +84,30 @@ const LeadForm = () => {
   }
 
   return (
-    <section className="py-16 bg-secondary" aria-labelledby="form-heading">
+    <section className="py-20 bg-secondary" aria-labelledby="form-heading">
       <div className="container mx-auto px-4 max-w-md">
-        <Card className="bg-card border-0 shadow-card rounded-3xl">
-          <CardHeader className="pb-3">
-            <CardTitle id="form-heading" className="text-xl text-center text-foreground font-montserrat">
-              Quick <span className="text-primary">Booking</span>
+        <Card className="bg-card border border-border shadow-card rounded-2xl">
+          <CardHeader className="pb-4">
+            <CardTitle id="form-heading" className="text-2xl text-center text-foreground font-montserrat">
+              Quick Booking
             </CardTitle>
-            <p className="text-sm text-muted-foreground text-center font-montserrat font-light">
+            <p className="text-base text-muted-foreground text-center font-montserrat font-medium">
               Get a callback within 5 minutes
             </p>
           </CardHeader>
-          <CardContent className="p-7">
-            <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+          <CardContent className="p-8">
+            <form onSubmit={handleSubmit} className="space-y-6" noValidate>
               <div>
                 <label htmlFor="name" className="sr-only">Your Name</label>
                 <div className="relative">
-                  <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <User className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" aria-hidden="true" />
                   <Input
                     id="name"
                     type="text"
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-montserrat font-light"
+                    className="pl-12 h-14 min-h-[56px] rounded-full border-border font-montserrat font-medium text-base"
                     maxLength={50}
                     required
                     aria-required="true"
@@ -118,14 +118,14 @@ const LeadForm = () => {
               <div>
                 <label htmlFor="phone" className="sr-only">Phone Number</label>
                 <div className="relative">
-                  <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" aria-hidden="true" />
                   <Input
                     id="phone"
                     type="tel"
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-montserrat font-light"
+                    className="pl-12 h-14 min-h-[56px] rounded-full border-border font-montserrat font-medium text-base"
                     maxLength={12}
                     required
                     aria-required="true"
@@ -135,16 +135,16 @@ const LeadForm = () => {
               
               <Button
                 type="submit"
-                variant="coral"
-                className="w-full h-12 min-h-[48px] font-semibold"
+                variant="call"
+                className="w-full h-14 min-h-[56px] font-bold text-base"
               >
-                <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
+                <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
                 Get Instant Callback
               </Button>
               
-              <p className="text-[10px] text-muted-foreground text-center font-montserrat font-light">
+              <p className="text-xs text-muted-foreground text-center font-montserrat font-medium">
                 By submitting, you agree to our{" "}
-                <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>
+                <a href="/privacy-policy" className="text-foreground hover:underline">Privacy Policy</a>
               </p>
             </form>
           </CardContent>
