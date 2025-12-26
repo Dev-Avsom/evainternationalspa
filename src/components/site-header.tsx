@@ -31,7 +31,6 @@ const SiteHeader = () => {
 
   const sectionLinks = [
     { label: "Services", id: "services" },
-    { label: "Pricing", id: "pricing" },
     { label: "Contact", id: "contact" },
   ];
 
