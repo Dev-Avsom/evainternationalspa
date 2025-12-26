@@ -30,12 +30,12 @@ const StickyCTA = () => {
 
   return (
     <nav 
-      className="fixed bottom-0 left-0 right-0 z-50 bg-card shadow-top safe-area-bottom"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-card shadow-top border-t border-border safe-area-bottom"
       aria-label="Quick contact"
       role="navigation"
     >
-      <div className="flex gap-3 p-4">
-        {/* Call Now Button - Deep Charcoal for high contrast */}
+      <div className="flex gap-4 p-4">
+        {/* Call Now Button - Matte Black for high contrast */}
         <Button
           onClick={handleCall}
           variant="call"

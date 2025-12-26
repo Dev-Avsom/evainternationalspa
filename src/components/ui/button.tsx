@@ -16,14 +16,14 @@ const buttonVariants = cva(
           "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground rounded-full",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full",
-        ghost: "hover:bg-accent/10 hover:text-accent-foreground rounded-full",
-        link: "text-primary underline-offset-4 hover:underline",
-        // Deep Charcoal Call Button - High contrast on pastel
-        call: "bg-deep-charcoal text-white hover:bg-deep-charcoal/90 rounded-full shadow-button font-semibold text-base",
+        ghost: "hover:bg-muted hover:text-foreground rounded-full",
+        link: "text-foreground underline-offset-4 hover:underline",
+        // Matte Black Call Button - Sophisticated luxury contrast
+        call: "bg-matte-black text-white hover:bg-matte-black/90 rounded-full shadow-button font-semibold text-base",
         // WhatsApp Green with white border for clean look
         whatsapp: "bg-whatsapp-green text-white hover:bg-whatsapp-green/90 rounded-full shadow-button font-semibold text-base border-2 border-white",
-        // Pastel Coral for Book buttons - gentle attention
-        coral: "bg-accent text-accent-foreground hover:bg-accent/90 rounded-full shadow-button font-semibold",
+        // Deep Espresso for Book buttons - Warm luxury feel
+        espresso: "bg-deep-espresso text-white hover:bg-deep-espresso/90 rounded-full shadow-button font-semibold",
       },
       size: {
         default: "h-11 px-6 py-2 text-sm",

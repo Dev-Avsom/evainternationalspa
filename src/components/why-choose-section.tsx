@@ -5,37 +5,37 @@ import { Users, Shield, Leaf, Award, Clock, Star } from "lucide-react";
 const WhyChooseSection = () => {
   const features = [
     {
-      icon: <Users className="h-5 w-5" />,
+      icon: <Users className="h-6 w-6" />,
       title: "Expert Therapists",
       description: "Professionally trained and certified therapists",
       badge: "Certified"
     },
     {
-      icon: <Shield className="h-5 w-5" />,
+      icon: <Shield className="h-6 w-6" />,
       title: "100% Hygienic",
       description: "Disposable accessories and sanitized spaces",
       badge: "Safe"
     },
     {
-      icon: <Leaf className="h-5 w-5" />,
+      icon: <Leaf className="h-6 w-6" />,
       title: "Premium Products",
       description: "Natural oils and quality products only",
       badge: "Natural"
     },
     {
-      icon: <Award className="h-5 w-5" />,
+      icon: <Award className="h-6 w-6" />,
       title: "Private Rooms",
       description: "Comfortable private treatment areas",
       badge: "Premium"
     },
     {
-      icon: <Clock className="h-5 w-5" />,
+      icon: <Clock className="h-6 w-6" />,
       title: "Open Daily",
       description: "9 AM - 10 PM, 7 days a week",
       badge: "Flexible"
     },
     {
-      icon: <Star className="h-5 w-5" />,
+      icon: <Star className="h-6 w-6" />,
       title: "Top Rated",
       description: "4.8/5 rating with 5000+ clients",
       badge: "Trusted"
@@ -43,44 +43,44 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4 font-montserrat">
-            Why <span className="text-primary">Eva Spa</span>?
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 font-montserrat">
+            Why Eva Spa?
           </h2>
-          <p className="text-sm text-muted-foreground font-montserrat font-light">
+          <p className="text-base text-muted-foreground font-montserrat font-medium">
             Premium facilities with professional service
           </p>
         </div>
 
         {/* Compact Features Grid - White Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="bg-card border-0 shadow-card rounded-3xl"
+              className="bg-card border border-border shadow-card rounded-2xl"
             >
-              <CardContent className="p-6 text-center">
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 bg-secondary rounded-2xl text-primary">
+              <CardContent className="p-8 text-center">
+                <div className="mb-5 flex justify-center">
+                  <div className="p-4 bg-secondary rounded-xl text-foreground">
                     {feature.icon}
                   </div>
                 </div>
                 
                 <Badge 
                   variant="secondary" 
-                  className="mb-3 bg-accent/10 text-accent border-0 text-[10px] font-montserrat font-medium"
+                  className="mb-4 bg-muted text-foreground border-0 text-xs font-montserrat font-semibold"
                 >
                   {feature.badge}
                 </Badge>
                 
-                <h3 className="text-sm font-semibold text-foreground mb-2 font-montserrat">
+                <h3 className="text-base font-bold text-foreground mb-2 font-montserrat">
                   {feature.title}
                 </h3>
                 
-                <p className="text-xs text-muted-foreground font-montserrat font-light">
+                <p className="text-sm text-muted-foreground font-montserrat font-medium">
                   {feature.description}
                 </p>
               </CardContent>
