@@ -13,18 +13,17 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-24 bg-background pb-36">
+    <section className="py-24 bg-secondary pb-36">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 font-montserrat">
-            Book Now
+            Book <span className="text-primary">Now</span>
           </h2>
         </div>
 
         <div className="max-w-lg mx-auto space-y-8">
           {/* Quick Contact Card */}
-          <Card className="bg-foreground text-card border-0 shadow-luxury rounded-2xl">
+          <Card className="bg-primary text-primary-foreground border-0 shadow-luxury rounded-2xl">
             <CardHeader className="pb-4">
               <CardTitle className="text-2xl text-center font-montserrat">
                 Ready to Relax?
@@ -62,7 +61,7 @@ const ContactSection = () => {
           <div className="grid grid-cols-2 gap-6">
             <Card className="bg-card border border-border shadow-card rounded-2xl">
               <CardContent className="p-8 text-center">
-                <Clock className="h-6 w-6 text-foreground mx-auto mb-4" />
+                <Clock className="h-6 w-6 text-primary mx-auto mb-4" />
                 <p className="font-bold text-foreground text-base font-montserrat">Open Daily</p>
                 <p className="text-sm text-muted-foreground font-montserrat font-medium mt-1">9 AM - 10 PM</p>
               </CardContent>
@@ -70,13 +69,13 @@ const ContactSection = () => {
             
             <Card className="bg-card border border-border shadow-card rounded-2xl">
               <CardContent className="p-8 text-center">
-                <MapPin className="h-6 w-6 text-foreground mx-auto mb-4" />
+                <MapPin className="h-6 w-6 text-primary mx-auto mb-4" />
                 <p className="font-bold text-foreground text-base font-montserrat">Koramangala</p>
                 <Button 
                   onClick={() => window.open("https://maps.app.goo.gl/x33CYXpKePF3YTCW7", "_blank")}
                   variant="link"
                   size="sm"
-                  className="text-sm text-foreground p-0 h-auto font-montserrat font-medium mt-1"
+                  className="text-sm text-primary p-0 h-auto font-montserrat font-medium mt-1"
                 >
                   View Map
                 </Button>
@@ -86,7 +85,7 @@ const ContactSection = () => {
 
           {/* Offer Badge */}
           <div className="text-center bg-card rounded-2xl p-8 shadow-card border border-border">
-            <p className="text-foreground font-bold text-lg font-montserrat">✨ Spa Services from ₹1,999</p>
+            <p className="text-primary font-bold text-lg font-montserrat">✨ Spa Services from ₹1,999</p>
             <p className="text-sm text-muted-foreground mt-3 font-montserrat font-medium">
               Cross-gender therapy available with certified professionals
             </p>

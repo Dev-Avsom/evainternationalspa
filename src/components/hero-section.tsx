@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   return (
     <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-card">
-      {/* Subtle Background Image with Warm Light Overlay */}
+      {/* Subtle Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
         style={{ backgroundImage: `url(${heroImage})` }}
@@ -23,30 +23,30 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center pt-8 pb-36">
-        <div className="max-w-3xl mx-auto space-y-12">
-          {/* Logo with subtle drop shadow for visibility */}
-          <div className="flex justify-center mb-10">
+        <div className="max-w-3xl mx-auto space-y-10">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
             <img 
               src="/lovable-uploads/8472c527-b267-4b77-8b2c-a6664cc5a617.png" 
               alt="EVA International Spa - Premium Body Massage & Spa in Koramangala" 
-              className="h-24 md:h-32 w-auto drop-shadow-lg"
+              className="h-24 md:h-32 w-auto"
               style={{ filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.1))' }}
               width="200"
               height="128"
             />
           </div>
 
-          {/* Main Headline - H1 with Montserrat Bold */}
+          {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight font-montserrat tracking-tight">
-            Premium <span className="text-foreground">Body Massage & Spa</span> in Koramangala
+            Premium <span className="text-primary">Body Massage & Spa</span> in Koramangala
           </h1>
           
-          {/* Sub-headline with Medium weight */}
+          {/* Sub-headline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-montserrat font-medium">
             Best Spa Near Me for Relaxation & Pain Relief Therapy. Certified Therapists in a 100% Safe & Hygienic Wellness Center.
           </p>
 
-          {/* Primary CTA Button - Matte Black for high contrast */}
+          {/* Primary CTA Button */}
           <div className="pt-2">
             <Button
               onClick={handleWhatsApp}
@@ -60,22 +60,22 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Trust Badge - Clean white card */}
+          {/* Trust Badge */}
           <div className="flex items-center justify-center gap-2 pt-2">
             <div className="flex flex-wrap items-center justify-center gap-4 bg-card rounded-full px-8 py-4 shadow-card border border-border">
               <span className="flex items-center gap-2">
-                <Star className="h-5 w-5 text-amber-500 fill-current" aria-hidden="true" />
+                <Star className="h-5 w-5 text-gold-accent fill-current" aria-hidden="true" />
                 <span className="font-semibold text-foreground text-sm font-montserrat">4.8/5 Google Rating</span>
               </span>
               <span className="text-border mx-1 hidden sm:inline">|</span>
               <span className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-foreground" aria-hidden="true" />
+                <Users className="h-5 w-5 text-primary" aria-hidden="true" />
                 <span className="font-semibold text-foreground text-sm font-montserrat">5000+ Happy Clients</span>
               </span>
             </div>
           </div>
 
-          {/* Secondary CTAs - Matte Black Call & Green WhatsApp */}
+          {/* Secondary CTAs */}
           <nav className="flex flex-col sm:flex-row gap-5 justify-center pt-4" aria-label="Contact options">
             <Button
               onClick={handleCall}
@@ -99,32 +99,32 @@ const HeroSection = () => {
             </Button>
           </nav>
 
-          {/* Quick Trust Icons - White cards with warm shadows */}
+          {/* Quick Trust Icons */}
           <div className="grid grid-cols-3 gap-8 pt-12 max-w-md mx-auto">
             <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-card shadow-card flex items-center justify-center border border-border">
-                <Shield className="h-7 w-7 text-foreground" aria-hidden="true" />
+              <div className="w-16 h-16 rounded-2xl bg-secondary shadow-card flex items-center justify-center">
+                <Shield className="h-7 w-7 text-primary" aria-hidden="true" />
               </div>
               <span className="text-xs text-muted-foreground font-medium font-montserrat">100% Safe</span>
             </div>
             <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-card shadow-card flex items-center justify-center border border-border">
-                <Users className="h-7 w-7 text-foreground" aria-hidden="true" />
+              <div className="w-16 h-16 rounded-2xl bg-secondary shadow-card flex items-center justify-center">
+                <Users className="h-7 w-7 text-primary" aria-hidden="true" />
               </div>
               <span className="text-xs text-muted-foreground font-medium font-montserrat">Certified Staff</span>
             </div>
             <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-card shadow-card flex items-center justify-center border border-border">
-                <Star className="h-7 w-7 text-amber-500" aria-hidden="true" />
+              <div className="w-16 h-16 rounded-2xl bg-secondary shadow-card flex items-center justify-center">
+                <Star className="h-7 w-7 text-gold-accent" aria-hidden="true" />
               </div>
               <span className="text-xs text-muted-foreground font-medium font-montserrat">Top Rated</span>
             </div>
           </div>
 
-          {/* Opening Hours - Clean white card */}
+          {/* Opening Hours */}
           <div className="pt-4">
-            <div className="inline-block bg-card rounded-2xl px-10 py-6 shadow-card border border-border">
-              <p className="text-foreground font-semibold text-sm font-montserrat">Open Daily</p>
+            <div className="inline-block bg-secondary rounded-2xl px-10 py-6 shadow-card">
+              <p className="text-primary font-semibold text-sm font-montserrat">Open Daily</p>
               <p className="text-foreground text-xl font-bold font-montserrat mt-1">9:00 AM - 10:00 PM</p>
             </div>
           </div>

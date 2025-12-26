@@ -45,17 +45,15 @@ const WhyChooseSection = () => {
   return (
     <section className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 font-montserrat">
-            Why Eva Spa?
+            Why <span className="text-primary">Eva Spa</span>?
           </h2>
           <p className="text-base text-muted-foreground font-montserrat font-medium">
             Premium facilities with professional service
           </p>
         </div>
 
-        {/* Compact Features Grid - White Cards */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <Card 
@@ -64,14 +62,14 @@ const WhyChooseSection = () => {
             >
               <CardContent className="p-8 text-center">
                 <div className="mb-5 flex justify-center">
-                  <div className="p-4 bg-secondary rounded-xl text-foreground">
+                  <div className="p-4 bg-secondary rounded-xl text-primary">
                     {feature.icon}
                   </div>
                 </div>
                 
                 <Badge 
                   variant="secondary" 
-                  className="mb-4 bg-muted text-foreground border-0 text-xs font-montserrat font-semibold"
+                  className="mb-4 bg-primary/10 text-primary border-0 text-xs font-montserrat font-semibold"
                 >
                   {feature.badge}
                 </Badge>
