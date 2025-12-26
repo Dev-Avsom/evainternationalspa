@@ -1,0 +1,156 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageCircle, User, Phone, CheckCircle } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+
+const LeadForm = () => {
+  const [formData, setFormData] = useState({ name: "", phone: "" });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const { toast } = useToast();
+
+  const validatePhone = (phone: string) => {
+    const cleaned = phone.replace(/\D/g, '');
+    return cleaned.length >= 10 && cleaned.length <= 12;
+  };
+
+  const validateName = (name: string) => {
+    return name.trim().length >= 2 && name.trim().length <= 50;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const trimmedName = formData.name.trim();
+    const trimmedPhone = formData.phone.trim();
+
+    if (!validateName(trimmedName)) {
+      toast({
+        title: "Invalid Name",
+        description: "Please enter a valid name (2-50 characters)",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (!validatePhone(trimmedPhone)) {
+      toast({
+        title: "Invalid Phone Number",
+        description: "Please enter a valid 10-digit phone number",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Track form submission
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'generate_lead', {
+        event_category: 'Lead Generation',
+        event_label: 'Quick Inquiry Form',
+        value: 1,
+      });
+    }
+
+    // Send to WhatsApp with sanitized data
+    const sanitizedName = trimmedName.replace(/[<>'"]/g, '');
+    const sanitizedPhone = trimmedPhone.replace(/[^0-9+\-\s]/g, '');
+    const message = `Hi! I'm interested in booking a spa session.\n\nName: ${sanitizedName}\nPhone: ${sanitizedPhone}\n\nPlease contact me for booking.`;
+    window.open(`https://wa.me/918884666814?text=${encodeURIComponent(message)}`, "_blank");
+    
+    setIsSubmitted(true);
+    toast({
+      title: "Request Sent!",
+      description: "We'll contact you within 5 minutes",
+    });
+  };
+
+  if (isSubmitted) {
+    return (
+      <section className="py-10 bg-background" aria-labelledby="form-success">
+        <div className="container mx-auto px-4 max-w-md">
+          <Card className="bg-card border-primary/20">
+            <CardContent className="p-6 text-center">
+              <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" aria-hidden="true" />
+              <h2 id="form-success" className="text-xl font-bold text-foreground mb-2">Thank You!</h2>
+              <p className="text-muted-foreground">
+                We have received your request. Our team will contact you within 5 minutes.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="py-10 bg-background" aria-labelledby="form-heading">
+      <div className="container mx-auto px-4 max-w-md">
+        <Card className="bg-card border-primary/20">
+          <CardHeader className="pb-2">
+            <CardTitle id="form-heading" className="text-xl text-center text-foreground">
+              Quick <span className="text-primary">Booking</span>
+            </CardTitle>
+            <p className="text-sm text-muted-foreground text-center">
+              Get a callback within 5 minutes
+            </p>
+          </CardHeader>
+          <CardContent className="p-5">
+            <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+              <div>
+                <label htmlFor="name" className="sr-only">Your Name</label>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="pl-10 h-12 min-h-[48px]"
+                    maxLength={50}
+                    required
+                    aria-required="true"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="phone" className="sr-only">Phone Number</label>
+                <div className="relative">
+                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    className="pl-10 h-12 min-h-[48px]"
+                    maxLength={12}
+                    required
+                    aria-required="true"
+                  />
+                </div>
+              </div>
+              
+              <Button
+                type="submit"
+                className="w-full h-12 min-h-[48px] bg-primary text-primary-foreground hover:bg-primary/90 font-bold"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
+                Get Instant Callback
+              </Button>
+              
+              <p className="text-[10px] text-muted-foreground text-center">
+                By submitting, you agree to our{" "}
+                <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>
+              </p>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  );
+};
+
+export default LeadForm;
