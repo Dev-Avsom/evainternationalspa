@@ -2,109 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Teal Luxury Design System - Sophisticated Spa Aesthetic
+/* Vibrant Teal Spa Design System
    All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Teal Luxury Palette */
-    --background: 180 15% 97%;             /* Soft Teal Tint #F5FAFA */
-    --foreground: 180 25% 15%;             /* Dark Teal #1F3333 */
+    /* Vibrant Teal Palette */
+    --background: 0 0% 100%;               /* Pure White */
+    --foreground: 180 40% 12%;             /* Deep Dark Teal #142D2D */
 
-    --card: 0 0% 100%;                     /* Pure White #FFFFFF */
-    --card-foreground: 180 25% 15%;        /* Dark Teal */
+    --card: 0 0% 100%;                     /* Pure White */
+    --card-foreground: 180 40% 12%;        /* Deep Dark Teal */
 
-    --popover: 0 0% 100%;                  /* White */
-    --popover-foreground: 180 25% 15%;     /* Dark Teal */
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 40% 12%;
 
-    --primary: 174 60% 35%;                /* Deep Teal #247373 */
+    --primary: 174 72% 40%;                /* Vibrant Teal #1A9999 */
     --primary-foreground: 0 0% 100%;       /* White */
 
-    --secondary: 180 20% 94%;              /* Light Teal Wash #EDF5F5 */
-    --secondary-foreground: 180 25% 15%;   /* Dark Teal */
+    --secondary: 174 45% 92%;              /* Light Teal Wash #E5F5F5 */
+    --secondary-foreground: 180 40% 12%;
 
-    --muted: 180 10% 90%;                  /* Soft Grey Teal */
-    --muted-foreground: 180 15% 40%;       /* Medium Teal Grey */
+    --muted: 174 20% 85%;
+    --muted-foreground: 180 20% 35%;
 
-    --accent: 174 65% 28%;                 /* Darker Teal #186060 */
-    --accent-foreground: 0 0% 100%;        /* White */
+    --accent: 174 80% 32%;                 /* Rich Deep Teal #0F7A7A */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 180 15% 88%;                 /* Teal-tinted border */
-    --input: 180 15% 88%;
-    --ring: 174 60% 35%;                   /* Deep Teal */
+    --border: 174 25% 85%;
+    --input: 174 25% 85%;
+    --ring: 174 72% 40%;
 
-    /* Teal palette tokens */
-    --teal-deep: 174 60% 35%;              /* #247373 */
-    --teal-dark: 174 65% 28%;              /* #186060 */
-    --teal-light: 180 20% 94%;             /* #EDF5F5 */
-    --teal-muted: 180 15% 40%;             /* Muted teal */
+    /* Vibrant palette tokens */
+    --teal-vibrant: 174 72% 40%;           /* #1A9999 */
+    --teal-deep: 174 80% 32%;              /* #0F7A7A */
+    --teal-dark: 180 50% 18%;              /* #173D3D */
+    --teal-light: 174 45% 92%;             /* #E5F5F5 */
+    --teal-hero: 174 65% 25%;              /* Hero background */
     --whatsapp-green: 142 70% 49%;         /* #25D366 */
-    --gold-accent: 43 74% 49%;             /* Gold for star ratings */
+    --gold-accent: 43 90% 55%;             /* Vibrant Gold #F5B820 */
+    --coral-warm: 16 80% 60%;              /* Warm accent #E87A5C */
     
-    /* Soft Teal Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(180 15% 97%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(180 20% 94%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(180 15% 97%) 0%, hsl(180 20% 94%) 100%);
+    /* Rich Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(174 80% 28%) 0%, hsl(174 65% 38%) 50%, hsl(180 50% 30%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(174 45% 96%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(174 72% 40%) 0%, hsl(174 80% 32%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 90% 55%) 0%, hsl(38 85% 50%) 100%);
     
-    /* Refined Shadows with Teal Tint */
-    --shadow-luxury: 0 10px 40px -10px hsl(180 30% 20% / 0.12);
-    --shadow-card: 0 4px 20px -6px hsl(180 30% 20% / 0.08);
-    --shadow-button: 0 4px 14px -4px hsl(174 60% 35% / 0.3);
-    --shadow-glow: 0 0 30px hsl(174 60% 35% / 0.15);
-    --shadow-top: 0 -4px 20px -6px hsl(180 30% 20% / 0.08);
+    /* Impactful Shadows */
+    --shadow-luxury: 0 20px 50px -15px hsl(174 60% 25% / 0.25);
+    --shadow-card: 0 8px 30px -8px hsl(174 60% 25% / 0.15);
+    --shadow-button: 0 8px 20px -6px hsl(174 72% 40% / 0.4);
+    --shadow-glow: 0 0 40px hsl(174 72% 40% / 0.3);
+    --shadow-top: 0 -4px 25px -5px hsl(174 60% 25% / 0.15);
 
     --radius: 1rem;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 180 25% 15%;
-    --sidebar-primary: 174 60% 35%;
+    --sidebar-foreground: 180 40% 12%;
+    --sidebar-primary: 174 72% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 180 20% 94%;
-    --sidebar-accent-foreground: 180 25% 15%;
-    --sidebar-border: 180 15% 88%;
-    --sidebar-ring: 174 60% 35%;
+    --sidebar-accent: 174 45% 92%;
+    --sidebar-accent-foreground: 180 40% 12%;
+    --sidebar-border: 174 25% 85%;
+    --sidebar-ring: 174 72% 40%;
   }
 
   .dark {
-    --background: 180 25% 8%;
-    --foreground: 180 10% 95%;
+    --background: 180 35% 8%;
+    --foreground: 174 20% 95%;
 
-    --card: 180 20% 12%;
-    --card-foreground: 180 10% 95%;
+    --card: 180 30% 12%;
+    --card-foreground: 174 20% 95%;
 
-    --popover: 180 20% 12%;
-    --popover-foreground: 180 10% 95%;
+    --popover: 180 30% 12%;
+    --popover-foreground: 174 20% 95%;
 
-    --primary: 174 50% 45%;
+    --primary: 174 65% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 180 20% 18%;
-    --secondary-foreground: 180 10% 95%;
+    --secondary: 180 25% 18%;
+    --secondary-foreground: 174 20% 95%;
 
-    --muted: 180 15% 22%;
-    --muted-foreground: 180 10% 65%;
+    --muted: 180 20% 22%;
+    --muted-foreground: 174 15% 65%;
 
-    --accent: 174 45% 50%;
+    --accent: 174 60% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 180 15% 20%;
-    --input: 180 15% 20%;
-    --ring: 174 50% 45%;
-    --sidebar-background: 180 20% 10%;
-    --sidebar-foreground: 180 10% 95%;
-    --sidebar-primary: 174 50% 45%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 180 20% 15%;
-    --sidebar-accent-foreground: 180 10% 95%;
-    --sidebar-border: 180 15% 20%;
-    --sidebar-ring: 174 50% 45%;
+    --border: 180 20% 20%;
+    --input: 180 20% 20%;
+    --ring: 174 65% 50%;
   }
 }
 
@@ -123,4 +118,62 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-luxury;
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-up-delay-1 {
+    animation: fadeUp 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-up-delay-2 {
+    animation: fadeUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-up-delay-3 {
+    animation: fadeUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(174 72% 40% / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(174 72% 40% / 0.6);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
