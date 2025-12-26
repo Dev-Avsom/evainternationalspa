@@ -55,13 +55,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'teal-vibrant': 'hsl(var(--teal-vibrant))',
+				header: {
+					DEFAULT: 'hsl(var(--header))',
+					foreground: 'hsl(var(--header-foreground))'
+				},
 				'teal-deep': 'hsl(var(--teal-deep))',
-				'teal-dark': 'hsl(var(--teal-dark))',
+				'teal-rich': 'hsl(var(--teal-rich))',
 				'teal-light': 'hsl(var(--teal-light))',
 				'whatsapp-green': 'hsl(var(--whatsapp-green))',
 				'gold-accent': 'hsl(var(--gold-accent))',
-				'coral-warm': 'hsl(var(--coral-warm))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -73,17 +75,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
-			backgroundImage: {
-				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-card': 'var(--gradient-card)',
-				'gradient-cta': 'var(--gradient-cta)',
-				'gradient-gold': 'var(--gradient-gold)',
-			},
 			boxShadow: {
 				'luxury': 'var(--shadow-luxury)',
 				'card': 'var(--shadow-card)',
 				'button': 'var(--shadow-button)',
-				'glow': 'var(--shadow-glow)',
 				'top': 'var(--shadow-top)',
 			},
 			borderRadius: {

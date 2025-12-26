@@ -50,7 +50,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary" aria-labelledby="pricing-heading">
+    <section id="pricing" className="py-20 bg-secondary" aria-labelledby="pricing-heading">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold font-montserrat mb-4">
@@ -68,10 +68,10 @@ const PricingSection = () => {
           {packages.map((pkg, index) => (
             <Card 
               key={index} 
-              className={`relative overflow-hidden rounded-2xl hover-lift ${pkg.popular ? 'border-2 border-primary shadow-glow bg-gradient-to-b from-card to-primary/5' : 'border border-border shadow-card bg-card'}`}
+              className={`relative overflow-hidden rounded-2xl hover-lift ${pkg.popular ? 'border-2 border-primary shadow-luxury bg-card' : 'border border-border shadow-card bg-card'}`}
             >
               {pkg.popular && (
-                <div className="absolute top-0 left-0 right-0 bg-gradient-cta text-primary-foreground px-4 py-2 text-center">
+                <div className="absolute top-0 left-0 right-0 bg-primary text-primary-foreground px-4 py-2 text-center">
                   <span className="text-sm font-bold flex items-center justify-center gap-1.5 font-montserrat">
                     <Sparkles className="h-4 w-4" aria-hidden="true" />
                     Most Popular

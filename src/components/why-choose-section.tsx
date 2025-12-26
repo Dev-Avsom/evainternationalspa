@@ -49,7 +49,7 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="why-choose" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold font-montserrat mb-4">
