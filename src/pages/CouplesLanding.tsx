@@ -171,7 +171,7 @@ const CouplesLanding = () => {
               </Button>
               <Button
                 onClick={handleWhatsApp}
-                variant="hero"
+                variant="whatsapp"
                 size="xl"
                 className="w-full sm:w-auto text-sm md:text-base"
               >
@@ -268,7 +268,7 @@ const CouplesLanding = () => {
                       <Phone className="mr-2 h-4 w-4" />
                       Book {pkg.title}
                     </Button>
-                    <Button onClick={handleWhatsApp} variant="hero" size="sm" className="w-full">
+                    <Button onClick={handleWhatsApp} variant="whatsapp" size="sm" className="w-full">
                       <MessageCircle className="mr-2 h-4 w-4" />
                       WhatsApp Details
                     </Button>
@@ -366,18 +366,18 @@ const CouplesLanding = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 onClick={handleCall}
-                variant="hero"
+                variant="call"
                 size="xl"
-                className="w-full sm:w-auto bg-white text-navy-deep hover:bg-white/90"
+                className="w-full sm:w-auto"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Book Your Romantic Retreat
               </Button>
               <Button
                 onClick={handleWhatsApp}
-                variant="luxury"
+                variant="whatsapp"
                 size="xl"
-                className="w-full sm:w-auto bg-gold text-maroon hover:bg-gold/90"
+                className="w-full sm:w-auto"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp for Special Packages

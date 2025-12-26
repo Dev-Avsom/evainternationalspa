@@ -5,25 +5,25 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border py-10 pb-20" role="contentinfo">
+    <footer className="bg-white border-t border-border py-12 pb-24" role="contentinfo">
       <div className="container mx-auto px-4">
         {/* Safety Disclaimer */}
-        <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-8 text-center">
+        <div className="bg-secondary border border-border rounded-2xl p-5 mb-10 text-center">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Shield className="h-5 w-5 text-primary" aria-hidden="true" />
-            <span className="font-semibold text-foreground text-sm">Professional Services Only</span>
+            <span className="font-semibold text-foreground text-sm font-playfair">Professional Services Only</span>
           </div>
-          <p className="text-xs text-muted-foreground max-w-xl mx-auto">
+          <p className="text-xs text-muted-foreground max-w-xl mx-auto font-lato">
             We provide strictly professional therapeutic massage and spa services only. 
             All therapists are certified professionals trained in therapeutic techniques.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Contact Information */}
           <div>
-            <h3 className="font-bold text-foreground mb-4">Contact Us</h3>
-            <address className="not-italic space-y-3">
+            <h3 className="font-bold text-foreground mb-5 font-playfair">Contact Us</h3>
+            <address className="not-italic space-y-4 font-lato">
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-1 shrink-0" aria-hidden="true" />
                 <div>
@@ -48,8 +48,8 @@ const Footer = () => {
 
           {/* Physical Address */}
           <div>
-            <h3 className="font-bold text-foreground mb-4">Our Location</h3>
-            <address className="not-italic">
+            <h3 className="font-bold text-foreground mb-5 font-playfair">Our Location</h3>
+            <address className="not-italic font-lato">
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-1 shrink-0" aria-hidden="true" />
                 <div>
@@ -74,9 +74,9 @@ const Footer = () => {
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-bold text-foreground mb-4">Legal</h3>
-            <nav aria-label="Legal links">
-              <ul className="space-y-2">
+            <h3 className="font-bold text-foreground mb-5 font-playfair">Legal</h3>
+            <nav aria-label="Legal links" className="font-lato">
+              <ul className="space-y-3">
                 <li>
                   <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Privacy Policy
@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright & Credits */}
-        <div className="border-t border-border pt-6 text-center space-y-2">
+        <div className="border-t border-border pt-8 text-center space-y-2 font-lato">
           <p className="text-xs text-muted-foreground">
             © {currentYear} Eva International Spa. All rights reserved.
           </p>
