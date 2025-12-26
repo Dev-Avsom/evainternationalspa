@@ -14,14 +14,14 @@ const HeroSection = () => {
 
   return (
     <header className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Deep Rich Teal Background */}
-      <div className="absolute inset-0 bg-primary"></div>
-      
-      {/* Background Image Overlay */}
+      {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 mix-blend-overlay"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
+      
+      {/* Dark Teal Overlay for readability */}
+      <div className="absolute inset-0 bg-primary/85"></div>
       
       {/* Decorative Elements */}
       <div className="absolute top-40 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
