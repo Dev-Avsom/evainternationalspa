@@ -29,110 +29,97 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center pt-8 pb-36">
-        <div className="max-w-3xl mx-auto space-y-8">
-          {/* Logo with elegant styling */}
-          <div className="flex justify-center mb-6 animate-fade-up">
-            <div className="bg-white rounded-2xl p-5 shadow-luxury">
-              <img 
-                src="/lovable-uploads/8472c527-b267-4b77-8b2c-a6664cc5a617.png" 
-                alt="EVA International Spa - Premium Body Massage & Spa in Koramangala" 
-                className="h-20 md:h-28 w-auto"
-                width="200"
-                height="112"
-              />
-            </div>
-          </div>
-
+        <div className="max-w-3xl mx-auto space-y-6">
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight animate-fade-up-delay-1">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight animate-fade-up">
             Premium <span className="text-gold-accent">Body Massage & Spa</span> in Koramangala
           </h1>
           
           {/* Sub-headline */}
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-montserrat font-medium animate-fade-up-delay-2">
+          <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-montserrat font-medium animate-fade-up-delay-1">
             Best Spa Near Me for Relaxation & Pain Relief Therapy. Certified Therapists in a 100% Safe & Hygienic Wellness Center.
           </p>
 
           {/* Primary CTA Button */}
-          <div className="pt-4 animate-fade-up-delay-3">
+          <div className="pt-2 animate-fade-up-delay-2">
             <Button
               onClick={handleWhatsApp}
               variant="gold"
-              size="xl"
-              className="w-full sm:w-auto text-lg font-bold px-14 py-7 h-auto min-h-[64px] pulse-glow"
+              size="lg"
+              className="w-full sm:w-auto text-base md:text-lg font-bold px-8 md:px-14 py-5 md:py-7 h-auto min-h-[52px] md:min-h-[64px] pulse-glow"
               aria-label="Book therapy session starting at Rs 1999"
             >
-              <Sparkles className="mr-2 h-6 w-6" aria-hidden="true" />
+              <Sparkles className="mr-2 h-5 w-5 md:h-6 md:w-6" aria-hidden="true" />
               Book Therapy @ ₹1,999
             </Button>
           </div>
 
           {/* Trust Badge */}
-          <div className="flex items-center justify-center gap-2 pt-4">
-            <div className="flex flex-wrap items-center justify-center gap-4 bg-white rounded-full px-8 py-4 shadow-luxury">
-              <span className="flex items-center gap-2">
-                <Star className="h-5 w-5 text-gold-accent fill-current" aria-hidden="true" />
-                <span className="font-bold text-foreground text-sm font-montserrat">4.8/5 Google Rating</span>
+          <div className="flex items-center justify-center gap-2 pt-2">
+            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 bg-white rounded-full px-5 md:px-8 py-3 md:py-4 shadow-luxury">
+              <span className="flex items-center gap-1.5 md:gap-2">
+                <Star className="h-4 w-4 md:h-5 md:w-5 text-gold-accent fill-current" aria-hidden="true" />
+                <span className="font-bold text-foreground text-xs md:text-sm font-montserrat">4.8/5 Google Rating</span>
               </span>
               <span className="text-muted mx-1 hidden sm:inline">|</span>
-              <span className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-primary" aria-hidden="true" />
-                <span className="font-bold text-foreground text-sm font-montserrat">5000+ Happy Clients</span>
+              <span className="flex items-center gap-1.5 md:gap-2">
+                <Users className="h-4 w-4 md:h-5 md:w-5 text-primary" aria-hidden="true" />
+                <span className="font-bold text-foreground text-xs md:text-sm font-montserrat">5000+ Happy Clients</span>
               </span>
             </div>
           </div>
 
           {/* Secondary CTAs */}
-          <nav className="flex flex-col sm:flex-row gap-4 justify-center pt-4" aria-label="Contact options">
+          <nav className="flex flex-col sm:flex-row gap-3 justify-center pt-2" aria-label="Contact options">
             <Button
               onClick={handleCall}
               variant="outline"
-              size="lg"
-              className="min-h-[56px] min-w-[220px] border-white text-white hover:bg-white hover:text-primary"
+              size="default"
+              className="min-h-[48px] md:min-h-[56px] min-w-[200px] md:min-w-[220px] border-white text-white hover:bg-white hover:text-primary text-sm md:text-base"
               aria-label="Call us at 8884666814"
             >
-              <Phone className="mr-2 h-5 w-5" aria-hidden="true" />
+              <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
               Call Now - 8884666814
             </Button>
             <Button
               onClick={handleWhatsApp}
               variant="whatsapp"
-              size="lg"
-              className="min-h-[56px] min-w-[220px]"
+              size="default"
+              className="min-h-[48px] md:min-h-[56px] min-w-[200px] md:min-w-[220px] text-sm md:text-base"
               aria-label="Contact via WhatsApp for quick response"
             >
-              <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
+              <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
               WhatsApp (Quick Response)
             </Button>
           </nav>
 
           {/* Quick Trust Icons */}
-          <div className="grid grid-cols-3 gap-6 pt-10 max-w-md mx-auto">
-            <div className="flex flex-col items-center gap-3 text-center hover-scale">
-              <div className="w-16 h-16 rounded-2xl bg-white shadow-card flex items-center justify-center">
-                <Shield className="h-7 w-7 text-primary" aria-hidden="true" />
+          <div className="grid grid-cols-3 gap-4 md:gap-6 pt-8 max-w-sm md:max-w-md mx-auto">
+            <div className="flex flex-col items-center gap-2 md:gap-3 text-center hover-scale">
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white shadow-card flex items-center justify-center">
+                <Shield className="h-5 w-5 md:h-7 md:w-7 text-primary" aria-hidden="true" />
               </div>
-              <span className="text-xs text-white/90 font-semibold font-montserrat">100% Safe</span>
+              <span className="text-[10px] md:text-xs text-white/90 font-semibold font-montserrat">100% Safe</span>
             </div>
-            <div className="flex flex-col items-center gap-3 text-center hover-scale">
-              <div className="w-16 h-16 rounded-2xl bg-white shadow-card flex items-center justify-center">
-                <Users className="h-7 w-7 text-primary" aria-hidden="true" />
+            <div className="flex flex-col items-center gap-2 md:gap-3 text-center hover-scale">
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white shadow-card flex items-center justify-center">
+                <Users className="h-5 w-5 md:h-7 md:w-7 text-primary" aria-hidden="true" />
               </div>
-              <span className="text-xs text-white/90 font-semibold font-montserrat">Certified Staff</span>
+              <span className="text-[10px] md:text-xs text-white/90 font-semibold font-montserrat">Certified Staff</span>
             </div>
-            <div className="flex flex-col items-center gap-3 text-center hover-scale">
-              <div className="w-16 h-16 rounded-2xl bg-white shadow-card flex items-center justify-center">
-                <Star className="h-7 w-7 text-gold-accent" aria-hidden="true" />
+            <div className="flex flex-col items-center gap-2 md:gap-3 text-center hover-scale">
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white shadow-card flex items-center justify-center">
+                <Star className="h-5 w-5 md:h-7 md:w-7 text-gold-accent" aria-hidden="true" />
               </div>
-              <span className="text-xs text-white/90 font-semibold font-montserrat">Top Rated</span>
+              <span className="text-[10px] md:text-xs text-white/90 font-semibold font-montserrat">Top Rated</span>
             </div>
           </div>
 
           {/* Opening Hours */}
-          <div className="pt-4">
-            <div className="inline-block bg-white rounded-2xl px-10 py-5 shadow-luxury">
-              <p className="text-primary font-bold text-sm font-montserrat">Open Daily</p>
-              <p className="text-foreground text-xl font-bold font-montserrat mt-1">9:00 AM - 10:00 PM</p>
+          <div className="pt-2">
+            <div className="inline-block bg-white rounded-xl md:rounded-2xl px-6 md:px-10 py-4 md:py-5 shadow-luxury">
+              <p className="text-primary font-bold text-xs md:text-sm font-montserrat">Open Daily</p>
+              <p className="text-foreground text-lg md:text-xl font-bold font-montserrat mt-1">9:00 AM - 10:00 PM</p>
             </div>
           </div>
         </div>
