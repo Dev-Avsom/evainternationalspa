@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 font-lato",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 font-montserrat",
   {
     variants: {
       variant: {
@@ -18,14 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-full",
         ghost: "hover:bg-accent/10 hover:text-accent-foreground rounded-full",
         link: "text-primary underline-offset-4 hover:underline",
-        call: "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full shadow-button font-bold text-base",
-        whatsapp: "bg-[#25D366] text-white hover:bg-[#20BD5A] rounded-full shadow-button font-bold text-base",
-        copper: "bg-accent text-accent-foreground hover:bg-accent/90 rounded-full shadow-luxury",
+        // Deep Charcoal Call Button - High contrast on pastel
+        call: "bg-deep-charcoal text-white hover:bg-deep-charcoal/90 rounded-full shadow-button font-semibold text-base",
+        // WhatsApp Green with white border for clean look
+        whatsapp: "bg-whatsapp-green text-white hover:bg-whatsapp-green/90 rounded-full shadow-button font-semibold text-base border-2 border-white",
+        // Pastel Coral for Book buttons - gentle attention
+        coral: "bg-accent text-accent-foreground hover:bg-accent/90 rounded-full shadow-button font-semibold",
       },
       size: {
-        default: "h-10 px-6 py-2",
-        sm: "h-9 px-4",
-        lg: "h-12 px-8",
+        default: "h-11 px-6 py-2 text-sm",
+        sm: "h-10 px-4 text-sm",
+        lg: "h-12 px-8 text-base",
         xl: "h-14 px-10 text-base",
         icon: "h-10 w-10",
       },

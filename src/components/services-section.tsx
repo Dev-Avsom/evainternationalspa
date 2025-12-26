@@ -32,34 +32,34 @@ const ServicesSection = () => {
   ];
 
   const ServiceCard = ({ service }: { service: { title: string; image: string; duration: string } }) => (
-    <article className="bg-white rounded-2xl overflow-hidden border border-border shadow-card hover:shadow-luxury transition-all duration-300">
-      <div className="relative h-28 md:h-36 overflow-hidden">
+    <article className="bg-card rounded-3xl overflow-hidden shadow-card hover:shadow-luxury transition-all duration-300">
+      <div className="relative h-32 md:h-40 overflow-hidden rounded-t-3xl">
         <img 
           src={service.image} 
           alt={`${service.title} - Professional massage therapy at Eva International Spa Koramangala`}
           className="w-full h-full object-cover"
           loading="lazy"
           width="300"
-          height="144"
+          height="160"
         />
       </div>
       
-      <div className="p-4">
-        <h3 className="font-semibold text-foreground text-sm md:text-base font-playfair">
+      <div className="p-5">
+        <h3 className="font-bold text-foreground text-sm md:text-base font-montserrat">
           {service.title}
         </h3>
-        <div className="flex items-center gap-1 text-muted-foreground text-xs mb-3 font-lato">
+        <div className="flex items-center gap-1 text-muted-foreground text-xs mb-4 font-montserrat font-light mt-1">
           <Clock className="h-3 w-3" aria-hidden="true" />
           <span>{service.duration}</span>
         </div>
         <Button 
           onClick={() => handleWhatsApp(service.title)}
-          variant="call"
+          variant="coral"
           size="sm"
-          className="w-full h-11 text-xs min-h-[44px]"
+          className="w-full h-11 text-sm min-h-[44px]"
           aria-label={`Book ${service.title} via WhatsApp`}
         >
-          <MessageCircle className="mr-1 h-3 w-3" aria-hidden="true" />
+          <MessageCircle className="mr-1 h-4 w-4" aria-hidden="true" />
           Book Now
         </Button>
       </div>
@@ -67,17 +67,17 @@ const ServicesSection = () => {
   );
 
   return (
-    <section className="py-16 bg-secondary" aria-labelledby="services-heading">
+    <section className="py-20 bg-background" aria-labelledby="services-heading">
       <div className="container mx-auto px-4">
         {/* Deep Tissue Massage Services */}
-        <div className="mb-14">
-          <h2 id="services-heading" className="text-2xl md:text-4xl font-bold text-foreground mb-2 text-center font-playfair">
+        <div className="mb-16">
+          <h2 id="services-heading" className="text-2xl md:text-4xl font-bold text-foreground mb-3 text-center font-montserrat">
             Deep Tissue <span className="text-primary">Massage Services</span>
           </h2>
-          <p className="text-sm text-muted-foreground text-center mb-8 font-lato max-w-lg mx-auto">
+          <p className="text-sm text-muted-foreground text-center mb-10 font-montserrat font-light max-w-lg mx-auto">
             Pain relief therapy for chronic tension and muscle recovery
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
             {deepTissueServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
             ))}
@@ -85,14 +85,14 @@ const ServicesSection = () => {
         </div>
 
         {/* Aromatherapy Packages */}
-        <div className="mb-14">
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-2 text-center font-playfair">
+        <div className="mb-16">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 text-center font-montserrat">
             Aromatherapy <span className="text-primary">Packages</span>
           </h2>
-          <p className="text-sm text-muted-foreground text-center mb-8 font-lato max-w-lg mx-auto">
+          <p className="text-sm text-muted-foreground text-center mb-10 font-montserrat font-light max-w-lg mx-auto">
             Holistic wellness center treatments with natural essential oils
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
             {aromatherapyServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
             ))}
@@ -101,13 +101,13 @@ const ServicesSection = () => {
 
         {/* Couple Spa Deals */}
         <div>
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-2 text-center font-playfair">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 text-center font-montserrat">
             Couple Spa <span className="text-primary">Deals</span>
           </h2>
-          <p className="text-sm text-muted-foreground text-center mb-8 font-lato max-w-lg mx-auto">
+          <p className="text-sm text-muted-foreground text-center mb-10 font-montserrat font-light max-w-lg mx-auto">
             Romantic spa experience for two at the best spa near me in Koramangala
           </p>
-          <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-lg mx-auto">
+          <div className="grid grid-cols-2 gap-5 md:gap-8 max-w-lg mx-auto">
             {coupleServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
             ))}

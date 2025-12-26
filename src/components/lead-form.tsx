@@ -67,13 +67,13 @@ const LeadForm = () => {
 
   if (isSubmitted) {
     return (
-      <section className="py-12 bg-background" aria-labelledby="form-success">
+      <section className="py-16 bg-secondary" aria-labelledby="form-success">
         <div className="container mx-auto px-4 max-w-md">
-          <Card className="bg-white border-border shadow-card rounded-2xl">
-            <CardContent className="p-8 text-center">
-              <CheckCircle className="h-14 w-14 text-primary mx-auto mb-4" aria-hidden="true" />
-              <h2 id="form-success" className="text-xl font-bold text-foreground mb-2 font-playfair">Thank You!</h2>
-              <p className="text-muted-foreground font-lato">
+          <Card className="bg-card border-0 shadow-card rounded-3xl">
+            <CardContent className="p-10 text-center">
+              <CheckCircle className="h-14 w-14 text-primary mx-auto mb-5" aria-hidden="true" />
+              <h2 id="form-success" className="text-xl font-bold text-foreground mb-3 font-montserrat">Thank You!</h2>
+              <p className="text-muted-foreground font-montserrat font-light">
                 We have received your request. Our team will contact you within 5 minutes.
               </p>
             </CardContent>
@@ -84,19 +84,19 @@ const LeadForm = () => {
   }
 
   return (
-    <section className="py-12 bg-background" aria-labelledby="form-heading">
+    <section className="py-16 bg-secondary" aria-labelledby="form-heading">
       <div className="container mx-auto px-4 max-w-md">
-        <Card className="bg-white border-border shadow-card rounded-2xl">
-          <CardHeader className="pb-2">
-            <CardTitle id="form-heading" className="text-xl text-center text-foreground font-playfair">
+        <Card className="bg-card border-0 shadow-card rounded-3xl">
+          <CardHeader className="pb-3">
+            <CardTitle id="form-heading" className="text-xl text-center text-foreground font-montserrat">
               Quick <span className="text-primary">Booking</span>
             </CardTitle>
-            <p className="text-sm text-muted-foreground text-center font-lato">
+            <p className="text-sm text-muted-foreground text-center font-montserrat font-light">
               Get a callback within 5 minutes
             </p>
           </CardHeader>
-          <CardContent className="p-6">
-            <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+          <CardContent className="p-7">
+            <form onSubmit={handleSubmit} className="space-y-5" noValidate>
               <div>
                 <label htmlFor="name" className="sr-only">Your Name</label>
                 <div className="relative">
@@ -107,7 +107,7 @@ const LeadForm = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-lato"
+                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-montserrat font-light"
                     maxLength={50}
                     required
                     aria-required="true"
@@ -125,7 +125,7 @@ const LeadForm = () => {
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-lato"
+                    className="pl-11 h-12 min-h-[48px] rounded-full border-border font-montserrat font-light"
                     maxLength={12}
                     required
                     aria-required="true"
@@ -135,14 +135,14 @@ const LeadForm = () => {
               
               <Button
                 type="submit"
-                variant="call"
-                className="w-full h-12 min-h-[48px] font-bold"
+                variant="coral"
+                className="w-full h-12 min-h-[48px] font-semibold"
               >
                 <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
                 Get Instant Callback
               </Button>
               
-              <p className="text-[10px] text-muted-foreground text-center font-lato">
+              <p className="text-[10px] text-muted-foreground text-center font-montserrat font-light">
                 By submitting, you agree to our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>
               </p>

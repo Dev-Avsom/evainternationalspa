@@ -69,35 +69,35 @@ const TrustBadges = () => {
   ];
 
   return (
-    <section className="py-14 bg-background">
+    <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
-        {/* Trust Badges - Clean Grid */}
-        <div className="grid grid-cols-4 gap-3 mb-14">
+        {/* Trust Badges - Clean Grid with White Cards */}
+        <div className="grid grid-cols-4 gap-4 mb-16">
           {badges.map((badge, index) => (
-            <div key={index} className="text-center bg-white rounded-2xl p-4 shadow-card border border-border">
-              <badge.icon className={`h-6 w-6 mx-auto mb-2 ${badge.color}`} />
-              <p className="font-bold text-foreground text-xs font-playfair">{badge.title}</p>
-              <p className="text-[10px] text-muted-foreground font-lato">{badge.subtitle}</p>
+            <div key={index} className="text-center bg-card rounded-3xl p-5 shadow-card">
+              <badge.icon className={`h-6 w-6 mx-auto mb-3 ${badge.color}`} />
+              <p className="font-bold text-foreground text-xs font-montserrat">{badge.title}</p>
+              <p className="text-[10px] text-muted-foreground font-montserrat font-light">{badge.subtitle}</p>
             </div>
           ))}
         </div>
 
         {/* Trust & Safety Section */}
-        <div className="mb-14">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8 font-playfair">
+        <div className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-10 font-montserrat">
             Your <span className="text-primary">Safety</span> is Our Priority
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {safetyFeatures.map((feature, index) => (
-              <Card key={index} className="bg-white border-border shadow-card rounded-2xl">
-                <CardContent className="p-5 flex items-start gap-4">
-                  <div className="bg-secondary rounded-full p-3 shrink-0">
+              <Card key={index} className="bg-card border-0 shadow-card rounded-3xl">
+                <CardContent className="p-6 flex items-start gap-4">
+                  <div className="bg-secondary rounded-2xl p-3 shrink-0">
                     <feature.icon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground text-sm font-playfair">{feature.title}</h3>
-                    <p className="text-xs text-muted-foreground font-lato">{feature.description}</p>
+                    <h3 className="font-semibold text-foreground text-sm font-montserrat">{feature.title}</h3>
+                    <p className="text-xs text-muted-foreground font-montserrat font-light mt-1">{feature.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -105,27 +105,27 @@ const TrustBadges = () => {
           </div>
         </div>
 
-        {/* Testimonials - Clean Cards */}
+        {/* Testimonials - Clean White Cards */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-6 font-playfair">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-8 font-montserrat">
             What <span className="text-primary">Clients Say</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-white border-border shadow-card rounded-2xl">
-                <CardContent className="p-5">
-                  <div className="flex items-center gap-1 mb-3">
+              <Card key={index} className="bg-card border-0 shadow-card rounded-3xl">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 text-accent fill-current" />
                     ))}
                   </div>
-                  <p className="text-muted-foreground text-sm mb-4 italic font-lato leading-relaxed">
+                  <p className="text-muted-foreground text-sm mb-5 italic font-montserrat font-light leading-relaxed">
                     "{testimonial.text}"
                   </p>
                   <div className="flex justify-between items-center">
-                    <p className="font-semibold text-foreground text-sm font-playfair">{testimonial.name}</p>
-                    <p className="text-[10px] text-primary font-lato">{testimonial.service}</p>
+                    <p className="font-semibold text-foreground text-sm font-montserrat">{testimonial.name}</p>
+                    <p className="text-[10px] text-primary font-montserrat">{testimonial.service}</p>
                   </div>
                 </CardContent>
               </Card>
