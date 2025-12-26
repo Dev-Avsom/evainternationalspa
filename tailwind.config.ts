@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +55,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'spa-green-deep': 'hsl(var(--spa-green-deep))',
+				'spa-green-card': 'hsl(var(--spa-green-card))',
+				'spa-green-light': 'hsl(var(--spa-green-light))',
+				'spa-gold': 'hsl(var(--spa-gold))',
+				'spa-gold-light': 'hsl(var(--spa-gold-light))',
+				'spa-gold-dark': 'hsl(var(--spa-gold-dark))',
+				'spa-beige': 'hsl(var(--spa-beige))',
+				'spa-cream': 'hsl(var(--spa-cream))',
+				'spa-white': 'hsl(var(--spa-white))',
 				'navy-deep': 'hsl(var(--navy-deep))',
 				'navy-card': 'hsl(var(--navy-card))',
 				'navy-border': 'hsl(var(--navy-border))',
@@ -61,11 +73,8 @@ export default {
 				'gold-eva-bright': 'hsl(var(--gold-eva-bright))',
 				'white-pure': 'hsl(var(--white-pure))',
 				'cream-soft': 'hsl(var(--cream-soft))',
-				'spa-gold': 'hsl(var(--spa-gold))',
-				'spa-gold-light': 'hsl(var(--spa-gold-light))',
 				'spa-dark': 'hsl(var(--spa-dark))',
 				'spa-navy': 'hsl(var(--spa-navy))',
-				'spa-cream': 'hsl(var(--spa-cream))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

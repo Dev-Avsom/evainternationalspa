@@ -1,126 +1,136 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Shield, Users, Clock, Award, CheckCircle } from "lucide-react";
+import { Star, Shield, UserCheck, Sparkles, Droplets, ShowerHead } from "lucide-react";
 
 const TrustBadges = () => {
   const badges = [
     {
       icon: Star,
       title: "4.8/5 Rating",
-      subtitle: "5000+ Happy Clients",
+      subtitle: "Google Reviews",
       color: "text-yellow-500"
     },
     {
       icon: Shield,
       title: "100% Safe",
-      subtitle: "Hygiene Certified",
+      subtitle: "Hygienic Space",
       color: "text-green-500"
     },
     {
-      icon: Users,
-      title: "Expert Therapists",
-      subtitle: "Trained Professionals",
+      icon: UserCheck,
+      title: "Certified",
+      subtitle: "Therapists",
       color: "text-primary"
     },
     {
-      icon: Clock,
-      title: "Open 7 Days",
-      subtitle: "9 AM - 10 PM",
-      color: "text-blue-500"
+      icon: Sparkles,
+      title: "5000+",
+      subtitle: "Happy Clients",
+      color: "text-primary"
+    }
+  ];
+
+  const safetyFeatures = [
+    {
+      icon: UserCheck,
+      title: "Certified Therapists",
+      description: "All our therapists are professionally trained and certified"
+    },
+    {
+      icon: Droplets,
+      title: "Disposable Accessories",
+      description: "Fresh disposable items used for every client"
+    },
+    {
+      icon: ShowerHead,
+      title: "Shower Facility",
+      description: "Private shower rooms with premium amenities"
     }
   ];
 
   const testimonials = [
     {
       name: "Priya M.",
-      text: "Amazing experience! The Thai massage was exactly what I needed. Professional service and clean environment.",
+      text: "Amazing experience! Professional service and clean environment.",
       rating: 5,
       service: "Thai Massage"
     },
     {
       name: "Rahul S.",
-      text: "Best spa in Koramangala! My wife and I had the couples package - absolutely fantastic. Highly recommend!",
+      text: "Best spa in Koramangala! Highly recommend the couples package.",
       rating: 5,
-      service: "Couples Package"
+      service: "Couples Spa"
     },
     {
       name: "Sneha K.",
-      text: "Great value for money. The deep tissue massage helped with my back pain. Will definitely come back!",
+      text: "Great value. The deep tissue massage helped my back pain.",
       rating: 5,
       service: "Deep Tissue"
     }
   ];
 
   return (
-    <section className="py-16 bg-gradient-card">
+    <section className="py-10 bg-gradient-card">
       <div className="container mx-auto px-4">
-        {/* Trust Badges */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        {/* Trust Badges - Compact Grid */}
+        <div className="grid grid-cols-4 gap-2 mb-10">
           {badges.map((badge, index) => (
-            <Card key={index} className="bg-background/50 border-primary/20 text-center">
-              <CardContent className="p-4">
-                <badge.icon className={`h-8 w-8 mx-auto mb-2 ${badge.color}`} />
-                <p className="font-bold text-foreground text-sm">{badge.title}</p>
-                <p className="text-xs text-muted-foreground">{badge.subtitle}</p>
-              </CardContent>
-            </Card>
+            <div key={index} className="text-center">
+              <badge.icon className={`h-6 w-6 mx-auto mb-1 ${badge.color}`} />
+              <p className="font-bold text-foreground text-xs">{badge.title}</p>
+              <p className="text-[10px] text-muted-foreground">{badge.subtitle}</p>
+            </div>
           ))}
         </div>
 
-        {/* Social Proof Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground mb-4">
-            What Our <span className="text-primary font-bold">Clients Say</span>
+        {/* Trust & Safety Section */}
+        <div className="mb-10">
+          <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-6">
+            Your <span className="text-primary">Safety</span> is Our Priority
           </h2>
-          <div className="w-24 h-px bg-gradient-gold mx-auto mb-6"></div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {safetyFeatures.map((feature, index) => (
+              <Card key={index} className="bg-card border-primary/20">
+                <CardContent className="p-4 flex items-start gap-3">
+                  <div className="bg-primary/10 rounded-full p-2 shrink-0">
+                    <feature.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground text-sm">{feature.title}</h3>
+                    <p className="text-xs text-muted-foreground">{feature.description}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
-        {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-background border-primary/20">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-3">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 text-yellow-500 fill-current" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground text-sm mb-4 italic">
-                  "{testimonial.text}"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-xs text-primary">{testimonial.service}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Key Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="bg-primary/10 border-primary/30">
-            <CardContent className="p-6 text-center">
-              <CheckCircle className="h-8 w-8 text-green-500 mx-auto mb-3" />
-              <h3 className="font-bold text-foreground mb-2">Instant Booking</h3>
-              <p className="text-sm text-muted-foreground">Call now for same-day appointments</p>
-            </CardContent>
-          </Card>
+        {/* Testimonials - Compact */}
+        <div>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground text-center mb-4">
+            What <span className="text-primary">Clients Say</span>
+          </h2>
           
-          <Card className="bg-primary/10 border-primary/30">
-            <CardContent className="p-6 text-center">
-              <Award className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h3 className="font-bold text-foreground mb-2">Premium Quality</h3>
-              <p className="text-sm text-muted-foreground">International spa standards</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-primary/10 border-primary/30">
-            <CardContent className="p-6 text-center">
-              <Shield className="h-8 w-8 text-green-500 mx-auto mb-3" />
-              <h3 className="font-bold text-foreground mb-2">100% Safe</h3>
-              <p className="text-sm text-muted-foreground">Hygienic & professional service</p>
-            </CardContent>
-          </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-background border-border/50">
+                <CardContent className="p-4">
+                  <div className="flex items-center gap-1 mb-2">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-3 w-3 text-yellow-500 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground text-xs mb-2 italic">
+                    "{testimonial.text}"
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
+                    <p className="text-[10px] text-primary">{testimonial.service}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>

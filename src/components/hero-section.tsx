@@ -1,158 +1,117 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Star, Users, Shield, Sparkles } from "lucide-react";
 import heroImage from "@/assets/spa-hero-green.jpg";
-import { useState, useEffect } from "react";
 
 const HeroSection = () => {
-  const adKeywords = [
-    "Best Spa in Koramangala",
-    "Luxury Massage Therapy",
-    "Professional Body Treatments", 
-    "Relaxation & Wellness Center",
-    "Premium Spa Services",
-    "Thai & Swedish Massage",
-    "Couples Spa Packages",
-    "Deep Tissue Therapy"
-  ];
-
-  const [currentKeyword, setCurrentKeyword] = useState(0);
-  const [utmKeyword, setUtmKeyword] = useState<string | null>(null);
-
-  // Function to convert text to Title Case
-  const toTitleCase = (str: string) => {
-    return str.replace(/\w\S*/g, (txt) => 
-      txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-    );
-  };
-
-  useEffect(() => {
-    // Get utm_term from URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const keyword = urlParams.get('utm_term');
-    setUtmKeyword(keyword);
-  }, []);
-
-  useEffect(() => {
-    // Only cycle through keywords if no UTM keyword is present
-    if (!utmKeyword) {
-      const interval = setInterval(() => {
-        setCurrentKeyword((prev) => (prev + 1) % adKeywords.length);
-      }, 3000);
-
-      return () => clearInterval(interval);
-    }
-  }, [adKeywords.length, utmKeyword]);
-
-  const displayKeyword = toTitleCase(utmKeyword || adKeywords[currentKeyword]);
-
   const handleCall = () => {
     window.open("tel:+918884666814", "_self");
   };
 
   const handleWhatsApp = () => {
-    // WhatsApp number will be provided later
-    window.open("https://wa.me/918884666814", "_blank");
+    window.open("https://wa.me/918884666814?text=Hi! I'd like to book a therapy session.", "_blank");
   };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image with Dark Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background/95"></div>
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Logo/Brand */}
-          <div className="space-y-4">
-            <div className="flex justify-center mb-6">
-              <img 
-                src="/lovable-uploads/8472c527-b267-4b77-8b2c-a6664cc5a617.png" 
-                alt="EVA International Spa" 
-                className="h-24 md:h-32 w-auto"
-              />
-            </div>
-            <div className="w-32 h-px bg-gradient-gold mx-auto"></div>
+      <div className="relative z-10 container mx-auto px-4 text-center pt-8 pb-24">
+        <div className="max-w-3xl mx-auto space-y-6">
+          {/* Logo */}
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/lovable-uploads/8472c527-b267-4b77-8b2c-a6664cc5a617.png" 
+              alt="EVA International Spa" 
+              className="h-20 md:h-28 w-auto"
+            />
           </div>
 
-          {/* Tagline */}
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-5xl font-light text-foreground">
-              Most Trusted Body Massage & Spa in Koramangala
-            </h2>
-            
-            {/* Dynamic Google Ad Keywords */}
-            <div className="h-8 flex items-center justify-center">
-              <p className="text-xl md:text-2xl font-semibold text-primary animate-fade-in transition-all duration-500">
-                {displayKeyword}
-              </p>
-            </div>
-            
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Experience premium spa and massage services in Koramangala. We offer full body massage, 
-              female to male body massage, jacuzzi spa treatments, and luxury wellness services. 
-              Your trusted spa center near you for complete relaxation and rejuvenation.
-            </p>
+          {/* Main Headline */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            Best Rated <span className="text-primary">Luxury Spa</span> in Koramangala
+          </h1>
+          
+          {/* Sub-headline */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Relax & Rejuvenate with Certified Therapists. 100% Safe & Hygienic Environment.
+          </p>
+
+          {/* Primary CTA Button */}
+          <div className="pt-4">
+            <Button
+              onClick={handleWhatsApp}
+              size="xl"
+              className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 shadow-luxury hover:shadow-glow transition-all duration-300 text-xl font-bold px-10 py-6 h-auto"
+            >
+              <Sparkles className="mr-2 h-6 w-6" />
+              Book Therapy @ ₹1,999
+            </Button>
           </div>
 
-          {/* Pricing Highlight */}
-          <div className="pt-6">
-            <div className="inline-block bg-white backdrop-blur-sm border border-white/30 rounded-full px-4 md:px-6 py-2 md:py-3 shadow-lg hover-scale animate-fade-in">
-              <p className="text-spa-dark font-bold text-sm md:text-lg">
-                ✨ Spa Service Starts from ₹1,999/- only
-              </p>
+          {/* Trust Badge */}
+          <div className="flex items-center justify-center gap-2 pt-2">
+            <div className="flex items-center gap-1 bg-card/80 backdrop-blur-sm rounded-full px-4 py-2 border border-primary/30">
+              <Star className="h-5 w-5 text-yellow-500 fill-current" />
+              <span className="font-bold text-foreground">4.8/5 Rating on Google</span>
+              <span className="text-muted-foreground mx-2">|</span>
+              <Users className="h-5 w-5 text-primary" />
+              <span className="font-semibold text-foreground">5000+ Happy Clients</span>
             </div>
           </div>
 
-          {/* Enhanced CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          {/* Secondary CTAs */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <Button
               onClick={handleCall}
-              variant="call"
-              size="xl"
-              className="w-full sm:w-auto shadow-luxury hover:shadow-glow transition-all duration-300"
+              variant="outline"
+              size="lg"
+              className="border-primary/50 bg-card/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
             >
               <Phone className="mr-2 h-5 w-5" />
-              BOOK NOW - 8884666814
+              Call Now - 8884666814
             </Button>
             <Button
               onClick={handleWhatsApp}
-              variant="hero"
-              size="xl"
-              className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white shadow-luxury hover:shadow-glow transition-all duration-300"
+              size="lg"
+              className="bg-green-600 hover:bg-green-700 text-white"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
               WhatsApp (Quick Response)
             </Button>
           </div>
 
-          {/* Urgency Text */}
-          <div className="pt-4">
-            <p className="text-primary font-semibold animate-pulse">
-              ⚡ Call now for instant booking | Response within 5 minutes
-            </p>
+          {/* Quick Trust Icons */}
+          <div className="grid grid-cols-3 gap-4 pt-6 max-w-md mx-auto">
+            <div className="flex flex-col items-center gap-1 text-center">
+              <Shield className="h-6 w-6 text-green-500" />
+              <span className="text-xs text-muted-foreground">100% Safe</span>
+            </div>
+            <div className="flex flex-col items-center gap-1 text-center">
+              <Users className="h-6 w-6 text-primary" />
+              <span className="text-xs text-muted-foreground">Certified Staff</span>
+            </div>
+            <div className="flex flex-col items-center gap-1 text-center">
+              <Star className="h-6 w-6 text-yellow-500" />
+              <span className="text-xs text-muted-foreground">Top Rated</span>
+            </div>
           </div>
 
           {/* Opening Hours */}
-          <div className="pt-12">
-            <div className="inline-block bg-card/20 backdrop-blur-sm border border-primary/30 rounded-lg px-6 py-4">
-              <p className="text-primary font-semibold text-sm">Opening Hours</p>
-              <p className="text-foreground text-lg font-light">
-                Mon - Sun: 09:00 AM - 10:00 PM
-              </p>
+          <div className="pt-4">
+            <div className="inline-block bg-card/60 backdrop-blur-sm border border-primary/20 rounded-lg px-5 py-3">
+              <p className="text-primary font-semibold text-sm">Open Daily</p>
+              <p className="text-foreground text-base font-medium">9:00 AM - 10:00 PM</p>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Floating Elements */}
-      <div className="absolute top-1/4 left-10 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-      <div className="absolute top-1/3 right-16 w-3 h-3 bg-accent rounded-full animate-pulse delay-1000"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-1 h-1 bg-primary rounded-full animate-pulse delay-500"></div>
     </section>
   );
 };
