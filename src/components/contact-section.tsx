@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, MessageCircle, MapPin, Clock } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Clock, Sparkles } from "lucide-react";
 
 const ContactSection = () => {
   const handleCall = () => {
@@ -13,32 +13,37 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-24 bg-secondary pb-36">
+    <section className="py-20 bg-gradient-hero pb-36">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 font-montserrat">
-            Book <span className="text-primary">Now</span>
+        <div className="text-center mb-14">
+          <span className="inline-block px-4 py-1.5 bg-white/20 text-white rounded-full text-sm font-semibold font-montserrat mb-4">
+            Book Your Session
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white font-montserrat">
+            Book <span className="text-gold-accent">Now</span>
           </h2>
         </div>
 
-        <div className="max-w-lg mx-auto space-y-8">
+        <div className="max-w-lg mx-auto space-y-6">
           {/* Quick Contact Card */}
-          <Card className="bg-primary text-primary-foreground border-0 shadow-luxury rounded-2xl">
+          <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-luxury rounded-2xl overflow-hidden">
+            <div className="h-2 bg-gradient-cta"></div>
             <CardHeader className="pb-4">
-              <CardTitle className="text-2xl text-center font-montserrat">
+              <CardTitle className="text-2xl text-center font-montserrat text-foreground">
                 Ready to Relax?
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-8 text-center">
-              <p className="text-base opacity-90 font-montserrat font-medium">
+            <CardContent className="space-y-6 text-center px-8 pb-8">
+              <p className="text-base text-muted-foreground font-montserrat font-medium">
                 Call now for instant booking. Our team responds within 5 minutes!
               </p>
               
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-4">
                 <Button 
                   onClick={handleCall}
+                  variant="call"
                   size="lg"
-                  className="w-full bg-card text-foreground hover:bg-card/90 font-bold rounded-full shadow-button min-h-[56px] font-montserrat text-base"
+                  className="w-full min-h-[56px]"
                 >
                   <Phone className="mr-2 h-5 w-5" />
                   Call 8884666814
@@ -58,35 +63,42 @@ const ContactSection = () => {
           </Card>
 
           {/* Info Grid */}
-          <div className="grid grid-cols-2 gap-6">
-            <Card className="bg-card border border-border shadow-card rounded-2xl">
-              <CardContent className="p-8 text-center">
-                <Clock className="h-6 w-6 text-primary mx-auto mb-4" />
+          <div className="grid grid-cols-2 gap-4">
+            <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-card rounded-2xl">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-primary" />
+                </div>
                 <p className="font-bold text-foreground text-base font-montserrat">Open Daily</p>
                 <p className="text-sm text-muted-foreground font-montserrat font-medium mt-1">9 AM - 10 PM</p>
               </CardContent>
             </Card>
             
-            <Card className="bg-card border border-border shadow-card rounded-2xl">
-              <CardContent className="p-8 text-center">
-                <MapPin className="h-6 w-6 text-primary mx-auto mb-4" />
+            <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-card rounded-2xl">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-primary" />
+                </div>
                 <p className="font-bold text-foreground text-base font-montserrat">Koramangala</p>
                 <Button 
                   onClick={() => window.open("https://maps.app.goo.gl/x33CYXpKePF3YTCW7", "_blank")}
                   variant="link"
                   size="sm"
-                  className="text-sm text-primary p-0 h-auto font-montserrat font-medium mt-1"
+                  className="text-sm text-primary p-0 h-auto font-montserrat font-semibold mt-1"
                 >
-                  View Map
+                  View Map →
                 </Button>
               </CardContent>
             </Card>
           </div>
 
           {/* Offer Badge */}
-          <div className="text-center bg-card rounded-2xl p-8 shadow-card border border-border">
-            <p className="text-primary font-bold text-lg font-montserrat">✨ Spa Services from ₹1,999</p>
-            <p className="text-sm text-muted-foreground mt-3 font-montserrat font-medium">
+          <div className="text-center bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-card">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <Sparkles className="h-5 w-5 text-gold-accent" />
+              <p className="text-primary font-bold text-lg font-montserrat">Spa Services from ₹1,999</p>
+            </div>
+            <p className="text-sm text-muted-foreground font-montserrat font-medium">
               Cross-gender therapy available with certified professionals
             </p>
           </div>

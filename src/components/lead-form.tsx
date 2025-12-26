@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, User, Phone, CheckCircle } from "lucide-react";
+import { MessageCircle, User, Phone, CheckCircle, Sparkles } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const LeadForm = () => {
@@ -65,11 +65,14 @@ const LeadForm = () => {
 
   if (isSubmitted) {
     return (
-      <section className="py-20 bg-background" aria-labelledby="form-success">
+      <section className="py-20 bg-secondary" aria-labelledby="form-success">
         <div className="container mx-auto px-4 max-w-md">
-          <Card className="bg-card border border-border shadow-card rounded-2xl">
+          <Card className="bg-card border border-border shadow-luxury rounded-2xl overflow-hidden">
+            <div className="h-2 bg-gradient-cta"></div>
             <CardContent className="p-12 text-center">
-              <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" aria-hidden="true" />
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                <CheckCircle className="h-10 w-10 text-primary" aria-hidden="true" />
+              </div>
               <h2 id="form-success" className="text-2xl font-bold text-foreground mb-4 font-montserrat">Thank You!</h2>
               <p className="text-muted-foreground font-montserrat font-medium">
                 We have received your request. Our team will contact you within 5 minutes.
@@ -82,10 +85,14 @@ const LeadForm = () => {
   }
 
   return (
-    <section className="py-20 bg-background" aria-labelledby="form-heading">
+    <section className="py-20 bg-secondary" aria-labelledby="form-heading">
       <div className="container mx-auto px-4 max-w-md">
-        <Card className="bg-card border border-border shadow-card rounded-2xl">
-          <CardHeader className="pb-4">
+        <Card className="bg-card border border-border shadow-luxury rounded-2xl overflow-hidden">
+          <div className="h-2 bg-gradient-cta"></div>
+          <CardHeader className="pb-4 pt-8">
+            <div className="flex justify-center mb-2">
+              <Sparkles className="h-6 w-6 text-gold-accent" />
+            </div>
             <CardTitle id="form-heading" className="text-2xl text-center text-foreground font-montserrat">
               Quick <span className="text-primary">Booking</span>
             </CardTitle>
@@ -94,7 +101,7 @@ const LeadForm = () => {
             </p>
           </CardHeader>
           <CardContent className="p-8">
-            <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+            <form onSubmit={handleSubmit} className="space-y-5" noValidate>
               <div>
                 <label htmlFor="name" className="sr-only">Your Name</label>
                 <div className="relative">
@@ -105,7 +112,7 @@ const LeadForm = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="pl-12 h-14 min-h-[56px] rounded-full border-border font-montserrat font-medium text-base"
+                    className="pl-12 h-14 min-h-[56px] rounded-full border-border font-montserrat font-medium text-base focus:border-primary focus:ring-primary"
                     maxLength={50}
                     required
                     aria-required="true"
@@ -123,7 +130,7 @@ const LeadForm = () => {
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="pl-12 h-14 min-h-[56px] rounded-full border-border font-montserrat font-medium text-base"
+                    className="pl-12 h-14 min-h-[56px] rounded-full border-border font-montserrat font-medium text-base focus:border-primary focus:ring-primary"
                     maxLength={12}
                     required
                     aria-required="true"
@@ -134,7 +141,7 @@ const LeadForm = () => {
               <Button
                 type="submit"
                 variant="call"
-                className="w-full h-14 min-h-[56px] font-bold text-base"
+                className="w-full h-14 min-h-[56px] text-base"
               >
                 <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
                 Get Instant Callback
