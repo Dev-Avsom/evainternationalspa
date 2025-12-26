@@ -1,3 +1,4 @@
+import SiteHeader from "@/components/site-header";
 import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import PricingSection from "@/components/pricing-section";
@@ -11,6 +12,7 @@ import StickyCTA from "@/components/sticky-cta";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SiteHeader />
       <HeroSection />
       <TrustBadges />
       <ServicesSection />

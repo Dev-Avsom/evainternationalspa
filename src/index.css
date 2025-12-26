@@ -2,96 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Vibrant Teal Spa Design System
+/* Modern Luxury Spa Design System
+   Dark Teal Header + Pastel Body
    All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Vibrant Teal Palette */
-    --background: 0 0% 100%;               /* Pure White */
-    --foreground: 180 40% 12%;             /* Deep Dark Teal #142D2D */
+    /* Pastel Body Palette */
+    --background: 40 20% 98%;               /* Soft Alabaster #FAF9F6 */
+    --foreground: 0 0% 20%;                 /* Dark Slate #333333 */
 
-    --card: 0 0% 100%;                     /* Pure White */
-    --card-foreground: 180 40% 12%;        /* Deep Dark Teal */
+    --card: 0 0% 100%;                      /* Pure White */
+    --card-foreground: 0 0% 20%;            /* Dark Slate */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 180 40% 12%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 174 72% 40%;                /* Vibrant Teal #1A9999 */
-    --primary-foreground: 0 0% 100%;       /* White */
+    --primary: 168 100% 11%;                /* Deep Rich Teal #003833 */
+    --primary-foreground: 0 0% 100%;        /* White */
 
-    --secondary: 174 45% 92%;              /* Light Teal Wash #E5F5F5 */
-    --secondary-foreground: 180 40% 12%;
+    --secondary: 150 20% 96%;               /* Pastel Mint #F0F7F4 */
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 174 20% 85%;
-    --muted-foreground: 180 20% 35%;
+    --muted: 150 15% 92%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 174 80% 32%;                 /* Rich Deep Teal #0F7A7A */
+    --accent: 168 80% 18%;                  /* Rich Teal */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 174 25% 85%;
-    --input: 174 25% 85%;
-    --ring: 174 72% 40%;
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 168 100% 11%;
 
-    /* Vibrant palette tokens */
-    --teal-vibrant: 174 72% 40%;           /* #1A9999 */
-    --teal-deep: 174 80% 32%;              /* #0F7A7A */
-    --teal-dark: 180 50% 18%;              /* #173D3D */
-    --teal-light: 174 45% 92%;             /* #E5F5F5 */
-    --teal-hero: 174 65% 25%;              /* Hero background */
-    --whatsapp-green: 142 70% 49%;         /* #25D366 */
-    --gold-accent: 43 90% 55%;             /* Vibrant Gold #F5B820 */
-    --coral-warm: 16 80% 60%;              /* Warm accent #E87A5C */
+    /* Header Colors */
+    --header: 168 100% 11%;                 /* Deep Rich Teal #003833 */
+    --header-foreground: 0 0% 100%;         /* White */
+
+    /* Brand Tokens */
+    --teal-deep: 168 100% 11%;              /* #003833 */
+    --teal-rich: 168 80% 18%;               /* Darker teal accent */
+    --teal-light: 150 20% 96%;              /* Pastel Mint */
+    --whatsapp-green: 142 70% 49%;          /* #25D366 */
+    --gold-accent: 43 90% 55%;              /* Vibrant Gold #F5B820 */
     
-    /* Rich Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(174 80% 28%) 0%, hsl(174 65% 38%) 50%, hsl(180 50% 30%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(174 45% 96%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(174 72% 40%) 0%, hsl(174 80% 32%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(43 90% 55%) 0%, hsl(38 85% 50%) 100%);
-    
-    /* Impactful Shadows */
-    --shadow-luxury: 0 20px 50px -15px hsl(174 60% 25% / 0.25);
-    --shadow-card: 0 8px 30px -8px hsl(174 60% 25% / 0.15);
-    --shadow-button: 0 8px 20px -6px hsl(174 72% 40% / 0.4);
-    --shadow-glow: 0 0 40px hsl(174 72% 40% / 0.3);
-    --shadow-top: 0 -4px 25px -5px hsl(174 60% 25% / 0.15);
+    /* Elegant Shadows */
+    --shadow-luxury: 0 20px 50px -15px hsl(168 100% 11% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(168 100% 11% / 0.08);
+    --shadow-button: 0 4px 14px -4px hsl(168 100% 11% / 0.25);
+    --shadow-top: 0 -4px 20px -5px hsl(168 100% 11% / 0.1);
 
     --radius: 1rem;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 180 40% 12%;
-    --sidebar-primary: 174 72% 40%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 168 100% 11%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 174 45% 92%;
-    --sidebar-accent-foreground: 180 40% 12%;
-    --sidebar-border: 174 25% 85%;
-    --sidebar-ring: 174 72% 40%;
+    --sidebar-accent: 150 20% 96%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 150 15% 88%;
+    --sidebar-ring: 168 100% 11%;
   }
 
   .dark {
     --background: 180 35% 8%;
-    --foreground: 174 20% 95%;
+    --foreground: 150 20% 95%;
 
     --card: 180 30% 12%;
-    --card-foreground: 174 20% 95%;
+    --card-foreground: 150 20% 95%;
 
     --popover: 180 30% 12%;
-    --popover-foreground: 174 20% 95%;
+    --popover-foreground: 150 20% 95%;
 
-    --primary: 174 65% 50%;
+    --primary: 168 65% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 180 25% 18%;
-    --secondary-foreground: 174 20% 95%;
+    --secondary-foreground: 150 20% 95%;
 
     --muted: 180 20% 22%;
-    --muted-foreground: 174 15% 65%;
+    --muted-foreground: 150 15% 65%;
 
-    --accent: 174 60% 55%;
+    --accent: 168 60% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -99,7 +94,10 @@
 
     --border: 180 20% 20%;
     --input: 180 20% 20%;
-    --ring: 174 65% 50%;
+    --ring: 168 65% 45%;
+
+    --header: 168 100% 8%;
+    --header-foreground: 0 0% 100%;
   }
 }
 
@@ -117,6 +115,7 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    @apply text-primary;
   }
 }
 
@@ -167,10 +166,10 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px hsl(174 72% 40% / 0.4);
+    box-shadow: 0 0 20px hsl(43 90% 55% / 0.4);
   }
   50% {
-    box-shadow: 0 0 40px hsl(174 72% 40% / 0.6);
+    box-shadow: 0 0 40px hsl(43 90% 55% / 0.6);
   }
 }
 

@@ -13,26 +13,26 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Rich Teal Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-hero"></div>
+    <header className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Deep Rich Teal Background */}
+      <div className="absolute inset-0 bg-primary"></div>
       
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 mix-blend-overlay"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 mix-blend-overlay"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-40 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-accent/10 rounded-full blur-3xl"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center pt-8 pb-36">
         <div className="max-w-3xl mx-auto space-y-8">
-          {/* Logo with glow effect */}
+          {/* Logo with elegant styling */}
           <div className="flex justify-center mb-6 animate-fade-up">
-            <div className="bg-white/95 rounded-2xl p-4 shadow-luxury backdrop-blur-sm">
+            <div className="bg-white rounded-2xl p-5 shadow-luxury">
               <img 
                 src="/lovable-uploads/8472c527-b267-4b77-8b2c-a6664cc5a617.png" 
                 alt="EVA International Spa - Premium Body Massage & Spa in Koramangala" 
@@ -53,7 +53,7 @@ const HeroSection = () => {
             Best Spa Near Me for Relaxation & Pain Relief Therapy. Certified Therapists in a 100% Safe & Hygienic Wellness Center.
           </p>
 
-          {/* Primary CTA Button with glow */}
+          {/* Primary CTA Button */}
           <div className="pt-4 animate-fade-up-delay-3">
             <Button
               onClick={handleWhatsApp}
@@ -69,7 +69,7 @@ const HeroSection = () => {
 
           {/* Trust Badge */}
           <div className="flex items-center justify-center gap-2 pt-4">
-            <div className="flex flex-wrap items-center justify-center gap-4 bg-white/95 backdrop-blur-sm rounded-full px-8 py-4 shadow-luxury">
+            <div className="flex flex-wrap items-center justify-center gap-4 bg-white rounded-full px-8 py-4 shadow-luxury">
               <span className="flex items-center gap-2">
                 <Star className="h-5 w-5 text-gold-accent fill-current" aria-hidden="true" />
                 <span className="font-bold text-foreground text-sm font-montserrat">4.8/5 Google Rating</span>
@@ -86,9 +86,9 @@ const HeroSection = () => {
           <nav className="flex flex-col sm:flex-row gap-4 justify-center pt-4" aria-label="Contact options">
             <Button
               onClick={handleCall}
-              variant="call"
+              variant="outline"
               size="lg"
-              className="min-h-[56px] min-w-[220px]"
+              className="min-h-[56px] min-w-[220px] border-white text-white hover:bg-white hover:text-primary"
               aria-label="Call us at 8884666814"
             >
               <Phone className="mr-2 h-5 w-5" aria-hidden="true" />
@@ -109,19 +109,19 @@ const HeroSection = () => {
           {/* Quick Trust Icons */}
           <div className="grid grid-cols-3 gap-6 pt-10 max-w-md mx-auto">
             <div className="flex flex-col items-center gap-3 text-center hover-scale">
-              <div className="w-16 h-16 rounded-2xl bg-white/95 shadow-card flex items-center justify-center backdrop-blur-sm">
+              <div className="w-16 h-16 rounded-2xl bg-white shadow-card flex items-center justify-center">
                 <Shield className="h-7 w-7 text-primary" aria-hidden="true" />
               </div>
               <span className="text-xs text-white/90 font-semibold font-montserrat">100% Safe</span>
             </div>
             <div className="flex flex-col items-center gap-3 text-center hover-scale">
-              <div className="w-16 h-16 rounded-2xl bg-white/95 shadow-card flex items-center justify-center backdrop-blur-sm">
+              <div className="w-16 h-16 rounded-2xl bg-white shadow-card flex items-center justify-center">
                 <Users className="h-7 w-7 text-primary" aria-hidden="true" />
               </div>
               <span className="text-xs text-white/90 font-semibold font-montserrat">Certified Staff</span>
             </div>
             <div className="flex flex-col items-center gap-3 text-center hover-scale">
-              <div className="w-16 h-16 rounded-2xl bg-white/95 shadow-card flex items-center justify-center backdrop-blur-sm">
+              <div className="w-16 h-16 rounded-2xl bg-white shadow-card flex items-center justify-center">
                 <Star className="h-7 w-7 text-gold-accent" aria-hidden="true" />
               </div>
               <span className="text-xs text-white/90 font-semibold font-montserrat">Top Rated</span>
@@ -130,7 +130,7 @@ const HeroSection = () => {
 
           {/* Opening Hours */}
           <div className="pt-4">
-            <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl px-10 py-5 shadow-luxury">
+            <div className="inline-block bg-white rounded-2xl px-10 py-5 shadow-luxury">
               <p className="text-primary font-bold text-sm font-montserrat">Open Daily</p>
               <p className="text-foreground text-xl font-bold font-montserrat mt-1">9:00 AM - 10:00 PM</p>
             </div>

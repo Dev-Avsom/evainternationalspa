@@ -13,7 +13,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-hero pb-36">
+    <section id="contact" className="py-20 bg-primary pb-36">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <span className="inline-block px-4 py-1.5 bg-white/20 text-white rounded-full text-sm font-semibold font-montserrat mb-4">
@@ -26,8 +26,8 @@ const ContactSection = () => {
 
         <div className="max-w-lg mx-auto space-y-6">
           {/* Quick Contact Card */}
-          <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-luxury rounded-2xl overflow-hidden">
-            <div className="h-2 bg-gradient-cta"></div>
+          <Card className="bg-white border-0 shadow-luxury rounded-2xl overflow-hidden">
+            <div className="h-1 bg-gold-accent"></div>
             <CardHeader className="pb-4">
               <CardTitle className="text-2xl text-center font-montserrat text-foreground">
                 Ready to Relax?
@@ -64,7 +64,7 @@ const ContactSection = () => {
 
           {/* Info Grid */}
           <div className="grid grid-cols-2 gap-4">
-            <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-card rounded-2xl">
+            <Card className="bg-white border-0 shadow-card rounded-2xl">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center">
                   <Clock className="h-6 w-6 text-primary" />
@@ -74,7 +74,7 @@ const ContactSection = () => {
               </CardContent>
             </Card>
             
-            <Card className="bg-white/95 backdrop-blur-sm border-0 shadow-card rounded-2xl">
+            <Card className="bg-white border-0 shadow-card rounded-2xl">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-primary" />
@@ -93,7 +93,7 @@ const ContactSection = () => {
           </div>
 
           {/* Offer Badge */}
-          <div className="text-center bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-card">
+          <div className="text-center bg-white rounded-2xl p-6 shadow-card">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Sparkles className="h-5 w-5 text-gold-accent" />
               <p className="text-primary font-bold text-lg font-montserrat">Spa Services from ₹1,999</p>

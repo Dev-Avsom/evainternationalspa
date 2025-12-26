@@ -55,7 +55,7 @@ const ServicesSection = () => {
         </div>
         <Button 
           onClick={() => handleWhatsApp(service.title)}
-          variant="teal"
+          variant="default"
           size="sm"
           className="w-full h-11 text-sm min-h-[44px]"
           aria-label={`Book ${service.title} via WhatsApp`}
@@ -68,7 +68,7 @@ const ServicesSection = () => {
   );
 
   return (
-    <section className="py-20 bg-background" aria-labelledby="services-heading">
+    <section id="services" className="py-20 bg-background" aria-labelledby="services-heading">
       <div className="container mx-auto px-4">
         {/* Deep Tissue Massage Services */}
         <div className="mb-20">

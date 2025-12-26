@@ -68,7 +68,7 @@ const LeadForm = () => {
       <section className="py-20 bg-secondary" aria-labelledby="form-success">
         <div className="container mx-auto px-4 max-w-md">
           <Card className="bg-card border border-border shadow-luxury rounded-2xl overflow-hidden">
-            <div className="h-2 bg-gradient-cta"></div>
+            <div className="h-1 bg-gold-accent"></div>
             <CardContent className="p-12 text-center">
               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <CheckCircle className="h-10 w-10 text-primary" aria-hidden="true" />
@@ -88,7 +88,7 @@ const LeadForm = () => {
     <section className="py-20 bg-secondary" aria-labelledby="form-heading">
       <div className="container mx-auto px-4 max-w-md">
         <Card className="bg-card border border-border shadow-luxury rounded-2xl overflow-hidden">
-          <div className="h-2 bg-gradient-cta"></div>
+          <div className="h-1 bg-gold-accent"></div>
           <CardHeader className="pb-4 pt-8">
             <div className="flex justify-center mb-2">
               <Sparkles className="h-6 w-6 text-gold-accent" />
