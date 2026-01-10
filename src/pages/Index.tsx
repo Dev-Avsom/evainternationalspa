@@ -7,6 +7,7 @@ import LeadForm from "@/components/lead-form";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import StickyCTA from "@/components/sticky-cta";
+import UrgencyPopup from "@/components/urgency-popup";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <ContactSection />
       <Footer />
       <StickyCTA />
+      <UrgencyPopup />
     </div>
   );
 };

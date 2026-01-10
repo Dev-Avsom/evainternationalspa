@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, Star, Users, Shield, Sparkles } from "lucide-react";
+import { Phone, MessageCircle, Star, CheckCircle } from "lucide-react";
 import heroImage from "@/assets/spa-hero-green.jpg";
 
 const HeroSection = () => {
@@ -13,114 +13,80 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <header className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
-      
-      {/* Dark Teal Overlay for readability */}
       <div className="absolute inset-0 bg-primary/85"></div>
       
-      {/* Decorative Elements */}
-      <div className="absolute top-40 left-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-accent/10 rounded-full blur-3xl"></div>
-      
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center pt-8 pb-36">
-        <div className="max-w-3xl mx-auto space-y-6">
-          {/* Main Headline */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight animate-fade-up">
-            Premium <span className="text-gold-accent">Body Massage & Spa</span> in Koramangala
+      <div className="relative z-10 container mx-auto px-4 text-center py-8 pb-28">
+        <div className="max-w-2xl mx-auto space-y-5">
+          
+          {/* Trust Badge - Compact */}
+          <div className="inline-flex items-center gap-2 bg-gold-accent/20 border border-gold-accent/40 rounded-full px-4 py-2 animate-fade-in">
+            <Star className="h-4 w-4 text-gold-accent fill-current" />
+            <span className="text-white text-sm font-semibold font-montserrat">
+              4.8★ Rated • 5000+ Happy Clients
+            </span>
+          </div>
+          
+          {/* Main Headline - Simplified */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight animate-fade-in">
+            Get <span className="text-gold-accent">20% Off</span> Your First<br />
+            Spa Session Today
           </h1>
           
-          {/* Sub-headline */}
-          <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed font-montserrat font-medium animate-fade-up-delay-1">
-            Best Spa Near Me for Relaxation & Pain Relief Therapy. Certified Therapists in a 100% Safe & Hygienic Wellness Center.
+          {/* Value Proposition - Clear & Specific */}
+          <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto leading-relaxed font-montserrat animate-fade-in">
+            Premium massage therapy starting ₹1,599 only. 
+            Certified therapists • 100% hygienic • Koramangala
           </p>
 
-          {/* Primary CTA Button */}
-          <div className="pt-2 animate-fade-up-delay-2">
+          {/* Primary CTA - Single Focus */}
+          <div className="pt-3 animate-fade-in">
             <Button
               onClick={handleWhatsApp}
               variant="gold"
-              size="lg"
-              className="w-full sm:w-auto text-base md:text-lg font-bold px-8 md:px-14 py-5 md:py-7 h-auto min-h-[52px] md:min-h-[64px] pulse-glow"
-              aria-label="Book therapy session starting at Rs 1999"
+              size="xl"
+              className="w-full sm:w-auto text-lg font-bold px-10 py-7 h-auto pulse-glow shadow-2xl"
+              aria-label="Book now via WhatsApp"
             >
-              <Sparkles className="mr-2 h-5 w-5 md:h-6 md:w-6" aria-hidden="true" />
-              Book Therapy @ ₹1,999
+              <MessageCircle className="mr-2 h-6 w-6" />
+              Book Now – Get 20% Off
             </Button>
+            <p className="text-white/70 text-sm mt-3 font-montserrat">
+              Limited slots today • Instant confirmation
+            </p>
           </div>
 
-          {/* Trust Badge */}
-          <div className="flex items-center justify-center gap-2 pt-2">
-            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 bg-white rounded-full px-5 md:px-8 py-3 md:py-4 shadow-luxury">
-              <span className="flex items-center gap-1.5 md:gap-2">
-                <Star className="h-4 w-4 md:h-5 md:w-5 text-gold-accent fill-current" aria-hidden="true" />
-                <span className="font-bold text-foreground text-xs md:text-sm font-montserrat">4.8/5 Google Rating</span>
-              </span>
-              <span className="text-muted mx-1 hidden sm:inline">|</span>
-              <span className="flex items-center gap-1.5 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 text-primary" aria-hidden="true" />
-                <span className="font-bold text-foreground text-xs md:text-sm font-montserrat">5000+ Happy Clients</span>
-              </span>
-            </div>
+          {/* Quick Trust Points - Minimal */}
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-4 text-white/80 text-sm font-montserrat animate-fade-in">
+            <span className="flex items-center gap-1.5">
+              <CheckCircle className="h-4 w-4 text-green-400" />
+              Certified Staff
+            </span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle className="h-4 w-4 text-green-400" />
+              Safe & Hygienic
+            </span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle className="h-4 w-4 text-green-400" />
+              Open 9AM-10PM
+            </span>
           </div>
 
-          {/* Secondary CTAs */}
-          <nav className="flex flex-col sm:flex-row gap-3 justify-center pt-2" aria-label="Contact options">
-            <Button
+          {/* Secondary CTA - Call Option */}
+          <div className="pt-2 animate-fade-in">
+            <button
               onClick={handleCall}
-              variant="outline"
-              size="default"
-              className="min-h-[48px] md:min-h-[56px] min-w-[200px] md:min-w-[220px] border-white text-white hover:bg-white hover:text-primary text-sm md:text-base"
-              aria-label="Call us at 8884666814"
+              className="text-white/90 hover:text-white underline underline-offset-4 text-sm font-montserrat transition-colors"
             >
-              <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
-              Call Now - 8884666814
-            </Button>
-            <Button
-              onClick={handleWhatsApp}
-              variant="whatsapp"
-              size="default"
-              className="min-h-[48px] md:min-h-[56px] min-w-[200px] md:min-w-[220px] text-sm md:text-base"
-              aria-label="Contact via WhatsApp for quick response"
-            >
-              <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
-              WhatsApp (Quick Response)
-            </Button>
-          </nav>
-
-          {/* Quick Trust Icons */}
-          <div className="grid grid-cols-3 gap-4 md:gap-6 pt-8 max-w-sm md:max-w-md mx-auto">
-            <div className="flex flex-col items-center gap-2 md:gap-3 text-center hover-scale">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white shadow-card flex items-center justify-center">
-                <Shield className="h-5 w-5 md:h-7 md:w-7 text-primary" aria-hidden="true" />
-              </div>
-              <span className="text-[10px] md:text-xs text-white/90 font-semibold font-montserrat">100% Safe</span>
-            </div>
-            <div className="flex flex-col items-center gap-2 md:gap-3 text-center hover-scale">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white shadow-card flex items-center justify-center">
-                <Users className="h-5 w-5 md:h-7 md:w-7 text-primary" aria-hidden="true" />
-              </div>
-              <span className="text-[10px] md:text-xs text-white/90 font-semibold font-montserrat">Certified Staff</span>
-            </div>
-            <div className="flex flex-col items-center gap-2 md:gap-3 text-center hover-scale">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white shadow-card flex items-center justify-center">
-                <Star className="h-5 w-5 md:h-7 md:w-7 text-gold-accent" aria-hidden="true" />
-              </div>
-              <span className="text-[10px] md:text-xs text-white/90 font-semibold font-montserrat">Top Rated</span>
-            </div>
-          </div>
-
-          {/* Opening Hours */}
-          <div className="pt-2">
-            <div className="inline-block bg-white rounded-xl md:rounded-2xl px-6 md:px-10 py-4 md:py-5 shadow-luxury">
-              <p className="text-primary font-bold text-xs md:text-sm font-montserrat">Open Daily</p>
-              <p className="text-foreground text-lg md:text-xl font-bold font-montserrat mt-1">9:00 AM - 10:00 PM</p>
-            </div>
+              <Phone className="inline h-4 w-4 mr-1" />
+              Or call us: 8884666814
+            </button>
           </div>
         </div>
       </div>
