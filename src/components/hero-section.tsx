@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Star, CheckCircle } from "lucide-react";
 import { memo } from "react";
+import heroImage from "@/assets/massage-therapy.jpg";
 
 const HeroSection = memo(() => {
   const handleCall = () => {
@@ -14,12 +15,10 @@ const HeroSection = memo(() => {
 
   return (
     <header className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-14 md:pt-16">
-      {/* Background - Optimized with CSS gradient fallback */}
+      {/* Background - Spa image */}
       <div 
         className="absolute inset-0 bg-primary bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: `url('/lovable-uploads/8472c527-b267-4b77-8b2c-a6664cc5a617.png')`,
-        }}
+        style={{ backgroundImage: `url(${heroImage})` }}
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-primary/85" aria-hidden="true" />
