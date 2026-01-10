@@ -108,67 +108,82 @@ const CouplesLanding = () => {
       <SiteHeader />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-14 md:pt-16">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-primary bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
+          aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-primary/85"></div>
+        <div className="absolute inset-0 bg-primary/85" aria-hidden="true" />
         
-        <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* Headlines */}
-            <div className="space-y-4">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat">
-                <span className="text-gold-accent">Couples Spa Near Me</span> - Reconnect & Unwind Together
-              </h1>
-              
-              <h2 className="text-lg md:text-xl font-semibold text-white/90 font-montserrat">
-                Private Massage Therapist Near Me | Jacuzzi Spa for Couples Near Me
-              </h2>
-              
-              <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed font-montserrat font-medium">
-                Discover the best couple massage spa near me at Eva International Spa. Our private massage therapist near me 
-                offers exclusive couples' packages with jacuzzi near me, steam and sauna near me facilities.
+        <div className="relative z-10 container mx-auto px-4 text-center py-6 pb-24 md:pb-28">
+          <div className="max-w-2xl mx-auto space-y-4 md:space-y-5">
+            
+            {/* Trust Badge */}
+            <div className="inline-flex items-center gap-2 bg-gold-accent/20 border border-gold-accent/40 rounded-full px-3 md:px-4 py-1.5 md:py-2">
+              <Heart className="h-3.5 w-3.5 md:h-4 md:w-4 text-gold-accent fill-current" aria-hidden="true" />
+              <span className="text-white text-xs md:text-sm font-semibold font-montserrat">
+                4.8★ Rated • 500+ Couples Served
+              </span>
+            </div>
+            
+            {/* Main Headline */}
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight">
+              Couples Spa @ <span className="text-gold-accent">₹4,999</span><br />
+              <span className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium text-white/90">
+                (25% Off Today Only)
+              </span>
+            </h1>
+            
+            {/* Value Proposition */}
+            <p className="text-base md:text-xl text-white/90 max-w-xl mx-auto leading-relaxed font-montserrat px-2">
+              Private jacuzzi + couples massage by certified therapists.
+              Romantic ambiance • Koramangala
+            </p>
+
+            {/* Primary CTA */}
+            <div className="pt-2 md:pt-3">
+              <Button
+                onClick={handleWhatsApp}
+                variant="gold"
+                size="xl"
+                className="w-full sm:w-auto text-base md:text-lg font-bold px-8 md:px-10 py-5 md:py-7 h-auto shadow-2xl active:scale-95 transition-transform"
+                aria-label="Book couples spa via WhatsApp"
+              >
+                <MessageCircle className="mr-2 h-5 w-5 md:h-6 md:w-6" aria-hidden="true" />
+                Book Couples Spa @ ₹4,999
+              </Button>
+              <p className="text-white/70 text-xs md:text-sm mt-2 md:mt-3 font-montserrat">
+                Limited slots • Private suite guaranteed
               </p>
             </div>
 
-            {/* Pricing Highlight */}
-            <div className="pt-4 space-y-3">
-              <div className="inline-block bg-white rounded-full px-4 md:px-6 py-2 md:py-3 shadow-luxury mx-2">
-                <p className="text-primary font-bold text-sm md:text-base text-center font-montserrat">
-                  💕 Couples Packages from ₹4,999/-
-                </p>
-              </div>
-              <div className="inline-block bg-gold-accent rounded-full px-4 md:px-6 py-2 md:py-3 shadow-luxury mx-2">
-                <p className="text-white font-bold text-sm md:text-base text-center font-montserrat">
-                  ✨ Book Couples Massage & Get 25% Off
-                </p>
-              </div>
+            {/* Quick Trust Points */}
+            <div className="flex flex-wrap items-center justify-center gap-x-4 md:gap-x-6 gap-y-1.5 md:gap-y-2 pt-3 md:pt-4 text-white/80 text-xs md:text-sm font-montserrat">
+              <span className="flex items-center gap-1">
+                <Sparkles className="h-3.5 w-3.5 md:h-4 md:w-4 text-gold-accent" aria-hidden="true" />
+                Private Suite
+              </span>
+              <span className="flex items-center gap-1">
+                <Heart className="h-3.5 w-3.5 md:h-4 md:w-4 text-pink-400" aria-hidden="true" />
+                Jacuzzi Included
+              </span>
+              <span className="flex items-center gap-1">
+                <Users className="h-3.5 w-3.5 md:h-4 md:w-4 text-green-400" aria-hidden="true" />
+                Expert Therapists
+              </span>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-6 px-4">
-              <Button
+            {/* Secondary CTA */}
+            <div className="pt-1 md:pt-2">
+              <button
                 onClick={handleCall}
-                variant="outline"
-                size="default"
-                className="w-full sm:w-auto text-sm md:text-base min-h-[48px] md:min-h-[56px] border-white text-white hover:bg-white hover:text-primary"
+                className="text-white/90 hover:text-white active:text-white underline underline-offset-4 text-xs md:text-sm font-montserrat transition-colors py-2"
+                aria-label="Call us at 8884666814"
               >
-                <Phone className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                <span className="hidden md:inline">Book Romantic Retreat - 8884666814</span>
-                <span className="md:hidden">Call - 8884666814</span>
-              </Button>
-              <Button
-                onClick={handleWhatsApp}
-                variant="whatsapp"
-                size="default"
-                className="w-full sm:w-auto text-sm md:text-base min-h-[48px] md:min-h-[56px]"
-              >
-                <MessageCircle className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                <span className="hidden md:inline">WhatsApp for Couples Package</span>
-                <span className="md:hidden">WhatsApp Us</span>
-              </Button>
+                <Phone className="inline h-3.5 w-3.5 md:h-4 md:w-4 mr-1" aria-hidden="true" />
+                Or call: 888-466-6814
+              </button>
             </div>
           </div>
         </div>
