@@ -29,7 +29,7 @@ const UrgencyPopup = () => {
   };
 
   const handleClaim = () => {
-    const message = "Hi! I saw the 20% discount offer on your website. I'd like to book a session today!";
+    const message = "Hi! I want to book a spa session at ₹1,999 (20% off offer). Please confirm availability!";
     window.open(`https://wa.me/918884666814?text=${encodeURIComponent(message)}`, "_blank");
     handleClose();
   };
@@ -66,12 +66,15 @@ const UrgencyPopup = () => {
           
           {/* Content */}
           <div className="p-5 md:p-6 text-center space-y-4">
-            <div className="space-y-2">
+            <div className="space-y-1">
+              <p className="text-sm text-muted-foreground font-montserrat line-through">
+                ₹2,499
+              </p>
               <p className="text-3xl md:text-4xl font-bold text-primary font-montserrat">
-                20% OFF
+                ₹1,999 Only
               </p>
               <p className="text-muted-foreground font-montserrat">
-                On your first therapy session
+                Save ₹500 on your first session
               </p>
             </div>
             
