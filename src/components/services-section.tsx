@@ -83,7 +83,7 @@ const ServicesSection = () => {
               Expert therapy for chronic tension and muscle recovery
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
             {deepTissueServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
             ))}
@@ -103,7 +103,7 @@ const ServicesSection = () => {
               Natural essential oils for mind and body rejuvenation
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
             {aromatherapyServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
             ))}
@@ -123,7 +123,7 @@ const ServicesSection = () => {
               Unforgettable spa experience for two
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-5 md:gap-8 max-w-xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 max-w-xl mx-auto">
             {coupleServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
             ))}
