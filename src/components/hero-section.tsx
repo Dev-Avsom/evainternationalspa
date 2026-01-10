@@ -41,7 +41,7 @@ const HeroSection = () => {
           
           {/* Value Proposition - Clear & Specific */}
           <p className="text-lg md:text-xl text-white/90 max-w-xl mx-auto leading-relaxed font-montserrat animate-fade-in">
-            Premium massage therapy starting ₹1,599 only. 
+            Premium massage therapy starting ₹1,999 only. 
             Certified therapists • 100% hygienic • Koramangala
           </p>
 
