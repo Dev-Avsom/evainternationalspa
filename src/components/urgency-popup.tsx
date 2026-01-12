@@ -96,7 +96,7 @@ const UrgencyPopup = () => {
                 ✓ 100% hygienic environment
               </p>
               <p className="text-sm text-foreground font-montserrat">
-                ✓ Premium aromatherapy included
+                ✓ Traditional Thai massage included
               </p>
             </div>
             
