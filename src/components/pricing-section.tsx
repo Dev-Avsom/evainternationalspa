@@ -41,9 +41,10 @@ const PricingSection = () => {
       originalPrice: "₹6,249",
       price: "₹4,999",
       duration: "120 mins",
+      highlight: "Jacuzzi Available",
       features: [
         "Dual massage for two",
-        "Jacuzzi session",
+        "Jacuzzi session included",
         "Private couple suite",
         "Champagne & chocolates",
         "Complimentary aromatherapy"
@@ -91,7 +92,11 @@ const PricingSection = () => {
                   <span className="text-4xl font-bold text-primary font-montserrat">{pkg.price}</span>
                   <span className="text-xs text-green-600 font-semibold font-montserrat">(after discount)</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-8 font-montserrat font-medium">{pkg.duration} treatment</p>
+                <p className="text-sm text-muted-foreground mb-2 font-montserrat font-medium">{pkg.duration} treatment</p>
+                {pkg.highlight && (
+                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-6 font-montserrat">{pkg.highlight}</span>
+                )}
+                {!pkg.highlight && <div className="mb-8" />}
                 
                 <ul className="space-y-4 mb-8">
                   {pkg.features.map((feature, i) => (
