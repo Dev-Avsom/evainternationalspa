@@ -129,10 +129,8 @@ const CouplesLanding = () => {
             
             {/* Main Headline */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight">
-              Couples Spa @ <span className="text-gold-accent">₹4,999</span><br />
-              <span className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium text-white/90">
-                (25% Off Today Only)
-              </span>
+              Couples Spa Starting from<br />
+              <span className="text-gold-accent">₹4,999</span>
             </h1>
             
             {/* Value Proposition */}
