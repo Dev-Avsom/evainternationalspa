@@ -10,13 +10,13 @@ const PricingSection = () => {
 
   const packages = [
     {
-      name: "Essential Relaxation",
+      name: "Luxury Relaxation",
       originalPrice: "₹2,499",
       price: "₹1,999",
       duration: "60 mins",
       features: [
         "Choice of Swedish or Aroma Therapy",
-        "Private treatment room",
+        "Private luxury treatment room",
         "Shower facility included",
         "Complimentary refreshments"
       ],
@@ -29,23 +29,23 @@ const PricingSection = () => {
       duration: "90 mins",
       features: [
         "Deep Tissue or Thai Massage",
-        "Body scrub treatment",
+        "International-standard body scrub",
         "Private shower & changing room",
-        "Premium essential oils",
+        "Premium imported essential oils",
         "Extended relaxation time"
       ],
       popular: true
     },
     {
-      name: "Couples Retreat",
+      name: "Luxury Couples Retreat",
       originalPrice: "₹6,249",
       price: "₹4,999",
       duration: "120 mins",
       highlight: "Jacuzzi Available",
       features: [
-        "Dual massage for two",
-        "Jacuzzi session included",
-        "Private couple suite",
+        "Dual luxury massage for two",
+        "Private Jacuzzi session",
+        "Exclusive couple suite",
         "Champagne & chocolates",
         "Complimentary aromatherapy"
       ],
@@ -58,13 +58,13 @@ const PricingSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold font-montserrat mb-4">
-            Transparent Pricing
+            Eva International Spa
           </span>
           <h2 id="pricing-heading" className="text-3xl md:text-4xl font-bold text-foreground font-montserrat">
-            Pricing & <span className="text-primary">Packages</span>
+            Luxury <span className="text-primary">Spa Packages</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-xl mx-auto font-montserrat font-medium mt-4">
-            No hidden charges. Premium body massage starting at just ₹1,999 (after discount).
+            Premium international-standard treatments starting at just ₹1,999.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ const PricingSection = () => {
 
         <div className="text-center mt-10">
           <p className="text-sm text-muted-foreground font-montserrat font-medium">
-            All prices inclusive of taxes. Custom packages available on request.
+            All prices inclusive of taxes. Luxury custom packages available on request.
           </p>
         </div>
       </div>
