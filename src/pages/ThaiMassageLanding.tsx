@@ -113,8 +113,7 @@ const ThaiMassageLanding = () => {
             
             {/* Main Headline */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight">
-              Thai Massage Starting from<br />
-              <span className="text-gold-accent">₹1,999</span>
+              Thai Massage Starting from <span className="text-gold-accent">₹1,999</span>
             </h1>
             
             {/* Value Proposition */}
