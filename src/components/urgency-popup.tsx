@@ -8,7 +8,7 @@ const UrgencyPopup = () => {
 
   useEffect(() => {
     // Check if popup was already shown this session
-    const popupShown = sessionStorage.getItem("urgencyPopupShown");
+    const popupShown = sessionStorage.getItem("urgencyPopupShown_v2");
     if (popupShown) {
       setHasBeenClosed(true);
       return;
@@ -25,7 +25,7 @@ const UrgencyPopup = () => {
   const handleClose = () => {
     setIsVisible(false);
     setHasBeenClosed(true);
-    sessionStorage.setItem("urgencyPopupShown", "true");
+    sessionStorage.setItem("urgencyPopupShown_v2", "true");
   };
 
   const handleClaim = () => {
