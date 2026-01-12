@@ -70,8 +70,9 @@ const UrgencyPopup = () => {
               <p className="text-sm text-muted-foreground font-montserrat line-through">
                 ₹2,499
               </p>
+              <p className="text-xs text-muted-foreground font-montserrat font-medium">Starting at</p>
               <p className="text-3xl md:text-4xl font-bold text-primary font-montserrat">
-                ₹1,999 Only
+                ₹1,999 <span className="text-sm text-green-600 font-semibold">(after discount)</span>
               </p>
               <p className="text-muted-foreground font-montserrat">
                 Save ₹500 on your first session

@@ -11,6 +11,7 @@ const PricingSection = () => {
   const packages = [
     {
       name: "Essential Relaxation",
+      originalPrice: "₹2,499",
       price: "₹1,999",
       duration: "60 mins",
       features: [
@@ -23,6 +24,7 @@ const PricingSection = () => {
     },
     {
       name: "Premium Wellness",
+      originalPrice: "₹3,749",
       price: "₹2,999",
       duration: "90 mins",
       features: [
@@ -36,6 +38,7 @@ const PricingSection = () => {
     },
     {
       name: "Couples Retreat",
+      originalPrice: "₹6,249",
       price: "₹4,999",
       duration: "120 mins",
       features: [
@@ -60,7 +63,7 @@ const PricingSection = () => {
             Pricing & <span className="text-primary">Packages</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-xl mx-auto font-montserrat font-medium mt-4">
-            No hidden charges. Premium body massage starting from just ₹1,999.
+            No hidden charges. Premium body massage starting at just ₹1,999 (after discount).
           </p>
         </div>
 
@@ -80,9 +83,13 @@ const PricingSection = () => {
               )}
               <CardContent className={`p-8 ${pkg.popular ? 'pt-14' : ''}`}>
                 <h3 className="font-bold text-foreground text-xl mb-3 font-montserrat">{pkg.name}</h3>
+                <p className="text-xs text-muted-foreground font-montserrat line-through mb-1">{pkg.originalPrice}</p>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="text-xs text-muted-foreground font-montserrat font-medium">Starting at</span>
+                </div>
                 <div className="flex items-baseline gap-1 mb-2">
                   <span className="text-4xl font-bold text-primary font-montserrat">{pkg.price}</span>
-                  <span className="text-sm text-muted-foreground font-montserrat font-medium">/ session</span>
+                  <span className="text-xs text-green-600 font-semibold font-montserrat">(after discount)</span>
                 </div>
                 <p className="text-sm text-muted-foreground mb-8 font-montserrat font-medium">{pkg.duration} treatment</p>
                 
