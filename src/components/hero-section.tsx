@@ -37,10 +37,8 @@ const HeroSection = memo(() => {
           
           {/* Main Headline - Mobile optimized */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-montserrat tracking-tight">
-            Starting at <span className="text-gold-accent">₹1,999</span> <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-white/80">(after discount)</span><br />
-            <span className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-medium text-white/90">
-              20% Off Today Only
-            </span>
+            Spa Session Starting from<br />
+            <span className="text-gold-accent">₹1,999</span>
           </h1>
           
           {/* Value Proposition - Clear & Specific */}
