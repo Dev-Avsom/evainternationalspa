@@ -61,7 +61,7 @@ const PricingSection = () => {
             Eva International Spa
           </span>
           <h2 id="pricing-heading" className="text-3xl md:text-4xl font-bold text-foreground font-montserrat">
-            Luxury <span className="text-primary">Spa Packages</span>
+            Luxury & Premium <span className="text-primary">Spa Packages</span>
           </h2>
           <p className="text-base text-muted-foreground max-w-xl mx-auto font-montserrat font-medium mt-4">
             Premium international-standard treatments starting at just ₹1,999.
